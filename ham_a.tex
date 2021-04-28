@@ -5,8 +5,12 @@
 \usepackage{xcolor}%颜色
 \usepackage{enumitem}%列表用
 %\usepackage{fancyhdr}%页眉
+\usepackage{palatino,url}
 \usepackage[parfill]{parskip}
-%\CJKfamily{Noto Sans CJK SC}
+\usepackage{fontspec} %Font package
+\setmainfont{Noto Serif}
+\setsansfont{Noto Sans}
+\setmonofont{Noto Sans Mono CJK SC Regular}
 \setCJKmainfont {Noto Serif CJK SC}
 % 设置正文罗马族的CJK字体，影响\rmfamily和\textrm 的字体
 \setCJKsansfont {Noto Sans CJK SC Regular}
@@ -34,7 +38,7 @@ right=2.5cm]{geometry}
 \begin{document}%内容开始
 
 \maketitle%标题页
-\tableofcontents%目录
+%\tableofcontents%目录
 
 \chapter*{前言}
 
@@ -3969,6 +3973,9 @@ right=2.5cm]{geometry}
 \textbf{解说：}因为人体会对某些特定频率的电磁波吸收量更大。\\
 \textbf{答案：}A
 
+\chapter*{后记}
+
+本书的电子版可以在\url{https://github.com/mike2718/ham}下载以后阅读。
 
 %\chapter*{参考文献}
 
