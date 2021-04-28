@@ -2,7 +2,6 @@
 \usepackage[T1]{fontenc} % 避免字体显示出错？
 \usepackage {xeCJK}
 \usepackage{graphicx}%图片
-\usepackage{fontspec}%改默认字体
 \usepackage{xcolor}%颜色
 \usepackage{enumitem}%列表用
 %\usepackage{fancyhdr}%页眉
@@ -10,18 +9,13 @@
 %\CJKfamily{Noto Sans CJK SC}
 \setCJKmainfont {Noto Serif CJK SC}
 % 设置正文罗马族的CJK字体，影响\rmfamily和\textrm 的字体
-\setCJKsansfont {Noto Sans CJK SC}
+\setCJKsansfont {Noto Sans CJK SC Regular}
 % 设置正文无衬线族的CJK字体，影响\sffamily和\textsf 的字体
-\setCJKmonofont {Noto Mono CJK SC}
+\setCJKmonofont {Noto Sans Mono CJK SC Regular}
 % 设置正文等宽族的CJK字体，影响\ttfamily 和 \texttt 的字体
 
-\usepackage{geometry}
-\geometry{
-	a4paper,
-	total={170mm,257mm},
-	left=20mm,
-	top=20mm,
-}
+\usepackage[a4paper,left=2cm,top=2cm,bottom=2cm,
+right=3cm]{geometry}
 \ctexset{
 	chapter/name = {第,章},
 	chapter/number = \arabic{chapter},
@@ -33,9 +27,9 @@
 %\setlength\parindent{0pt}%取消缩进
 \setlist{nosep}
 
-\title{A类业余无线电操作证考试试题解析}%标题
+\title{A类业余无线电台操作技术能力考试攻略本}%标题
 \author{BG7XTQ}%作者
-\date{\today}%年月日
+\date{\today}%发布日期
 
 \begin{document}%内容开始
 
@@ -47,76 +41,96 @@
 \chapter{法律法规}
 
 \textbf{问题：}我国现行法律体系中专门针对无线电管理的最高法律文件及其立法机关是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 中华人民共和国业余无线电台管理办法，工业和信息化部
   \item 中华人民共和国无线电管理办法，工业和信息化部
   \item 中华人民共和国电信条例，国务院
   \item 中华人民共和国无线电管理条例，国务院和中央军委
 \end{enumerate}
-\textbf{解说：}我国专门针对无线电管理的最高法律文件为《中华人民共和国无线电管理条例》，由中华人民共和国国务院和中华人民共和国中央军事委员会发布。\\
+
+\textbf{解说：}我国专门针对无线电管理的最高法律文件为《中华人民共和国无线电管理条例》，由中华人民共和国国务院和中华人民共和国中央军事委员会发布。
+
 \textbf{答案：}D
 
 \textbf{问题：}我国现行法律体系中专门针对业余无线电台管理的最高法律文件及其立法机关是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 业余无线电台管理办法，工业和信息化部
   \item 个人业余无线电台管理暂行办法，国家体委和国家无委
   \item 业余无线电台管理暂行规定，国家体委和国家无委
   \item 中华人民共和国电信条例，国务院
 \end{enumerate}
-\textbf{解说：}我国专门针对无线电管理的最高法律文件为《中华人民共和国无线电管理条例》，其立法机关为中华人民共和国国务院和中华人民共和国中央军事委员会。\\
+
+\textbf{解说：}我国专门针对无线电管理的最高法律文件为《中华人民共和国无线电管理条例》，其立法机关为中华人民共和国国务院和中华人民共和国中央军事委员会。
+
 \textbf{答案：}D
 
 \textbf{问题：}我国的无线电主管部门是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 各级无线电管理机构
   \item 各级体育管理机构
   \item 各地业余无线电协会
   \item 各地电信管理局
 \end{enumerate}
-\textbf{解说：}根据《中华人民共和国无线电管理条例》第八条和第十条，国家无线电管理机构负责全国无线电管理工作。省、自治区、直辖市无线电管理机构在国家无线电管理机构协调下处理本行政区域无线电管理相关事宜。\\
+
+\textbf{解说：}根据《中华人民共和国无线电管理条例》第八条和第十条，国家无线电管理机构负责全国无线电管理工作。省、自治区、直辖市无线电管理机构在国家无线电管理机构协调下处理本行政区域无线电管理相关事宜。
+
 \textbf{答案：}A
 
-\textbf{问题：}我国依法负责对业余无线电台实施监督管理的机构是：
+\textbf{问题：}我国依法负责对业余无线电台实施监督管理的机构是
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 国家无线电管理机构和地方无线电管理机构
   \item 在国家或地方民政部门注册的业余无线电协会
   \item 国家体育管理机构和地方体育管理机构
   \item 国家和地方公安部门
 \end{enumerate}
-\textbf{解说：}根据《中华人民共和国无线电管理条例》第八条和第十条，国家无线电管理机构负责全国无线电管理工作。省、自治区、直辖市无线电管理机构在国家无线电管理机构协调下处理本行政区域无线电管理相关事宜。\\
+
+\textbf{解说：}根据《中华人民共和国无线电管理条例》第八条和第十条，国家无线电管理机构负责全国无线电管理工作。省、自治区、直辖市无线电管理机构在国家无线电管理机构协调下处理本行政区域无线电管理相关事宜。
+
 \textbf{答案：}A
 
 \textbf{问题：}《业余无线电台管理办法》所说的“地方无线电管理机构”指的是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 省、自治区、直辖市无线电管理机构
   \item 地方业余无线电协会或者类似组织机构
   \item 地市县（区）及以下各级无线电管理机构
   \item 各地方与无线电设备生产销售和无线电应用有关的行政管理机构
 \end{enumerate}
-\textbf{解说：}根据《业余无线电台管理办法》第三条：国家无线电管理机构和省、自治区、直辖市无线电管理机构简称地方无线电管理机构。\\
+\textbf{解说：}根据《业余无线电台管理办法》第三条：国家无线电管理机构和省、自治区、直辖市无线电管理机构简称地方无线电管理机构。
+
 \textbf{答案：}A
 
 \textbf{问题：}国家鼓励和支持业余无线电台开展下列活动：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 无线电通信技术研究、普及活动以及突发重大自然灾害等紧急情况下的应急通信活动
   \item 休闲娱乐性交谈
   \item 机动车辆行车服务性通信活动
   \item 作为日常公益活动的通信工具
 \end{enumerate}
-\textbf{解说：}根据《业余无线电台管理办法》第四条：国家鼓励和支持业余无线电通信技术的研究、普及和突发重大自然灾害等紧急情况下的应急无线电通信活动。\\
+
+\textbf{解说：}根据《业余无线电台管理办法》第四条：国家鼓励和支持业余无线电通信技术的研究、普及和突发重大自然灾害等紧急情况下的应急无线电通信活动。
+
 \textbf{答案：}A
 
 \textbf{问题：}关于业余电台管理的正确说法是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 依法设置的业余无线电台受国家法律保护
   \item 业余无线电爱好者的一切行为都受国家法律保护
   \item 通过法律手段限制业余无线电台的设置
   \item 在业余电台与其他业务电台遇到干扰纠纷时无条件优先保护其他业务电台
 \end{enumerate}
-\textbf{解说：}根据《业余无线电台管理办法》第四条：依法设置的业余无线电台受国家法律保护。\\
+\textbf{解说：}根据《业余无线电台管理办法》第四条：依法设置的业余无线电台受国家法律保护。
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电频率的使用必须得到各级无线电管理机构的批准，基本依据是“无线电频谱资源属于国家所有”，出自于下列法律：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 中华人民共和国物权法
   \item 中华人民共和国民法通则
@@ -1273,6 +1287,7 @@
 \end{enumerate}
 
 \textbf{问题：}“谁在呼叫我”的业余无线电通信Q简语为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item QRZ？
   \item QRZ
@@ -1280,7 +1295,12 @@
   \item QSL？
 \end{enumerate}
 
+\textbf{解说：}“谁在呼叫我”的业余无线电通信Q简语为QRZ？。
+
+\textbf{答案：}A
+
 \textbf{问题：}“我遇到他台干扰”的业余无线电通信Q简语为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item QRM
   \item QSM
@@ -1288,7 +1308,12 @@
   \item QSB？
 \end{enumerate}
 
+\textbf{解说：}“我遇到他台干扰”的业余无线电通信Q简语为QRM。
+
+\textbf{答案：}A
+
 \textbf{问题：}“我遇到天电干扰”的业余无线电通信Q简语为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item QRN
   \item QST
@@ -1296,7 +1321,12 @@
   \item QRM
 \end{enumerate}
 
+\textbf{解说：}“我遇到天电干扰”的业余无线电通信Q简语为QRN。其余各项Q简语分别为：
+
+\textbf{答案：}A
+
 \textbf{问题：}“我给你收据（QSL卡片）、我已收妥”的业余无线电通信Q简语为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item QSL
   \item QRG
@@ -1304,7 +1334,12 @@
   \item QRV
 \end{enumerate}
 
+\textbf{解说：}“我给你收据（QSL卡片）、我已收妥”的业余无线电通信Q简语为QSL。其余各项Q简语分别为：
+
+\textbf{答案：}A
+
 \textbf{问题：}“我的电台位置是××××”的业余无线电通信Q简语为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item QTH　××××
   \item QRD　××××
@@ -1312,7 +1347,12 @@
   \item QSP　××××
 \end{enumerate}
 
+\textbf{解说：}“我的电台位置是××××”的业余无线电通信Q简语为QTH　××××。其余各项Q简语分别为：
+
+\textbf{答案：}A
+
 \textbf{问题：}“天线”的业余无线电通信常用缩语是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item ANT
   \item ATT
@@ -1320,13 +1360,22 @@
   \item ATR
 \end{enumerate}
 
+\textbf{解说：}ANT是“天线”的业余无线电通信常用缩语，ANT英语Antenna（意为天线）的缩写。
+
+\textbf{答案：}A
+
 \textbf{问题：}业余无线电常用缩语“ARDF”的意思是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 业余无线电测向
   \item 天线调谐器、天调
   \item 地址
   \item 天线测试仪
 \end{enumerate}
+
+\textbf{解说：}业余无线电常用缩语“ARDF”是“业余无线电测向”的意思，ARDF即英语Amateur radio direction finding（意为：业余无线电测向）。
+
+\textbf{答案：}A
 
 \textbf{问题：}“频率”的业余无线电通信常用缩语是：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
@@ -1336,7 +1385,12 @@
   \item FIND
 \end{enumerate}
 
+\textbf{解说：}FREQ是“频率”的业余无线电通信常用缩语。FREQ即英语的Frequency，意为频率。
+
+\textbf{答案：}A
+
 \textbf{问题：}业余无线电通信常用缩语“GND”的意思是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 地线，地面
   \item 格林威治时间
@@ -1344,7 +1398,12 @@
   \item 高兴
 \end{enumerate}
 
+\textbf{解说：}”GND“是“地线，地面”的业余无线电通信常用缩语。GND即英语的Ground，意为大地、接地。
+
+\textbf{答案：}A
+
 \textbf{问题：}业余无线电通信常用缩语“OM”的意思是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 老朋友
   \item 欧姆
@@ -1352,7 +1411,12 @@
   \item 老人
 \end{enumerate}
 
+\textbf{解说：}“OM”是“老朋友”的业余无线电通信常用缩语。在莫尔斯电码通信中，“OM”为“old man”的缩略，指男性操作者（不分年龄）。
+
+\textbf{答案：}A
+
 \textbf{问题：}“电台设备”的业余无线电通信常用缩语是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item RIG
   \item REG
@@ -1360,7 +1424,12 @@
   \item SB
 \end{enumerate}
 
+\textbf{解说：}“RIG”是“电台设备”的业余无线电通信常用缩语。电台设备包括了收信机和发信机。
+
+\textbf{答案：}A
+
 \textbf{问题：}“收信机”的业余无线电通信常用缩语是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item RCVR，RX
   \item XCVR
@@ -1368,7 +1437,12 @@
   \item RMKS
 \end{enumerate}
 
+\textbf{解说：}“RCVR”和“RX”是“收信机”的业余无线电通信常用缩语，RCVR即英语Receiver（收信机）。
+
+\textbf{答案：}A
+
 \textbf{问题：}“发信机”的业余无线电通信常用缩语是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item TX、XMTR
   \item XTL
@@ -1376,7 +1450,12 @@
   \item VXCO
 \end{enumerate}
 
+\textbf{解说：}“TX“和”XMTR”是“发信机”的业余无线电通信常用缩语，“TX”即英语Transmitter（发信机）。
+
+\textbf{答案：}A
+
 \textbf{问题：}“收发信机”的业余无线电通信常用缩语是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item XCVR
   \item XVTR
@@ -1384,7 +1463,12 @@
   \item XTL
 \end{enumerate}
 
+\textbf{解说：}“XCVR”是“收发信机”的业余无线电通信常用缩语。指收信机和发信机。
+
+\textbf{答案：}A
+
 \textbf{问题：}业余无线电通信常用缩语“WX”的意思是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 天气
   \item 瓦特
@@ -1392,7 +1476,12 @@
   \item 星期
 \end{enumerate}
 
+\textbf{解说：}业余无线电通信常用缩语“WX”意为“天气”。“WX”即英语Weather（天气）。
+
+\textbf{答案：}A
+
 \textbf{问题：}业余无线电通信常用缩语“73”的意思是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 向对方的致意、美好的祝愿
   \item 再见
@@ -1400,7 +1489,12 @@
   \item 谢谢你
 \end{enumerate}
 
+\textbf{解说：}业余无线电通信常用缩语“73”意为”向对方的致意、美好的祝愿“。
+
+\textbf{答案：}A
+
 \textbf{问题：}业余无线电通话常用语“Roger”的用法是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 回答起始语，相当于“明白”，仅在已完全抄收对方刚才发送的信息时使用
   \item 回答起始语，相当于“听到”，用于能听到对方信号、但不一定能全部抄收的情况
@@ -1408,464 +1502,606 @@
   \item 惯用口头语，相当于电话的“喂”，仅提起注意，不包含任何意义
 \end{enumerate}
 
+\textbf{解说：}。“Roger”为回答起始语，相当于“明白”，仅在已完全抄收对方刚才发送的信息时使用。
+
+\textbf{答案：}A
+
 \textbf{问题：}业余无线电通信中常用的天线种类的缩写DP代表：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 偶极天线
   \item 长线天线
   \item 定向天线
   \item 垂直天线
 \end{enumerate}
-\textbf{解说：}DP为偶极天线（Dipole antenna）的缩写。\\
+
+\textbf{解说：}DP为英语Dipole antenna（偶极天线）的缩写。
+
 \textbf{答案：}A
 
 \textbf{问题：}业余无线电通信中常用的天线种类的缩写GP代表：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 垂直接地天线
   \item 对数周期天线
   \item 偶极天线
   \item 定向天线
 \end{enumerate}
-\textbf{解说：}GP为垂直接地天线（Ground plane）的缩写。\\
+
+\textbf{解说：}GP为英语Ground plane（垂直接地天线）的缩写。
+
 \textbf{答案：}A
 
 \textbf{问题：}业余无线电通信中常用的天线种类的缩写BEAM代表：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 定向天线
   \item 专指八木天线
   \item 偶极天线
   \item 垂直天线
 \end{enumerate}
-\textbf{解说：}BEAM为定向天线（Beam antenna）的缩写。\\
+
+\textbf{解说：}BEAM为英语Beam antenna（定向天线）的缩写。
+
 \textbf{答案：}A
 
 \textbf{问题：}业余无线电通信中常用的天线种类的缩写YAGI代表：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 八木天线
   \item 定向天线
   \item 偶极天线
   \item 垂直天线
 \end{enumerate}
-\textbf{解说：}YAGI为八木天线（Yagi antenna）的缩写。\\
+
+\textbf{解说：}YAGI为英语Yagi antenna（八木天线）的缩写。
+
 \textbf{答案：}A
 
 \textbf{问题：}业余无线电通信中常用的天线种类的缩写VER代表：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 垂直天线
   \item 垂直接地天线
   \item 定向天线
   \item 偶极天线
 \end{enumerate}
-\textbf{解说：}VER为垂直天线（Vertical antenna）的缩写。\\
+
+\textbf{解说：}VER为英语Vertical antenna（垂直天线）的缩写。
+
 \textbf{答案：}A
 
 \textbf{问题：}已知北京时间，相应的UTC时间应为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 北京时间的小时数减8，如小时数小于0，则小时数加24，日期改为前一天。
   \item 北京时间的小时数减8，如小时数小于0，则小时数加24，日期改为后一天。
   \item 北京时间的小时数加8，如小时数大于24，则小时数减24，日期改为前一天。
   \item 北京时间的小时数加8，如小时数大于24，则小时数减24，日期改为后一天。
 \end{enumerate}
-\textbf{解说：}已知北京时间，相应的UTC时间应为：北京时间的小时数减8，如小时数小于0，则小时数加24，日期改为前一天。\\
+
+\textbf{解说：}已知北京时间，相应的UTC时间计算方法为：北京时间的小时数减8，如小时数小于0，则小时数加24，日期改为前一天。
+
 \textbf{答案：}A
 
 \textbf{问题：}已知UTC时间，相应的北京时间应为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item UTC时间的小时数加8，如小时数大于24，则小时数减24，日期改为后一天。
   \item 北京时间的小时数减8，如小时数小于0，则小时数加24，日期改为后一天。
   \item 北京时间的小时数加8，如小时数大于24，则小时数减24，日期改为前一天。
   \item 北京时间的小时数减8，如小时数小于0，则小时数加24，日期改为前一天。
 \end{enumerate}
-\textbf{解说：}已知UTC时间，相应的北京时间应为：UTC时间的小时数加8，如小时数大于24，则小时数减24，日期改为后一天。\\
+
+\textbf{解说：}已知UTC时间，相应的北京时间计算方法为：UTC时间的小时数加8，如小时数大于24，则小时数减24，日期改为后一天。
+
 \textbf{答案：}A
 
 \textbf{问题：}我国所属的“CQ分区”有：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 23、24、27
   \item 42、43、44
   \item 23、24
   \item 42、43、44、50
 \end{enumerate}
-\textbf{解说：}我国所属的“CQ分区”有23、24、27。\\
+
+\textbf{解说：}我国所属的“CQ分区”有23、24、27。
+
 \textbf{答案：}A
 
 \textbf{问题：}“ITU分区”是IARU的活动计算通信成绩的基础。我国所属的“ITU分区”有：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 33、42、43、44、50
   \item 33、42、43、44
   \item 23、24
   \item 23、24、27
 \end{enumerate}
-\textbf{解说：}我国所属的“ITU分区”有33、42、43、44、50。\\
+
+\textbf{解说：}我国所属的“ITU分区”有33、42、43、44、50。
+
 \textbf{答案：}A
 
 \textbf{问题：}业余无线电通信梅登海德网格定位系统（Maidenhead Grid Square Locator）是一种：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 根据经纬度坐标对地球表面进行网格划分和命名，用以标示地理位置的系统
   \item 卫星定位系统
   \item 根据国际呼号系列对地球表面进行网格划分和命名，用以标示地理位置的系统
   \item 根据国际政治行政区划对地球表面进行网格划分和命名，用以标示地理位置的系统
 \end{enumerate}
-\textbf{解说：}业余无线电常用梅森海德网格定位系统（Maidenhead Grid Square Locator）来确定地理位置。这种系统根据经纬度坐标对地球表面进行网格划分和命名，用以标示地理位置。\\
+
+\textbf{解说：}业余无线电常用梅森海德网格定位系统（Maidenhead Grid Square Locator）来确定地理位置。这种系统根据经纬度坐标对地球表面进行网格划分和命名，用以标示地理位置。
+
 \textbf{答案：}A
 
 \textbf{问题：}业余无线电通信常用的梅登海德网格定位系统网格名称的格式为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 2个字母和2位数字、2个字母和2位数字再加2个字母
   \item 4位数字或者6位数字
   \item 4个字母或者6个字母
   \item 呼号前缀字母加2位数字和2个字母
 \end{enumerate}
-\textbf{解说：}业余无线电通信常用的梅登海德网格定位系统网格名称的格式为：4字符（2个字母和2位数字）或6字符（2个字母和2位数字再加2个字母）。\\
+
+\textbf{解说：}业余无线电通信常用的梅登海德网格定位系统网格名称的格式为：4字符（2个字母和2位数字）或6字符（2个字母和2位数字再加2个字母）。
+
 \textbf{答案：}A
 
 \textbf{问题：}业余无线电通信常用的梅登海德网格定位系统网格名称的长度是4字符或6字符，两者定位精度不同，差别为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 两者网格大小不同，4字符网格为经度2度和纬度1度，6字符网格为经度5分和纬度2.5分
   \item 4字符网格精确到国家分区，6字符网格精确到国家的城市或县乡
   \item 4字符网格根据国际呼号系列区分，6字符网格在4字符基础上加以经纬度细分
   \item 4字符网格名称用于HF频段通信，6字符网格名称用于VHF/UHF通信
 \end{enumerate}
-\textbf{解说：}业余无线电通信常用的梅登海德网格定位系统网格名称的长度是4字符或6字符，两者定位精度不同，差别为：两者网格大小不同，4字符网格为经度2度和纬度1度，6字符网格为经度5分和纬度2.5分。\\
+
+\textbf{解说：}业余无线电通信常用的梅登海德网格定位系统网格名称的长度是4字符或6字符，两者定位精度不同，差别为：两者网格大小不同，4字符网格为经度2度和纬度1度，6字符网格为经度5分和纬度2.5分。
+
 \textbf{答案：}A
 
 \textbf{问题：}业余无线电通信所说的“网格定位”是什么意思？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 一个由一串字母和数字确定的地理位置
   \item 一个由一串字母和数字确定的方位角和仰角
   \item 用来调谐末级功放的设备
   \item 用于无线电测向运动的设备
 \end{enumerate}
-\textbf{解说：}业余无线电通信所说的“网格定位”是一个由一串字母和数字确定地理位置的系统。\\
+
+\textbf{解说：}业余无线电通信所说的“网格定位”是一个由一串字母和数字确定地理位置的系统。
+
 \textbf{答案：}A
 
 \textbf{问题：}电流的单位是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 安（培）
   \item 伏（特）
   \item 瓦（特）
   \item 欧（姆）
 \end{enumerate}
-\textbf{解说：}安培，简称安，是电流的单位。\\
+
+\textbf{解说：}安培，简称安，是电流的单位。
+
 \textbf{答案：}A
 
 \textbf{问题：}电压的单位是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 伏（特）
   \item 安（培）
   \item 瓦（特）
   \item 欧（姆）
 \end{enumerate}
-\textbf{解说：}伏特，简称伏，是电压的单位。\\
+
+\textbf{解说：}伏特，简称伏，是电压的单位。
+
 \textbf{答案：}A
 
 \textbf{问题：}电阻的单位是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 欧（姆）
   \item 安（培）
   \item 伏（特）
   \item 瓦（特）
 \end{enumerate}
-\textbf{解说：}欧姆，简称欧，是电阻的单位。\\
+
+\textbf{解说：}欧姆，简称欧，是电阻的单位。
+
 \textbf{答案：}A
 
 \textbf{问题：}功率的单位是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 瓦（特）
   \item 安（培）
   \item 伏（特）
   \item 欧（姆）
 \end{enumerate}
-\textbf{解说：}瓦特，简称瓦，是功率的单位。\\
+
+\textbf{解说：}瓦特，简称瓦，是功率的单位。
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电常用度量单位的词头K的意义为：（”x＾m”表示“x的m次方”）
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 10＾3
   \item 10＾(-3)
   \item 10＾6
   \item 10＾(-6)
 \end{enumerate}
-\textbf{解说：}k，中文：千，意义为：10＾3。\\
+
+\textbf{解说：}国际单位制词头k，中文：千，意义为：10＾3。
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电常用度量单位的词头m的意义为：（”x＾m”表示“x的m次方”）
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 10＾(-3)
   \item 10＾3
   \item 10＾6
   \item 10＾(-6)
 \end{enumerate}
-\textbf{解说：}m，中文：毫，意义为：10＾(-3)。\\
+
+\textbf{解说：}国际单位制词头m，中文：毫，意义为：10＾(-3)。
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电常用度量单位的词头M的意义为：（”x＾m”表示“x的m次方”）
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 10＾6
   \item 10＾(-6)
   \item 10＾3
   \item 10＾(-3)
 \end{enumerate}
-\textbf{解说：}M，中文：兆，意义为：10＾6。\\
+
+\textbf{解说：}国际单位制词头M，中文：兆，意义为：10＾6。
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电常用度量单位的词头μ的意义为：（”x＾m”表示“x的m次方”）
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 10＾(-6)
   \item 10＾6
   \item 10＾(-3)
   \item 10＾3
 \end{enumerate}
-\textbf{解说：}μ，中文：微，意义为：10＾(-6)。\\
+
+\textbf{解说：}国际单位制词头μ，中文：微，意义为：10＾(-6)。
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电常用度量单位的词头G的意义分别为：（”x＾m”表示“x的m次方”）
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 10＾9
   \item 10＾6
   \item 10＾12
   \item 10＾(-12)
 \end{enumerate}
-\textbf{解说：}G，中文：吉，意义为：10＾9。\\
+
+\textbf{解说：}国际单位制词头G，中文：吉，意义为：10＾9。
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电常用度量单位的词头n的意义分别为：（”x＾m”表示“x的m次方”）
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 10＾(-9)
   \item 10＾9
   \item 10＾12
   \item 10＾(-12)
 \end{enumerate}
-\textbf{解说：}n，中文：纳，意义为：10＾(-9)。\\
+
+\textbf{解说：}国际单位制词头n，中文：纳，意义为：10＾(-9)。
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电常用度量单位的词头T的意义分别为：（”x＾m”表示“x的m次方”）
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 10＾12
   \item 10＾-12
   \item 10＾9
   \item 10＾(-9)
 \end{enumerate}
-\textbf{解说：}T，中文：太，意义为：10＾12。\\
+
+\textbf{解说：}国际单位制词头T，中文：太，意义为：10＾12。
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电常用度量单位的词头p的意义分别为：（”x＾m”表示“x的m次方”）
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 10＾(-12)
   \item 10＾12
   \item 10＾(-9)
   \item 10＾9
 \end{enumerate}
-\textbf{解说：}p，中文：皮，意义为：10＾(-12)。\\
+
+\textbf{解说：}国际单位制词头p，中文：皮，意义为：10＾(-12)。
+
 \textbf{答案：}A
 
 \textbf{问题：}音频所指的频率范围大致是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 16Hz - 20kHz
   \item 300Hz – 3000Hz
   \item 16kHz – 20kHz
   \item 16kHz – 56kHz
 \end{enumerate}
-\textbf{解说：}音频所指的频率范围大致是 16Hz - 20kHz。\\  % 20Hz ～ 20kHz
+
+\textbf{解说：}音频的频率范围大致是 16Hz - 20kHz。% 查资料得 20Hz ～ 20kHz
+
 \textbf{答案：}A
 
 \textbf{问题：}5W可以表示为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 37dBm
   \item 5dBW
   \item 17dBm
   \item 35dBμ
 \end{enumerate}
-\textbf{解说：}5W可以表示为37dBm。\\
+
+\textbf{解说：}5W可以表示为37dBm。 % ？？？
+
 \textbf{答案：}A
 
 \textbf{问题：}0.25W可以表示为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 54dBμ
   \item 6dBW
   \item 36dBm
   \item 25dBm
 \end{enumerate}
-\textbf{解说：}0.25W可以表示为54dBμ。\\
+
+\textbf{解说：}0.25W可以表示为54dBμ。%？？？
+
 \textbf{答案：}A
 
 \textbf{问题：}0.4kW可以表示为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 86dBμ
   \item 400dBm
   \item 6000dBm
   \item 34dBm
 \end{enumerate}
-\textbf{解说：}0.4kW可以表示为86dBμ。\\
+
+\textbf{解说：}0.4kW可以表示为86dBμ。%？？？
+
 \textbf{答案：}A
 
 \textbf{问题：}电源两端电压的方向为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 从电源的正极到负极
   \item 从电源的负极到正极
   \item 取决于负载电阻和电源内阻的相对大小
   \item 与电源的电动势方向相同
 \end{enumerate}
-\textbf{解说：}电源两端电压的方向是从电源的正极到负极。\\
+
+\textbf{解说：}电源两端电压的方向为:从电源的正极到负极。
+
 \textbf{答案：}A
 
 \textbf{问题：}直流电路欧姆定律是说：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 流过电阻的电流I，与两端的电压U成正比，与阻值R成反比
   \item 流过电阻的电流I，与两端的电压U成正比，与阻值R成正比
   \item 流过电阻的电流I，与两端的电压U成反比，与阻值R成反比
   \item 流过电阻的电流I，与两端的电压U成反比，与阻值R成正比
 \end{enumerate}
-\textbf{解说：}直流电路欧姆定律是说：流过电阻的电流I，与两端的电压U成正比，与阻值R成反比。\\
+
+\textbf{解说：}直流电路欧姆定律是说：流过电阻的电流I，与两端的电压U成正比，与阻值R成反比。%图？
+
 \textbf{答案：}A
 
 \textbf{问题：}峰-峰值为100伏的正弦交流电压，其有效值电压为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 约35.4伏
   \item 约70.7伏
   \item 约141伏
   \item 约50伏
 \end{enumerate}
-\textbf{解说：}峰-峰值为100伏的正弦交流电压，其有效值电压约35.4伏。\\
+
+\textbf{解说：}峰-峰值为100伏的正弦交流电压，其峰值为100/2=50伏，由50/1.414算得其有效值电压约为35.4伏。%公式？图？
+
 \textbf{答案：}A
 
 \textbf{问题：}峰值为100伏的正弦交流电压，其有效值电压为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 约70.7伏
   \item 约35.4伏
   \item 约141伏
   \item 约50伏
 \end{enumerate}
-\textbf{解说：}峰值为100伏的正弦交流电压，其有效值电压约70.7伏。\\
+
+\textbf{解说：}峰值为100伏的正弦交流电压，由100/1.414算得其有效值电压约为70.7伏。
+
 \textbf{答案：}A
 
 \textbf{问题：}峰-峰值为100伏的正弦交流电压，其平均值电压为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 0
   \item 约35.4伏
   \item 约70.7伏
   \item 约141伏
 \end{enumerate}
-\textbf{解说：}峰-峰值为100伏的正弦交流电压，其平均值电压为0。\\
+
+\textbf{解说：}峰-峰值为100伏的正弦交流电压，无论其大小，其平均值电压为0。
+
 \textbf{答案：}A
 
 \textbf{问题：}峰值为100伏的正弦交流电压，其平均值电压为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 0
   \item 约35.4伏
   \item 约70.7伏
   \item 约141伏
 \end{enumerate}
-\textbf{解说：}峰值为100伏的正弦交流电压，其平均值电压为0。\\
+
+\textbf{解说：}峰值为100伏的正弦交流电压，无论其大小，其平均值电压为0。
+
 \textbf{答案：}A
 
 \textbf{问题：}相位差通常用来描述：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 两个或多个同频率正弦信号之间的时间滞后或超前关系
   \item 两个或多个不同频率正弦信号之间的时间滞后或超前关系
   \item 两个或多个随机信号之间的时间滞后或超前关系
   \item 两个或多个任意信号之间的幅度关系
 \end{enumerate}
-\textbf{解说：}相位差通常用来描述两个或多个同频率正弦信号之间的时间滞后或超前关系。\\
+
+\textbf{解说：}相位差通常用来描述两个或多个同频率正弦信号之间的时间滞后或超前关系。
+
 \textbf{答案：}A
 
 \textbf{问题：}电源（或信号源）内阻对电路的影响是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 使电源（或信号源）的实际输出电压降低
   \item 使电源（或信号源）的电动势降低
   \item 使电源（或信号源）的可输出功率增加
   \item 减少电源（或信号源）本身的电能消耗
 \end{enumerate}
-\textbf{解说：}电源（或信号源）内阻对电路的影响是使电源（或信号源）的实际输出电压降低。\\
+
+\textbf{解说：}电源（或信号源）内阻对电路的影响是使电源（或信号源）的实际输出电压降低。
+
 \textbf{答案：}A
 
 \textbf{问题：}电阻元件的“额定功率”参数是指：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 该元件正常工作时所能承受的最大功率
   \item 该元件正常工作时所需要的最小功率
   \item 该元件正常工作时必须正好消耗的功率
   \item 该元件接入任何电路时的实际消耗功率
 \end{enumerate}
-\textbf{解说：}电阻元件的“额定功率”参数是指该元件正常工作时所能承受的最大功率。\\
+
+\textbf{解说：}电阻元件的“额定功率”参数是指该元件正常工作时所能承受的最大功率。
+
 \textbf{答案：}A
 
 \textbf{问题：}下面哪一个术语可以用来描述交流电每秒改变方向的次数？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 频率
   \item 速率
   \item 波长
   \item 脉率
 \end{enumerate}
-\textbf{解说：}频率可以用来描述交流电每秒改变方向的次数。\\
+
+\textbf{解说：}频率可以用来描述交流电每秒改变方向的次数。
+
 \textbf{答案：}A
 
 \textbf{问题：}电流使用下列哪一个单位来衡量？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 安培
   \item 瓦特
   \item 欧姆
   \item 伏特
 \end{enumerate}
-\textbf{解说：}电流使用安培来衡量。\\
+
+\textbf{解说：}电流使用安培来衡量。表示单位时间内通过的电子数量多少。%来源？
+
 \textbf{答案：}A
 
 \textbf{问题：}电功率使用如下哪一个单位来衡量？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 瓦特
   \item 伏特
   \item 欧姆
   \item 安培
 \end{enumerate}
-\textbf{解说：}电功率使用瓦特来衡量。\\
+
+\textbf{解说：}电功率使用瓦特来衡量。表示电流消耗的速率。
+
 \textbf{答案：}A
 
 \textbf{问题：}只向一个方向流动的电流叫做什么？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 直流
   \item 交流
   \item 常流
   \item 平流
 \end{enumerate}
-\textbf{解说：}只向一个方向流动的电流叫做直流。\\
+
+\textbf{解说：}只向一个方向流动的电流叫做直流。
+
 \textbf{答案：}A
 
 \textbf{问题：}下列哪一项是电的良导体？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 铜
   \item 木材
   \item 玻璃
   \item 橡胶
 \end{enumerate}
-\textbf{解说：}铜是电的良导体。干木材、玻璃、橡胶是电的良好绝缘体。\\
+
+\textbf{解说：}铜是电的良导体。木材、玻璃、橡胶是电的良好绝缘体。
+
 \textbf{答案：}A
 
 \textbf{问题：}下列哪一项是电的良好绝缘体？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 玻璃
   \item 铜
   \item 铝
   \item 汞
 \end{enumerate}
-\textbf{解说：}玻璃是电的良好绝缘体。铜、铝、汞是电的良导体。\\
+
+\textbf{解说：}玻璃是电的良好绝缘体。铜、铝、汞是电的良导体。
+
 \textbf{答案：}A
 
 \textbf{问题：}电能消耗的速率叫做什么？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 电功率
   \item 电流
   \item 电阻
   \item 电压
 \end{enumerate}
-\textbf{解说：}电能消耗的速率称为电功率。\\
+
+\textbf{解说：}电能消耗的速率称为电功率。
+
 \textbf{答案：}A
 
 \textbf{问题：}用通常的调频方式进行话音通信，必要带宽约为：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 6.25kHz
   \item 2700Hz
   \item 200Hz
   \item 12.5kHz
 \end{enumerate}
-\textbf{解说：}用通常的调频方式进行话音通信，必要带宽约为6.25kHz。\\
+
+\textbf{解说：}用通常的调频方式进行话音通信，必要带宽约为6.25kHz。%？？？
+
 \textbf{答案：}A
 
 \textbf{问题：}无线电干扰中不属于有害干扰的是：
@@ -2531,33 +2767,42 @@
 \end{enumerate}
 
 \textbf{问题：}在自由空间中，无线电波的速度约是多少？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 300000000米/每秒
   \item 3000千米/每秒
   \item 300000英里/每小时
   \item 18600英里/每小时
 \end{enumerate}
-\textbf{解说：}无线电波在自由空间中的速度约为300000000米/每秒（每秒30万千里）。\\
+
+\textbf{解说：}无线电波在自由空间中的速度约为300000000米/每秒。
+
 \textbf{答案：}A
 
 \textbf{问题：}如果你收到了一个从上千公里以外的距离传播过来的VHF信号，最可能的原因是：
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item 信号被突发E电离层反射过来
   \item 信号经过了地下传输过来
   \item 信号被附近的雷雨区反射过来
   \item 信号经过了宇宙的反射
 \end{enumerate}
-\textbf{解说：}突发E电离层反射有可能使你能收到从上千公里以外的距离传播过来的VHF信号。\\
+
+\textbf{解说：}突发E电离层反射有可能使你能收到从上千公里以外的距离传播过来的VHF信号。
+
 \textbf{答案：}A
 
 \textbf{问题：}下列哪一个缩写经常在无线电工程文章中用来代表各种类型的无线电波？
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
   \item RF
   \item HF
   \item AF
   \item VHF
 \end{enumerate}
-\textbf{解说：}RF是Radio Frequency（射频）的缩写。经常在无线电工程文章中用来代表各种类型的无线电波。\\
+
+\textbf{解说：}RF是Radio Frequency（射频）的缩写。经常在无线电工程文章中用来代表各种类型的无线电波。
+
 \textbf{答案：}A
 
 \textbf{问题：}在空间中传播的电磁波，一般被叫做什么？
