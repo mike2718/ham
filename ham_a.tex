@@ -1,16 +1,20 @@
-\documentclass{ctexbook}%官方指定
+\documentclass{ctexbook}%官方指定'
+\usepackage {ctex}
+\usepackage {xeCJK}
 \usepackage{graphicx}%图片
 \usepackage{fontspec}%改默认字体
 \usepackage{xcolor}%颜色
 \usepackage{enumitem}%列表用
 %\usepackage{fancyhdr}%页眉
 \usepackage[parfill]{parskip}
-%\setmainfont{Times New Roman}
-%\setsansfont{Myriad Pro}
-%\setmonofont{Courier Prime}
-%\setCJKmainfont[BoldFont={方正小标宋简体}, ItalicFont={方正楷体简体}, BoldItalicFont={方正仿宋简体}]{方正书宋简体}
-%\setCJKsansfont{方正黑体简体}
-%\setCJKmonofont{方正中等线简体}
+%\CJKfamily{Noto Sans CJK SC}
+\setCJKmainfont {Noto Serif CJK SC}
+% 设置正文罗马族的CJK字体，影响\rmfamily和\textrm 的字体
+\setCJKsansfont {Noto Sans CJK SC}
+% 设置正文无衬线族的CJK字体，影响\sffamily和\textsf 的字体
+\setCJKmonofont {Noto Mono CJK SC}
+% 设置正文等宽族的CJK字体，影响\ttfamily 和 \texttt 的字体
+
 \usepackage{geometry}
 \geometry{
 	a4paper,
@@ -122,7 +126,7 @@
 \textbf{解说：}根据《中华人民共和国物权法》第五十条：无线电频谱资源属于国家所有。\\
 \textbf{答案：}A
 
-\textbf{问题：}我国对无线电管理术语“业余业务”、“卫星业余业务”和“业余无线电台”做出具体定义的法规文件是
+\textbf{问题：}我国对无线电管理术语“业余业务”、“卫星业余业务”和“业余无线电台”做出具体定义的法规文件是：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item 中华人民共和国无线电频率划分规定
 \item 中华人民共和国无线电管理条例
