@@ -1,13 +1,15 @@
 \documentclass[UTF8]{ctexbook}
 %\usepackage[T1]{fontenc} % 避免字体显示出错？
-\usepackage {xeCJK}
-\usepackage{graphicx}%图片
-\usepackage{xcolor}%颜色
-\usepackage{enumitem}%列表用
+\usepackage{xeCJK}
+\usepackage{graphicx} % 图片
+\usepackage{xcolor} % 颜色
+\usepackage{enumitem} % 列表用
 %\usepackage{fancyhdr}%页眉
 \usepackage{palatino,url}
 \usepackage[parfill]{parskip}
 \usepackage{fontspec} %Font package
+%\usepackage{amsmath} % 数学
+%\usepackage{amssymb} % 数学
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Noto Mono}
@@ -18,7 +20,7 @@
 \setCJKmonofont {Noto Sans Mono CJK SC}
 % 设置正文等宽族的CJK字体，影响\ttfamily 和 \texttt 的字体
 
-\usepackage[a4paper,left=2.5cm,top=3cm,bottom=2cm,
+\usepackage[a4paper,left=2.5cm,top=2.5cm,bottom=2.5cm,
 right=2.5cm]{geometry}
 \ctexset{
 	chapter/name = {第,章},
@@ -31,7 +33,7 @@ right=2.5cm]{geometry}
 %\setlength\parindent{0pt}%取消缩进
 \setlist{nosep}
 
-\title{A类业余无线电台操作技术能力考试攻略本} %书名
+\title{A类业余无线电台操作技术能力考试攻略本\\\large 一本能帮助你通过考试的辅导书} %书名
 \author{BG7XTQ} %作者
 \date{\today}   %发布日期
 
@@ -39,7 +41,7 @@ right=2.5cm]{geometry}
 \begin{document}%内容开始
 
 \maketitle%标题页
-%\tableofcontents%目录
+\tableofcontents%目录
 
 \include{ham_a_0}%前言
 
@@ -54,6 +56,8 @@ right=2.5cm]{geometry}
 \include{ham_a_5}%防护电磁辐射以及消除射频干扰
 
 \chapter*{后记}
+
+感谢大家阅读我的书，真的很开心啦啦啦。
 
 本书的电子版可以在\url{https://github.com/mike2718/ham}下载以后阅读。
 
