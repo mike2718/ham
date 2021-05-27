@@ -10,3 +10,7 @@
 
 * proTeXt
 * TeXstudio
+
+## 协议
+
+&copy; 2021 BG7XTQ
