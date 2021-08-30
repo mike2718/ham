@@ -1,13 +1,13 @@
 \documentclass{ctexbook}
-%\usepackage{xeCJK}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx} % 图片
 \usepackage{xcolor} % 颜色
+%\usepackage[utf8]{inputenc}
+\graphicspath{ {./images/} } % 图片路径
 \usepackage{enumitem} % 列表用
-%\usepackage{fancyhdr}%页眉
-\usepackage{palatino,url}
-\usepackage[parfill]{parskip}
 \usepackage{fontspec} %Font package
 \usepackage{mathtools} %数学
+\usepackage{wasysym}
 \usepackage{hyperref}
 \newcommand*\rfrac[2]{{}^{#1}\!/_{#2}} % 压缩分数表示的空间
 \setmainfont{Noto Serif}
@@ -33,9 +33,9 @@ right=2.5cm]{geometry}
 %\setlength\parindent{0pt}%取消缩进
 \setlist{nosep}
 
-\title{\Huge A类业余无线电台操作技术能力考试攻略本} %书名
-\author{\Large BG7XTQ} %作者
-\date{\Large \today}   %发布日期
+\title{\sffamily {\Huge A类业余无线电台操作技术能力考试攻略本}} %书名
+\author{\texttt {\Large BG7XTQ}} %作者
+\date{\texttt {\Large \today}}   %发布日期
 
 
 \begin{document}%内容开始
