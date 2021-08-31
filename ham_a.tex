@@ -5,6 +5,7 @@
 %\usepackage[utf8]{inputenc}
 \graphicspath{ {./images/} } % 图片路径
 \usepackage{enumitem} % 列表用
+\usepackage[parfill]{parskip}
 \usepackage{fontspec} %Font package
 \usepackage{mathtools} %数学
 \usepackage{wasysym}
@@ -22,21 +23,21 @@
 
 \usepackage[a4paper,left=2.5cm,top=2.5cm,bottom=2.5cm,
 right=2.5cm]{geometry}
+
 \ctexset{
 	chapter/name = {第,章},
 	chapter/number = \arabic{chapter},
 	chapter/numberformat = \color{blue}\zihao{0}\emph,
 	section/name = {},
 	section/number = \Roman{section},
-	%autoindent=false,%取消缩进
+	autoindent=false, %禁用自动调整功能
 }
-%\setlength\parindent{0pt}%取消缩进
+\setlength\parindent{0pt} %设置固定长度的段首缩进
 \setlist{nosep}
 
 \title{\sffamily {\Huge A类业余无线电台操作技术能力考试攻略本}} %书名
 \author{\texttt {\Large BG7XTQ}} %作者
 \date{\texttt {\Large \today}}   %发布日期
-
 
 \begin{document}%内容开始
 
