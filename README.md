@@ -16,4 +16,4 @@
 
 ## 许可
 
-`&copy; 2021 BG7XTQ`
+&copy; 2021 BG7XTQ
