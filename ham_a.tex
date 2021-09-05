@@ -26,12 +26,10 @@
 %\usepackage[utf8]{inputenc}
 \graphicspath{ {./images/} } % 图片路径
 \usepackage{enumitem} % 列表用
-\usepackage[parfill]{parskip}
-\usepackage{fontspec} %Font package
+%\setlength{\parindent}{0pt}
 \usepackage{mathtools} %数学
 \usepackage{wasysym}
 \usepackage{hyperref}
-\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}} % 压缩分数表示的空间
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Noto Mono}
@@ -51,45 +49,40 @@ right=2.5cm]{geometry}
 	chapter/numberformat = \color{blue}\zihao{0}\emph,
 	section/name = {},
 	section/number = \Roman{section},
-	autoindent=false, %禁用自动调整功能
+%	autoindent=false, %禁用自动调整功能
 }
-\setlength\parindent{0pt} %设置固定长度的段首缩进
 \setlist{nosep}
 
 \title{\sffamily {\Huge A类业余无线电台操作技术能力考试攻略本}} %书名
-\author{\texttt {\Large BG7XTQ}} %作者
+\author{\texttt {\Large BG7XTQ 编著}} %作者
 \date{\sffamily {\Large \today} }  %发布日期
 
 \begin{document}%内容开始
 
 \maketitle%标题页
 
+%献辞
 \thispagestyle{empty}
 \vfil
 \ \\
 \vspace{15em}
 \begin{center}
 	{\Large 献给我的父亲。}
-\end{center}
+\end{center}、
+%献辞
 
 \newpage
 
 \tableofcontents%目录
 
-\include{ham_a_0}%前言
-
-\include{ham_a_1}%无线电法律
-
-\include{ham_a_2}%无线电通信方法
-
-\include{ham_a_3}%无线电系统原理
-
-\include{ham_a_4}%无线电安全防护
-
-\include{ham_a_5}%防护电磁辐射以及消除射频干扰
-
-\include{ham_a_6}%后记
-
-%\chapter*{参考文献}
+\include{qianyan}
+\include{bianzhuzhedehua}
+\include{ham_a_1}
+\include{ham_a_2}
+\include{ham_a_3}
+\include{ham_a_4}
+\include{ham_a_5}
+\include{houji}%后记
+%\include{cankaowenxian}
 
 \end{document}
