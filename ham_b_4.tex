@@ -1,210 +1,255 @@
-\chapter{无线电的安全性}
+\chapter{避免和解决射频干扰}
 
 
-\noindent\textbf{问题：}如何在电网停电的状况下给一个12伏的铅酸蓄电池充电？
-
-\begin{enumerate}[label=\Alph*), leftmargin=3em]	
-	\item 将蓄电池串联一个电灯泡作为限流装置，然后连接到220伏市电上
-	\item 将蓄电池连接与汽车的蓄电池并联，并且发动汽车
-	\item 给蓄电池中加一些酸
-	\item 将蓄电池放在冰里冷却一会儿
-\end{enumerate}
-
-\noindent\textbf{解说：}人们常用\textbf{将蓄电池连接与汽车的蓄电池并联，并且发动汽车}的办法在电网停电的状况下给一个12伏的铅酸蓄电池充电。\\\noindent\textbf{答案：}B%？？？
-
-
-\noindent\textbf{问题：}如果铅酸蓄电池的充电和放电进行得过快会怎样？
-
+\noindent\textbf{问题：}我国业余电台应该遵守的关于电磁辐射污染的具体管理规定文件为：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 电池可能会过热，甚至释放出可燃气体，甚至可能爆炸
-	\item 可能会产生过高的充电电压，引起触电的危险
-	\item “记忆效应”将使电池的可用容量减小
-	\item 电压会将为负值
+	\item 国家标准《电磁辐射防护规定》
+	\item 《业余电台管理办法》
+	\item 国际非电离辐射防护委员会《限制时变电场和磁场暴露的导则》
+	\item 美国FCC《射频电磁场人员暴露准则的测评方法规》
 \end{enumerate}
 
-\noindent\textbf{解说：}如果铅酸蓄电池的充电和放电进行得过快，\textbf{电池可能会过热，甚至释放出可燃气体，甚至可能爆炸}。\\\noindent\textbf{答案：}A%？？？
+\bigskip
 
 
-\noindent\textbf{问题：}VHF和UHF信号属于下面哪一类辐射？
-
+\noindent\textbf{问题：}按照我国国家标准《电磁辐射防护规定》，可以免于管理的电磁辐射体为 ：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 电离辐射
-	\item 阿尔法辐射
-	\item 伽玛辐射
-	\item 非电离辐射
+	\item 输出功率不大于15W的移动式无线电通信设备，以及等效辐射功率在0.1-3MHz不大于300W、在3MHz-300GHz不大于100瓦的辐射体
+	\item 所有业余电台
+	\item 发射频率30MHz以下的所有业余电台
+	\item 发射频率30MHz以上的所有业余电台
 \end{enumerate}
 
-\noindent\textbf{解说：}VHF和UHF信号属于\textbf{非电离辐射}。非电离辐射不会引起物质电离，一般不会直接破坏原子或分子结构；电离辐射会引起物质电离，会直接破坏原子或分子结构，因此阿尔法辐射和伽玛辐射属于电离辐射。\\\noindent\textbf{答案：}D
+\bigskip
 
 
-\noindent\textbf{问题：}防雷装置的作用是防止雷电危害。传统防雷装置的主要组成部分是：
-
+\noindent\textbf{问题：}按照我国国家标准《电磁辐射防护规定》，凡其功率大于豁免水平（3MHz以上等效辐射功率100瓦）的一切电磁波辐射体的所有者，必须：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 避雷针、过压保护器、熔丝
-	\item 避雷针、高压指示灯、过流保护器
-	\item 天线、限流器、地线
-	\item 接闪器（避雷针）、引下线、接地体
+	\item 向所在地区的环境保护部门申报、登记，并接受监督
+	\item 向所在地区的环境保护部门缴纳环境保护费
+	\item 向所在地区的无线电管理机构交纳环境电磁辐射监测报告
+	\item 业余电台可不受环境保护部门的监督管理
 \end{enumerate}
 
-\noindent\textbf{解说：}传统防雷装置主要由\textbf{接闪器（避雷针）、引下线、接地体}等部分组成。\\\noindent\textbf{答案：}D
+\bigskip
 
 
-\noindent\textbf{问题：}防雷接地的作用是：
-
+\noindent\textbf{问题：}按照我国国家标准《电磁辐射防护规定》，负责对超过豁免水平（3MHz以上等效辐射功率100瓦）电磁波辐射体所在的场所以及周围环境的电磁辐射水平进行监测的是：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 用接闪器感应到的雷电高压启动过压保护电路
-	\item 把接闪器引入的雷击电流有效地泄入大地
-	\item 有效地阻断接闪器引入的雷击电流使其不致流入大地
-	\item 当接闪器引入雷击电流时迅速烧断熔丝，阻断其流动
+	\item 其拥有者
+	\item 所在地区环境保护部门
+	\item 所在地区无线电管理机构
+	\item 所在地区业余无线电协会
 \end{enumerate}
 
-\noindent\textbf{解说：}防雷接地的作用是\textbf{把接闪器引入的雷击电流有效地泄入大地}。\\\noindent\textbf{答案：}B
+\bigskip
 
 
-
-\noindent\textbf{问题：}关于对防雷接地基本要求的正确说法：
-
+\noindent\textbf{问题：}按照我国国家标准《电磁辐射防护规定》，当监测到超过豁免水平的电磁辐射体使环境电磁辐射水平超过规定的限值时，必须：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 可以利用与埋地金属管线相连的自来水管作为接地体
-	\item 交流电网的“零线”在配电系统中已经接地，因此可代替防雷接地体及其引下线
-	\item 要有单独的接地体，接地电阻要小，接闪器到接地体之间的引下线应尽量短而粗
-	\item 接闪器到接地体之间的引下线平时没有电流流过，采用直径0.5毫米的导线为好
+	\item 尽快采取措施降低辐射水平，同时向环境保护部门报告
+	\item 立即到环境保护部门缴纳电磁污染治理费
+	\item 立即向无线电管理机构报告
+	\item 立即向当地城管机构报告
 \end{enumerate}
 
-\noindent\textbf{解说：}防雷接地的基本要求是：\textbf{要有单独的接地体，接地电阻要小，接闪器到接地体之间的引下线应尽量短而粗}。\\\noindent\textbf{答案：}C%？
+\bigskip
 
 
-
-\noindent\textbf{问题：}单支避雷针的保护范围大致有多大：
-
+\noindent\textbf{问题：}按照我国国家标准《电磁辐射防护规定》，对超过豁免水平的电磁辐射体的环境电磁辐射水平监测应在下列地点进行：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 避雷针周围水平方圆30米内的任何物体
-	\item 以避雷针为顶点的45度圆锥体以内空间
-	\item 以避雷针为顶点、避雷针高度为半径的半球体以内空间
-	\item 避雷针周围所有比避雷针低的空间
+	\item 在距辐射体天线2000米以内最大辐射方向上选点测量
+	\item 在发射机射频输出端口进行测量
+	\item 在距辐射体天线2000米以内选择任意位置测量
+	\item 在距辐射体天线100米以内最小辐射方向上选点测量
 \end{enumerate}
 
-\noindent\textbf{解说：}单支避雷针的保护范围大致为\textbf{以避雷针为顶点的45度圆锥体以内空间}。\\\noindent\textbf{答案：}B%%%%%%%
+\bigskip
 
 
-
-\noindent\textbf{问题：}安全电压是指不致使人直接致死或致残的电压。根据国家标准GB3805－83《安全电压》，一般环境条件下允许持续接触的“安全特低电压”为：
-
+\noindent\textbf{问题：}我国国家标准《电磁辐射防护规定》所规定的电磁辐射防护限值的公众照射基本限值，其基本计量方法规是：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 6V
-	\item 24V
-	\item 48V
-	\item 72V
+	\item 一天24小时内任意6分钟内全身平均的比吸收率（SAR）应小于每公斤体重限值
+	\item 任何时刻的全身平均的比吸收率（SAR）都应小于每公斤体重限值
+	\item 任何时刻的瞬时辐射场强都应小于与频率无关的固定限值
+	\item 任何时刻的瞬时辐射场强都应小于与频率有关的限值
 \end{enumerate}
 
-\noindent\textbf{解说：}根据国家标准GB3805-83《安全电压》，一般环境条件下允许持续接触的“安全特低电压”上限为\textbf{24V}。\\\noindent\textbf{答案：}B%%%%%%%%%%%
+\bigskip
 
 
-
-\noindent\textbf{问题：}触及裸露的射频导线时，与触及相同电压的直流或50Hz交流导线相比，对人身安全危险的大致差别为：
+\noindent\textbf{问题：}我国国家标准《电磁辐射防护规定》规定电磁辐射公众照射导出限值中，对环境电磁辐射场强一天24小时内任意6分钟内的平均值要求最严格的频率范围为：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 射频电流对人体没有危险
-	\item 更容易出现呼吸或心脏麻痹、更易致死
-	\item 触及不同频率、相同电压的导线时，对人体的危害没有差别
-	\item 致死危险性下降，但皮肤容易灼伤
+	\item 30MHz- 3GHz
+	\item 3MHz- 30MHz
+	\item 300kHz-30MHz
+	\item 1200MHz-30GHz
 \end{enumerate}
-\noindent\textbf{解说：}触及裸露的射频导线时，与触及相同电压的直流或50Hz交流导线相比，对人身安全危险的大致差别是\textbf{致死危险性下降，但皮肤容易灼伤}。\\\noindent\textbf{答案：}D
+
+\bigskip
 
 
-\noindent\textbf{问题：}如遇设备、电线或者电源引起失火，正确的处置为：
+\noindent\textbf{问题：}为什么电磁辐射防护规定国家标准中的照射限值随着频率的变化而不同？
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 立即切断电源，使用化学泡沫灭火器灭火
-	\item 迅速起身逃离火场
-	\item 立即切断电源，使用二氧化碳灭火器灭火
-	\item 立即切断电源，用水灭火
+	\item 人体会对某些特定频率的电磁波吸收量更大
+	\item 较低频率的无线电波不会穿透人体
+	\item 在自然中高频电磁波不常见
+	\item 较低频率的无线电波相对高频率的无线电波拥有更高的能量
 \end{enumerate}
-\noindent\textbf{解说：}如遇设备、电线或者电源引起失火，正确的处置方法是\textbf{立即切断电源，使用二氧化碳灭火器灭火}。不能用水或化学泡沫灭火器灭火，因为里面的水会导电。\\\noindent\textbf{答案：}C
+
+\bigskip
 
 
-\noindent\textbf{问题：}必须带电检修由市电供电的无线电设备时，应做到：
+\noindent\textbf{问题：}要防止HF发射机的杂散发射干扰天线附近的VHF电视机，应该发射机和天线之间串联：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 只要确保设备外壳与地绝缘，双脚是否与地绝缘、双手是否同时操作都没有关系
-	\item 只要设备外壳良好接地，双脚是否与地绝缘、双手是否同时操作都没有关系
-	\item 双脚与地绝缘，单手操作，另一只手不触摸机壳等任何与电路设备有关的金属物品
-	\item 双脚与地绝缘，单手操作，另一只手通过触摸机壳或水管等途径良好接地
+	\item 截止频率为30MHz左右的低通滤波器
+	\item 截止频率为30MHz左右的高通滤波器
+	\item 截止频率为300MHz左右的低通滤波器
+	\item 中心频率为30MHz左右的带通滤波器
 \end{enumerate}
-\noindent\textbf{解说：}必须带电检修由市电供电的无线电设备时，应做到\textbf{双脚与地绝缘，单手操作，另一只手不触摸机壳等任何与电路设备有关的金属物品}。\\\noindent\textbf{答案：}C
 
-\noindent\textbf{问题：}两手分别接触电压有效值相同但频率不同的电路两端时，对人体生命安全威胁由大到小的排序为：
+\bigskip
+
+
+\noindent\textbf{问题：}假设中继台的收、发信机共用天线，上下行频率分别为F1和F2。要防止中继台发射机对接收机产生干扰，应该对中继台设备采取下列措施：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item HF射频交流电、UHF射频交流电、工频交流电
-	\item UHF射频交流电、HF射频交流电、工频交流电
-	\item 工频交流电、HF射频交流电、UHF射频交流电
-	\item HF射频交流电、工频交流电、UHF射频交流电
+	\item 在发信机与天线间串联中心频率为F1的带阻滤波器，在收信机与天线间串接中心频率为F2的带阻滤波器
+	\item 在发信机与天线间串联中心频率为F1的带通滤波器，在收信机与天线间串接中心频率为F2的带通滤波器
+	\item 在发信机与天线间串联中心频率为F2的带阻滤波器，在收信机与天线间串接中心频率为F2的带阻滤波器
+	\item 在发信机与天线间串联中心频率为F1的带阻滤波器，在收信机与天线间串接中心频率为F1的带阻滤波器
 \end{enumerate}
-\noindent\textbf{解说：}当两手分别接触电压有效值相同但频率不同的电路两端时，对人体生命安全威胁由大到小的排序为：\textbf{工频交流电、HF射频交流电、UHF射频交流电}。\\\noindent\textbf{答案：}B%%%？？？
+
+\bigskip
 
 
-\noindent\textbf{问题：}电路中的保险丝起到什么作用？
+\noindent\textbf{问题：}要防止业余HF发射机的杂散发射干扰天线附近的电话机，应该在电话机和电话线之间之间串联：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 限制电流，防止触电
-	\item 以上三项全部正确
-	\item 防止电源纹波损害电路
-	\item 过载时切断电路
+	\item 截止频率不高于1MHz的低通滤波器
+	\item 截止频率约为3kHz的高通滤波器
+	\item 截止频率约为3kHz的带阻滤波器
+	\item 中心频率约为3kHz的带通滤波器
 \end{enumerate}
-\noindent\textbf{解说：}电路中的保险丝起到\textbf{过载时切断电路}的作用。\\\noindent\textbf{答案：}D
 
-\noindent\textbf{问题：}为什么在需要安装5安培保险丝的地方安装一个20安培的保险丝是不可取的？
+\bigskip
+
+
+\noindent\textbf{问题：}A、B两部HF业余电台相距很近，分别工作在A、B两个频段。为减少B电台受到来自A电台的干扰，可以在B电台与天线之间串联：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 其他三项全部正确
-	\item 因为20安培的保险丝电流更大，所以它更容易熔断
-	\item 过大的电流可能导致火灾
-	\item 电源的纹波会显著增大
+	\item 中心频率为A的带阻滤波器
+	\item 中心频率为A的带通滤波器
+	\item 截止频率为A的高通滤波器
+	\item 截止频率为B的高通滤波器
 \end{enumerate}
-\noindent\textbf{解说：}电路中的保险丝起到过载时切断电路的作用。把较小熔断电流的保险丝擅自换成大熔断电流的保险丝是错误的，这样做有可能造成\textbf{在过大的电流时不能切断电路，甚至可能导致火灾}。\\\noindent\textbf{答案：}C%%%？？？
+
+\bigskip
 
 
-\noindent\textbf{问题：}防止设备外壳带电危险的措施包括：
+\noindent\textbf{问题：}为了减少发射设备的谐波干扰近在咫尺的接收机，可以在发射设备和天线之间串联一个LC低通滤波器。正确的说法是：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 安装漏电保护断路器
-	\item 所有使用交流供电的设备的电源线都使用带有单独保护地线端的三线插头
-	\item 其他三项全部正确
-	\item 将所有的交流供电设备全部连接至一个安全地线
+	\item 滤波器的阶数越高，抑制倍频干扰的效果越好
+	\item 滤波器的阶数越低，抑制倍频干扰的效果越好
+	\item 滤波器的阶数越高，损耗的功率越小
+	\item 滤波器的阶数越高，耐受的功率越大
 \end{enumerate}
-\noindent\textbf{解说：}防止设备外壳带电危险的措施包括：将所有的交流供电设备全部连接至一个安全地线、安装漏电保护断路器、所有使用交流供电的设备的电源线都使用带有单独保护地线端的三线插头等措施。因此\textbf{其他三项全部正确}。\\\noindent\textbf{答案：}C
+
+\bigskip
 
 
-\noindent\textbf{问题：}在为同轴电缆馈线安装避雷器时应当注意什么？
+\noindent\textbf{问题：}架设业余中继台前应确定台址附近没有能与中继台下行频率形成三阶互调的发射台。如果中继台的上、下行频率分别为fR和fT，可能造成这种三阶互调的干扰频率fX是：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 在每一个避雷器的接地线上安装开关，以防止射频过载损伤避雷器
-	\item 要在每一个避雷器处两端并联一个开关，以便在使用大功率输出的时候可以将避雷器旁路掉
-	\item 将每一个避雷器单独引出接地线，并且将它们都连接至电台的地线
-	\item 将所有避雷器的地线接到同一个金属板上，然后将这个金属板接到室外的接地极
+	\item 2fT - fR 或 (fT + fR ) / 2
+	\item fT - fR 或 fT + fR
+	\item 2（fT - fR） 或 2(fT + fR )
+	\item 2fT 或 2fR
 \end{enumerate}
-\noindent\textbf{解说：}在为同轴电缆馈线安装避雷器时应当注意要\textbf{将所有避雷器的地线接到同一个金属板上，然后将这个金属板接到室外的接地极}。\\\noindent\textbf{答案：}D
+
+\bigskip
 
 
-\noindent\textbf{问题：}常规的12伏酸铅蓄电池通常有什么潜在的危险？
+\noindent\textbf{问题：}如果别人报告说你的发射干扰了相邻频率的通信，此时你应当做的是：
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 如果通风不良，有爆炸风险的气体会聚集
-	\item 有高电压，存在触电的风险
-	\item 长时间不使用可能会引起自燃
-	\item 它会释放臭氧，进而污染大气层
+	\item 检查发射机的频率指示是否准确、发射机的杂散发射指标是否合格
+	\item 换用另一种调制模式工作
+	\item 将这种情况通知你的设备制造商
+	\item 加大发射功率
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{如果通风不良，有爆炸风险的气体会聚集}是常规的12伏酸铅蓄电池潜在的危险。\\\noindent\textbf{答案：}A
+
+\bigskip
 
 
-\noindent\textbf{问题：}设备电源拔掉电源线以后，检修时还有什么安全风险？
+\noindent\textbf{问题：}滤去杂散发射的滤波器应该安装在什么地方？
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 打开电源外壳可能引起保险丝烧断
-	\item 地磁场可能在变压器中激起感应电流导致电源损坏
-	\item 静电可能损坏接地系统
-	\item 充满高电压的电容器可能造成电击
+	\item 发信机和天线之间
+	\item 收信机和发信机之间
+	\item 电台的电源处
+	\item 话筒上
 \end{enumerate}
-\noindent\textbf{解说：}检修时应注意，设备电源拔掉电源线以后，\textbf{充满高电压的电容器可能造成电击}。\\\noindent\textbf{答案：}D
+
+\bigskip
 
 
-\noindent\textbf{问题：}自制一台由220伏交流供电的设备，推荐采用的安全措施是：
+\noindent\textbf{问题：}在解决电视接收机被附近的144MHz业余电台的过载干扰问题的时候，应当先尝试什么措施？
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
-	\item 在交流供电入口处串联安装一个电感
-	\item 交流电源入口火线端串联安装保险丝
-	\item 在交流供电入口处并联安装一个交流电压表
-	\item 在交流供电入口处并联安装一个电容
+	\item 在电视接收机的天线端子前安装144MHz带阻滤波器
+	\item 在电视接收机的天线端子前安装144MHz带通波器
+	\item 在业余电台的射频输出端安装144MHz带通滤波器
+	\item 在业余电台的射频输出端安装144MHz带阻滤波器
 \end{enumerate}
-\noindent\textbf{解说：}在自制由220伏交流供电的设备时，推荐采用的安全措施是在\textbf{交流电源入口火线端串联安装保险丝}。\\\noindent\textbf{答案：}B
+
+\bigskip
+
+
+\noindent\textbf{问题：}在汽车上安装的移动电台中能听到的随着引擎转速变化的高频啸叫声的来源是？
+\begin{enumerate}[label=\Alph*), leftmargin=3em]
+	\item 发电机
+	\item 火花塞系统
+	\item 电动油泵
+	\item 防抱死刹车装置的控制器
+\end{enumerate}
+
+\bigskip
+
+
+\noindent\textbf{问题：}移动车载台的直流电源负极应当接在哪里？
+\begin{enumerate}[label=\Alph*), leftmargin=3em]
+	\item 连接在电池的负极或发动机的接地带
+	\item 连接在天线座上
+	\item 可以连接在汽车的任意的金属部分
+	\item 连接在固定住电台的挂置架上
+\end{enumerate}
+
+\bigskip
+
+
+\noindent\textbf{问题：}下列哪一项可以有效减小火花塞干扰？
+\begin{enumerate}[label=\Alph*), leftmargin=3em]
+	\item 打开电台的抑噪（NB）功能
+	\item 降低静噪（SQL）阀值
+	\item 将频率稍稍偏离一些
+	\item 调节电台的RIT旋钮
+\end{enumerate}
+
+\bigskip
+
+
+\noindent\textbf{问题：}一般来说，如果要解决发射机对附近有线电话的干扰，最先做的应当是：
+\begin{enumerate}[label=\Alph*), leftmargin=3em]
+	\item 在有线电话进线处安装射频滤波器
+	\item 在发射机射频输出端安装高通滤波器
+	\item 在发射机射频输出端安装低通滤波器
+	\item 改善发射机的接地情况
+\end{enumerate}
+
+\bigskip
+
+
+\noindent\textbf{问题：}下列哪一种方法可以用来定位无线电噪音源或者恶意干扰源？
+\begin{enumerate}[label=\Alph*), leftmargin=3em]
+	\item 无线电测向
+	\item 多普勒雷达
+	\item 回波定位
+	\item 相位锁定
+\end{enumerate}
+
+
 
