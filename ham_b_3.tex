@@ -1294,9 +1294,9 @@
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
 
-\begin{circuitikz}[european]
-	\draw 
-	(0,0) node[rground]{};
+\begin{circuitikz}[]
+	\ctikzset{grounds/scale=3, ground=european}
+	\draw (0,0) node[rground]{};
 \end{circuitikz}
 
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
@@ -1334,8 +1334,9 @@
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
 
-\begin{circuitikz}[european]
-	\draw (0,.5) to [fuse]     (1.5,.5) node [right] {};
+\begin{circuitikz}[]
+	\ctikzset{misc/scale=1.5}
+	\draw (0,0) to [fuse]     (2,0) node [right] {};
 \end{circuitikz}
 
 
@@ -1352,6 +1353,7 @@
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
 
 \begin{circuitikz}[european]
+	\ctikzset{capacitors/scale=1.5, ccapacitorshape=european}
 	\draw (0,0) to [C](0,1.5);
 \end{circuitikz}
 
@@ -1367,7 +1369,8 @@
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
 
-\begin{circuitikz}[european]
+\begin{circuitikz}[]
+	\ctikzset{resistors/scale=1, resistor=european}
 	\draw (0,0) to [R](2,0);
 \end{circuitikz}
 
@@ -1383,8 +1386,9 @@
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
 
-\begin{circuitikz}[european]
-	\draw (0,0) to [R](2,0);
+\begin{circuitikz}[]
+	\ctikzset{diodes/scale=1.5, emptydiodeshape=europe}
+	\draw (0,1.5) to [D-](0,0);
 \end{circuitikz}
 
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
@@ -1398,109 +1402,156 @@
 
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
+
+\begin{circuitikz}[]
+	\ctikzset{inductors/scale=1.5, inductor=american}
+	\draw (0,0) to[L] ++(1.7,0);
+\end{circuitikz}
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item 线圈
 \item 二极管
 \item 电容器
 \item 电阻
-\end{enumerate}
-%LK0503.jpg
+\end{enumerate}%LK0503.jpg
 
 \bigskip
 
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
+
+\begin{circuitikz}[]
+	\ctikzset{batteries/scale=1.5, battery2shape=europe}
+	\draw (1.5,0) to [battery2] (0,0);
+\end{circuitikz}
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item 电池
 \item 二极管
 \item 线圈
 \item 电阻
-\end{enumerate}
-%LK0504.jpg
+\end{enumerate}%LK0504.jpg
 
 \bigskip
 
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
+
+\begin{circuitikz}[]
+	\ctikzset{capacitors/scale=1.5, piezoelectricshape=europe}
+	\draw (0,0)  to [PZ] (0,2);
+\end{circuitikz}
+
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item 压电晶体
 \item 电池
 \item 二极管
 \item 电阻
-\end{enumerate}
-%LK0505.jpg
+\end{enumerate}%LK0505.jpg
 
 \bigskip
 
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
+
+\begin{circuitikz}[]
+	\ctikzset{diodes/scale=1.5, emptyzdiodeshape=europe}
+	\draw (0,1.5)  to [zD-, mirror] (0,0);
+\end{circuitikz}
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item 稳压二极管
 \item 压电晶体
 \item 发光二极管
 \item 电阻
-\end{enumerate}
-%LK0506.jpg
+\end{enumerate}%LK0506.jpg
 
 \bigskip
 
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
+
+\begin{circuitikz}[]
+	\ctikzset{diodes/scale=1.5, emptylediodeshape=europe}
+	\draw (0,1.5)  to [leD-, mirror] (0,0);
+\end{circuitikz}
+%%% 光的方向不对
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item 发光二极管
 \item 稳压二极管
 \item 压电晶体
 \item 电阻
-\end{enumerate}
-%LK0507.jpg
+\end{enumerate}%LK0507.jpg
 
 \bigskip
 
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
+
+\begin{circuitikz}[]
+	\ctikzset{transistors/scale=1.5}
+	\draw (0,0) node[pnp]{};
+\end{circuitikz}
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item PNP双极型半导体三极管
 \item NPN双极型半导体三极管
 \item 结型场效应半导体三极管
 \item 绝缘栅场效应半导体三极管
-\end{enumerate}
-%LK0508.jpg
+\end{enumerate}%LK0508.jpg
 
 \bigskip
 
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
+	
+\begin{circuitikz}[]
+	\ctikzset{transistors/scale=1.5}
+	\draw (0,0) node[npn]{};
+\end{circuitikz}
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item NPN双极型半导体三极管
 \item PNP双极型半导体三极管
 \item 结型场效应半导体三极管
 \item 绝缘栅场效应半导体三极管
-\end{enumerate}
-%LK0509.jpg
+\end{enumerate}%LK0509.jpg
 
 \bigskip
 
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
+
+\begin{circuitikz}[]
+	\ctikzset{transistors/scale=1.5}
+	\draw (0,0) node[njfet]{};
+\end{circuitikz}
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item 结型场效应半导体三极管
 \item PNP双极型半导体三极管
 \item NPN双极型半导体三极管
 \item 绝缘栅场效应半导体三极管
-\end{enumerate}
-%LK0510.jpg
+\end{enumerate}%LK0510.jpg
 
 \bigskip
 
 
 \noindent\textbf{问题：}附图中的电路元器件符号代表的是：
+
+\begin{circuitikz}[]
+	\ctikzset{transistors/scale=1.5}
+	\draw (0,0) node[pigfetebulk]{};
+\end{circuitikz}
+
 \begin{enumerate}[label=\Alph*), leftmargin=3em]
 \item 绝缘栅场效应半导体三极管
 \item 结型场效应半导体三极管
 \item PNP双极型半导体三极管
 \item NPN双极型半导体三极管
-\end{enumerate}
-%LK0511.jpg
+\end{enumerate}%LK0511.jpg
 
 \bigskip
 
