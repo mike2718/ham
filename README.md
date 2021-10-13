@@ -15,7 +15,7 @@
 您可以
 
 - [下载《A类业余无线电台操作技术能力考试攻略本》](https://github.com/mike2718/ham/archive/refs/heads/main.zip)
-- [下载《B类业余无线电台操作技术能力考试攻略本》](https://github.com/mike2718/ham/archive/refs/heads/main.zip)
+- [下载《B类业余无线电台操作技术能力考试攻略本》](https://github.com/mike2718/ham/archive/refs/heads/main.zip)（TODO: 未完成）
 
 ## 使用软件
 
