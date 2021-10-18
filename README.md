@@ -19,13 +19,12 @@
 
 ## 使用软件
 
-- proTeXt
 - TeXstudio
 - XeTeX
 
 ## 编译
 
-自行编译本书的话，`.tex`文件编码必须保存为无BOM的UTF-8。
+自行编译本书的话，`.tex`文件必须保存为无BOM的UTF-8文档。
 
 ## 许可
 
