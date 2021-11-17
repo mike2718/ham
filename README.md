@@ -8,19 +8,20 @@
 
 ## 简介
 
-此项目为A类和B类业余无线电台操作技术能力考试的应试辅导书。
+业余无线电台操作技术能力考试的应试辅导书。
 
 ## 下载
 
 您可以
 
-- [下载《A类业余无线电台操作技术能力考试攻略本》](https://github.com/mike2718/ham/archive/refs/heads/main.zip)
-- [下载《B类业余无线电台操作技术能力考试攻略本》](https://github.com/mike2718/ham/archive/refs/heads/main.zip)（TODO: 未完成）
+- [下载《A类业余无线电台操作技术能力考试攻略本》](https://github.com/mike2718/ham/releases)
+- [下载《B类业余无线电台操作技术能力考试攻略本》](https://github.com/mike2718/ham/releases)
 
 ## 使用软件
 
-- TeXstudio
 - XeTeX
+- ctex包
+- TeXstudio
 
 ## 编译
 
