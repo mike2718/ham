@@ -10,6 +10,7 @@
 \usepackage{wasysym}
 \usepackage{hyperref}
 \usepackage{circuitikz}
+\usepackage{multirow}
 %\usepackage{array}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
@@ -5217,7 +5218,7 @@ right=1.5cm]{geometry}
 \item NB和SQL都是指“抑噪”，收不到有用信号时自动关断背景噪声
 \item NB和SQL都是指“静噪”，收不到带有预期的特定控制信号时自动关断音频输出
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{NB为“抑噪”，切除高于平均信号的大幅度突发脉冲噪声；SQL为“静噪”，信噪比达不到一定水平时自动关闭音频输出}。\\\noindent\textbf{答案：}A
+\noindent\textbf{解说：}\textbf{NB为“抑噪”，切除高于平均信号的大幅度突发脉冲噪声；SQL为“静噪”，信噪比达不到一定水平时自动关闭音频输出}。\\即英语\textbf{N}oise \textbf{B}lanker和\textbf{Sq}ue\textbf{l}ch。\\\noindent\textbf{答案：}A
 
 
 \bigskip
@@ -5245,7 +5246,7 @@ right=1.5cm]{geometry}
 \item 发信自动音量控制，对音频输入电平进行检测并反馈控制，以维持其在适当限度之内
 \item 自动频率控制，对发射频率的漂移进行检测并反馈控制，以维持准确的工作频率
 \end{enumerate}
-\noindent\textbf{解说：}ALC代表\textbf{发信自动电平控制，对射频输出电平进行检测并反馈控制，以维持其在适当限度之内}。\\\noindent\textbf{答案：}B
+\noindent\textbf{解说：}ALC代表\textbf{发信自动电平控制，对射频输出电平进行检测并反馈控制，以维持其在适当限度之内}。\\即英语\textbf{A}utomatic \textbf{L}evel \textbf{C}ontrol。\\\noindent\textbf{答案：}B
 
 
 
@@ -5259,7 +5260,7 @@ right=1.5cm]{geometry}
 \item 发信自动音量控制，对音频输入电平进行检测并反馈控制，以维持其在适当限度之内
 \item 自动天线调谐，对天线电路的电压驻波比进行检测并进行自动补偿，以维持最小驻波比
 \end{enumerate}
-\noindent\textbf{解说：}AT代表\textbf{自动天线调谐，对天线电路的电压驻波比进行检测并进行自动补偿，以维持最小驻波比}。\\\noindent\textbf{答案：}D
+\noindent\textbf{解说：}AT代表\textbf{自动天线调谐，对天线电路的电压驻波比进行检测并进行自动补偿，以维持最小驻波比}。\\即英语\textbf{A}ntenna \textbf{T}uner。\\\noindent\textbf{答案：}D
 
 
 
@@ -5274,7 +5275,7 @@ right=1.5cm]{geometry}
 \item 收信机输入衰减器，在接收大信号时接入，使信号不致过大而使前级电路过载
 \item 自动天线调谐，对天线电路的电压驻波比进行检测并进行自动补偿，以维持最小驻波比
 \end{enumerate}
-\noindent\textbf{解说：}ATT代表\textbf{收信机输入衰减器，在接收大信号时接入，使信号不致过大而使前级电路过载}。\\\noindent\textbf{答案：}C
+\noindent\textbf{解说：}ATT代表\textbf{收信机输入衰减器，在接收大信号时接入，使信号不致过大而使前级电路过载}。\\即英语\textbf{Att}enuator。\\\noindent\textbf{答案：}C
 
 
 
@@ -5289,7 +5290,7 @@ right=1.5cm]{geometry}
 \item 自动天线调谐，对天线电路的电压驻波比进行检测并进行自动补偿，以维持最小驻波比
 \item 收信机自动增益控制，对中频级信号电平进行检测并反馈控制，防止电路过载
 \end{enumerate}
-\noindent\textbf{解说：}AGC代表\textbf{收信机自动增益控制，对中频级信号电平进行检测并反馈控制，防止电路过载}。\\\noindent\textbf{答案：}D
+\noindent\textbf{解说：}AGC代表\textbf{收信机自动增益控制，对中频级信号电平进行检测并反馈控制，防止电路过载}。\\即英语\textbf{A}utomatic \textbf{G}ain \textbf{C}ontrol。\\\noindent\textbf{答案：}D
 
 
 
@@ -5303,7 +5304,7 @@ right=1.5cm]{geometry}
 \item 发信自动电平控制，对射频输出电平进行检测并反馈控制，以维持其在适当限度之内
 \item 收信机前置放大器，在接收微弱信号时接入（此时某些技术指标可能低于额定值）
 \end{enumerate}
-\noindent\textbf{解说：}PRE代表\textbf{收信机前置放大器，在接收微弱信号时接入（此时某些技术指标可能低于额定值）}。\\\noindent\textbf{答案：}D
+\noindent\textbf{解说：}PRE代表\textbf{收信机前置放大器，在接收微弱信号时接入（此时某些技术指标可能低于额定值）}。\\即英语\textbf{Pre}amplifier。\\\noindent\textbf{答案：}D
 
 
 \bigskip
@@ -5316,7 +5317,7 @@ right=1.5cm]{geometry}
 \item 发信语音压缩，对音频输入电平进行检测并反馈控制，以提升语音包络幅度较小的部分
 \item 收信机前置放大器，在接收微弱信号时接入（此时某些技术指标可能低于额定值）
 \end{enumerate}
-\noindent\textbf{解说：}PROC代表\textbf{发信语音压缩，对音频输入电平进行检测并反馈控制，以提升语音包络幅度较小的部分}。\\\noindent\textbf{答案：}C
+\noindent\textbf{解说：}PROC代表\textbf{发信语音压缩，对音频输入电平进行检测并反馈控制，以提升语音包络幅度较小的部分}。\\即英语Speech \textbf{Proc}essor。\\\noindent\textbf{答案：}C
 
 
 
@@ -5330,7 +5331,7 @@ right=1.5cm]{geometry}
 \item 发射增量调谐，在发射频率的主调谐不变的基础上，对发射频率进行附加微调
 \item 异频收发，接收和发射使用互相独立的频率
 \end{enumerate}
-\noindent\textbf{解说：}RIT的中文名称是\textbf{接收增量调谐}，其代表的意义是\textbf{在接收频率的主调谐不变的基础上，对接收频率进行附加微调}。\\\noindent\textbf{答案：}B
+\noindent\textbf{解说：}RIT的中文名称是\textbf{接收增量调谐}，其代表的意义是\textbf{在接收频率的主调谐不变的基础上，对接收频率进行附加微调}。\\即英语\textbf{R}eceiver \textbf{I}ncremental \textbf{T}uning。\\\noindent\textbf{答案：}B
 
 
 
@@ -5345,7 +5346,7 @@ right=1.5cm]{geometry}
 \item 发射增量调谐，在发射频率的主调谐不变的基础上，对发射频率进行附加微调
 \item 接收增量调谐，在接收频率的主调谐不变的基础上，对接收频率进行附加微调
 \end{enumerate}
-\noindent\textbf{解说：}XIT的中文名称是\textbf{发射增量调谐}，其代表的意义是\textbf{在发射频率的主调谐不变的基础上，对发射频率进行附加微调}。\\\noindent\textbf{答案：}C
+\noindent\textbf{解说：}XIT的中文名称是\textbf{发射增量调谐}，其代表的意义是\textbf{在发射频率的主调谐不变的基础上，对发射频率进行附加微调}。\\即英语\textbf{T}ransmitter \textbf{I}ncremental \textbf{T}uning。\\\noindent\textbf{答案：}C
 
 
 
