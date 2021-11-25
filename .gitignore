@@ -3,4 +3,6 @@
 *.aux
 *.toc
 *.out
+*.7z
 add.sh
+archive.bat
