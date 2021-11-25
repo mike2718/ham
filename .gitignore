@@ -4,5 +4,6 @@
 *.toc
 *.out
 *.7z
+*.pdf
 add.sh
 archive.bat
