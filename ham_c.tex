@@ -11,6 +11,8 @@
 \usepackage{circuitikz}
 \usepackage{multirow}
 \usepackage{textcomp}
+\usepackage{xstring}
+\usepackage{catchfile}
 \usepackage[a4paper,left=2cm,top=2.5cm,bottom=2cm,
 right=1.5cm]{geometry}
 \setmainfont{Noto Serif}
@@ -33,11 +35,18 @@ right=1.5cm]{geometry}
 }
 \setlist{nosep}
 
-\title{\sffamily {\Huge 业余无线电操作技能考核攻略本\\（类别：C）}} %书名
-\author{\Large \texttt{BG7XTQ (原JJ1DSB) 编著}} %作者
-\date{\Large {\texttt \today} }  %更新日期
+\CatchFileDef{\headfull}{.git/HEAD.}{}
+\StrGobbleRight{\headfull}{1}[\head]
+\StrBehind[2]{\head}{/}[\branch]
+\IfFileExists{.git/refs/heads/\branch.}{%
+	\CatchFileDef{\commit}{.git/refs/heads/\branch.}{}}{%
+	\newcommand{\commit}{\dots~(in \emph{packed-refs})}}
 
 \begin{document}%内容开始
+
+\title{\sffamily {\Huge 业余无线电操作技能考核攻略本\\（类别：C）}} %书名
+\author{\large \texttt{BG7XTQ（原JJ1DSB）编著}} %作者
+\date{\large{编译日期：\texttt \today}\\版本：\texttt{\commit}在分支\texttt{\branch}上} %更新日期
 	
 \maketitle%标题页
 	
