@@ -1,4 +1,4 @@
-# 《A类业余无线电台操作技术能力考试攻略本》、《B类业余无线电台操作技术能力考试攻略本》
+# 《业余无线电操作技能考核攻略本（类别：A）》、《业余无线电操作技能考核攻略本（类别：B）》
 
 ## 目录
 
@@ -15,8 +15,8 @@
 
 您可以
 
-- [下载《A类业余无线电台操作技术能力考试攻略本》](https://github.com/mike2718/ham/releases)
-- [下载《B类业余无线电台操作技术能力考试攻略本》](https://github.com/mike2718/ham/releases)
+- [下载《业余无线电操作技能考核攻略本（类别：A）》](https://github.com/mike2718/ham/releases)
+- [下载《业余无线电操作技能考核攻略本（类别：B）》](https://github.com/mike2718/ham/releases)
 
 ## 使用软件
 
