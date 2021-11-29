@@ -5,6 +5,7 @@
 *.out
 *.7z
 *.xz
+*.zip
 *.pdf
 add.sh
 archive.bat
