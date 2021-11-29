@@ -5,7 +5,8 @@
 \graphicspath{ {./images/} } % 图片路径
 \usepackage{enumitem} % 列表用
 %\setlength{\parindent}{0pt}
-\usepackage{mathtools} %数学
+\usepackage[fleqn,tbtags]{amsmath}
+\usepackage{mathtools}
 \usepackage{wasysym}
 \usepackage{hyperref}
 \usepackage{circuitikz}
@@ -16,6 +17,15 @@
 \usepackage{siunitx}
 \usepackage[a4paper,left=2cm,top=2.5cm,bottom=2cm,
 right=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\fancyhf{}
+\lhead{\textnormal{\kaishu\rightmark}}
+\rhead{--\ \thepage\ --}
+\pagestyle{fancy}
+% \sectionmark 的重定义需要在 \pagestyle 之后生效
+\renewcommand\sectionmark[1]{%
+	\markright{\CTEXifname{\CTEXthesection——}{}#1}}
+
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Noto Mono}
