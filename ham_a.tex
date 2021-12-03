@@ -3,29 +3,36 @@
 right=1.5cm]{geometry}
 \usepackage{fancyhdr}
 \fancyhf{}
-\lhead{\textnormal{\kaishu\rightmark}}
-\rhead{--\ \thepage\ --}
+\lhead{业余无线电操作技能考核攻略本（类别：A）}
+\rhead{\textnormal{\kaishu\rightmark}}
+\rfoot{--\ \thepage\ --}
 \pagestyle{fancy}
-% \sectionmark 的重定义需要在 \pagestyle 之后生效
-\renewcommand\sectionmark[1]{%
-	\markright{\CTEXifname{\CTEXthesection——}{}#1}}
-
+%\sectionmark 的重定义需要在 \pagestyle 之后生效
+\renewcommand\chaptermark[1]{
+	\markright{\CTEXifname{\CTEXthechapter\ }{}#1}}
 \usepackage{graphicx} % 图片
 \usepackage{xcolor} % 颜色
-%\usepackage[utf8]{inputenc}
 \graphicspath{{./images/}} % 图片路径
 \usepackage{enumitem} % 列表用
 %\setlength{\parindent}{0pt}
 \usepackage[fleqn,tbtags]{amsmath}
 \usepackage{mathtools}
+\usepackage{lipsum}
 \usepackage{wasysym}
 \usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=red,
+	pdftitle={业余无线电操作技能考核攻略本（类别：A）},
+	}
 \usepackage{multirow}
 \usepackage{textcomp}
 \usepackage{xstring}
 \usepackage{catchfile}
 \usepackage{siunitx}
-
+\usepackage[yyyymmdd]{datetime}
+\renewcommand{\dateseparator}{-}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Noto Mono}
@@ -55,11 +62,11 @@ right=1.5cm]{geometry}
 
 \begin{document}%内容开始
 
-\title{\sffamily {\Huge 业余无线电操作技能考核攻略本\\（类别：A）}} %书名
-\author{\large \texttt{BG7XTQ（原JJ1DSB）编著}} %作者
-\date{\large{编译日期：\texttt \today}\\版本：\texttt{\commit}在分支\texttt{\branch}上} %更新日期
+\title{\sffamily {\Huge 业余无线电操作技能考核攻略本\\（类别：A）}}
+\author{\large \texttt{BG7XTQ}（原\texttt{JJ1DSB}）编著}
+\date{\large{编译日期：\texttt{\today}}\\版本：\texttt{\commit}在分支\texttt{\branch}上}
 
-\maketitle%标题页
+\maketitle
 
 %献辞
 \thispagestyle{empty}
@@ -83,7 +90,14 @@ right=1.5cm]{geometry}
 
 \chapter{无线电的相关法律}
 
+%\lipsum[1-2]
+%\begin{figure}[h]
+%	\centering
+%	\rule{8cm}{6cm}
+%	\caption{Rectangle}
+%\end{figure}
 
+%ä or ß
 
 \noindent\textbf{试题：}我国现行法律体系中专门针对无线电管理的最高法律文件及其立法机关是：
 
