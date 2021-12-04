@@ -120,8 +120,9 @@
 	\endfirsthead
 	\textbf{缩语} & \textbf{原词} & \textbf{含义} \\
 	\endhead
+	\textbf{AM} & Amplitude modulation & 幅度调制 \\
 	\textbf{ANT} & & 天线 \\
-	ARDF & Amateur Radio Direction Finding & 业余无线电测向 \\
+	ARDF & Amateur radio direction finding & 业余无线电测向 \\
 	\textbf{BEAM} & Beam antenna & 定向天线 \\
 	BREAK & & 插入 \\
 	BREAK BREAK & & 插入（繁忙） \\
@@ -130,8 +131,10 @@
 	CQ & & 普遍呼叫 \\
 	\textbf{CTCSS} & Continuous Tone-Coded Squelch System & 亚音调静噪 \\
 	DATE & & 日期 \\
+	dB & decibel & 增益（单位） \\
 	DTMF & Dual-tone multi-frequency signaling & 双音多频编码 \\
 	\textbf{DP} & Dipole antenna & 偶级天线 \\
+	EHF & Extremely high frequency & 极高频 \\
 	FET & Field-effect transistor & 场效应管 \\
 	FM & Frequency modulation & 频率调制、调频 \\
 	FREQ & Frequency & 频率 \\
@@ -147,14 +150,18 @@
 	MODE & & 模式 \\
 	NFM & Narrowband FM & 窄带调频 \\
 	\textbf{OM} & Old man & 老朋友 \\%朋友
+	OVER & & 我的传输已结束，期待回复 \\
+	\textbf{PM} & Phase modulation & 相位调制 \\
 	\textbf{PTT} & Push-to-talk & 按键发射 \\
 	\textbf{RCVR} & Receiver & 收信机 \\
 	\textbf{RF} & Radio frequency & 无线电波 \\
 	\textbf{RIG} & Equipment & 电台设备 \\
-	\multirow{2}{3em}{\textbf{ROGER}} & & 回答起始语，相当于“明白”， \\
+	\textbf{ROGER} & & 回答起始语，相当于“明白”， \\
 	&  & 仅在已完全抄收对方刚才发送的信息时使用 \\
 	RST & Readability, Strength, Tone & 可辨度、信号强度、音调系统 \\
 	\textbf{RX} & Receiver & 收信机 \\
+	SHF & Super high frequency & 超高频 \\
+	\textbf{SSB} & Single-sideband modulation & 单边带调制 \\
 	STANDBY & & 等待你的呼叫 \\
 	\textbf{SQL} & Squelch & 静噪控制 \\
 	THIS IS & & 此消息发自以下xxxx电台 \\
@@ -170,17 +177,17 @@
 	\textbf{WX} & Weather & 天气 \\
 	\textbf{XMTR} & Transmitter & 发信机 \\
 	\textbf{XCVR} & Transceiver & 收发信机 \\
-	\textbf{YAGI} & Yagi antenna & 八木天线 \\
+	\textbf{YAGI} & Yagi–Uda antenna & 八木天线 \\
 	\textbf{73} & & 向对方的致意、美好的祝愿 \\
 \end{longtable}
 
 
 \newpage
 
-\section{英语术语表（节录）}
+\section{术语表}
 
 \begin{longtable}[l]{ll}
-	\textbf{英语术语} & \textbf{含义} \\
+	\textbf{术语} & \textbf{含义} \\
 	Emission & 发射 \\
 	Eyeball QSO & 眼球QSO \\
 	GB & 中国强制性国家标准前缀 \\
@@ -192,15 +199,17 @@
 
 \section{无线电频段表（节录）}
 
+说明：黑体字的缩写为考到的重要缩写。
+
 \begin{longtable}{|c|c|c|}
 	\hline
 	\textbf{频段名称} & \textbf{缩写} & \textbf{频率范围} \\
 	\hline
-	高频 & HF & 3–30 MHz \\
+	高频 & \textbf{HF} & 3–30 MHz \\
 	\hline
-	甚高频 & VHF & 30–300 MHz \\
+	甚高频 & \textbf{VHF} & 30–300 MHz \\
 	\hline
-	特高频 & UHF & 300–3,000 MHz \\
+	特高频 & \textbf{UHF} & 300–3,000 MHz \\
 	\hline
 	超高频 & SHF & 3–30 GHz \\
 	\hline
@@ -221,8 +230,6 @@
 \begin{longtable}{|c|c|}
 	\hline
 	\textbf{波段名称} & \textbf{频率范围} \\
-	%\hline
-	%160米 & 1800–2000 kHz & 1.8-2 MHz \\
 	\hline
 	80米 & 3.5–4.0 MHz \\
 	\hline
@@ -244,12 +251,7 @@
 
 \newpage
 
-\section{计算公式}
 
-
-
-
-\newpage
 
 \section{国际单位制词头（节录）}
 
@@ -276,4 +278,27 @@
 	p & $10^{-12}$ \\
 	\hline
 \end{longtable}
+
+\newpage
+
+\section{计算公式}
+
+直流电路欧姆定律：
+$$\mbox{电流}I(A)=\frac{\mbox{电压}U(V)}{\mbox{电阻值}R(\Omega)}$$
+
+峰值电压的计算公式：
+$$\mbox{峰值}(V)=\frac{\mbox{峰--峰值}}{2}$$
+
+正弦交流电压的有效值计算公式：
+$$\mbox{交流的有效值}(V)=\frac{\mbox{峰值}}{\sqrt{2}}=\mbox{峰值}\times0.707$$
+
+功率增益的计算公式：
+$$\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right)\ \mathrm{dB}$$
+
+电压增益的计算公式：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)\ \mathrm{dB}$$
+
+%电流增益的计算公式：
+%$$\mbox{电流增益}=20 \log \left( {\frac{I_{ \mbox{输出} }}{I_{ \mbox{输入} }}} \right)\ \mathrm{dB}$$
+
 
