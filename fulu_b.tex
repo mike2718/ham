@@ -1,6 +1,6 @@
 \chapter{附录}
 
-\section{附录1 字母解释法（节录）}
+\section{字母解释法（节录）}
 
 \begin{tabular}{cc}%
 \begin{tabular}[t]{|c|l|}
@@ -89,7 +89,7 @@
 
 \newpage
 
-\section{附录2 业余通信中常用的Q简语（节录）}
+\section{业余通信中常用的Q简语（节录）}
 
 \begin{tabular}{|l|l|l|}
 	\hline
@@ -145,11 +145,11 @@
 
 
 
-\section{附录3 业余通信常用缩语表（节录）}
+\section{业余通信常用缩语表（节录）}
 
 \newpage
 
-\section{附录4 发射类别的表示方法（节录）}
+\section{发射类别的表示方法（节录）}
 
 \begin{tabular}{|c|c|}
 	\hline
@@ -203,7 +203,7 @@
 
 \newpage
 
-\section{附录5 无线电频段和波段表（节录）}
+\section{无线电频段和波段表（节录）}
 
 \begin{tabular}{|c|c|c|c|c|}
 	\hline
@@ -244,7 +244,7 @@
 
 
 
-\section{附录6 业余无线电频率划分表（节录）}
+\section{业余无线电频率划分表（节录）}
 
 
 \begin{tabular}{|c|c|c|}
@@ -273,14 +273,34 @@
 
 \newpage
 
-\section{附录7 计算公式}
+\section{计算公式}
 
-\subsection{真值表}
+直流电路欧姆定律：
+$$\mbox{电流}I(A)=\frac{\mbox{电压}U(V)}{\mbox{电阻值}R(\Omega)}$$
+
+峰值电压的计算公式：
+$$\mbox{峰值}(V)=\frac{\mbox{峰--峰值}}{2}$$
+
+正弦交流电压的有效值计算公式：
+$$\mbox{交流的有效值}(V)=\frac{\mbox{峰值}}{\sqrt{2}}=\mbox{峰值}\times0.707$$
+
+功率增益的计算公式：
+$$\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right)\ \mathrm{dB}$$
+
+电压增益的计算公式：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)\ \mathrm{dB}$$
+
+%电流增益的计算公式：
+%$$\mbox{电流增益}=20 \log \left( {\frac{I_{ \mbox{输出} }}{I_{ \mbox{输入} }}} \right)\ \mathrm{dB}$$
+
+绝对增益与相对增益的关系：
+$$\mbox{绝对增益} = \mbox{相对增益} + 2.15 \ \mathrm{dB}$$
+
+逻辑门的真值表：
 
 \begin{tabular}{cc}%
 \begin{tabular}{|c|c|c|}
-	\hline
-	\multicolumn{3}{|c|}{\textbf{与门（AND）}} \\
+	\multicolumn{3}{c}{\textbf{与门（AND）}} \\
 	\hline
 	\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
 	\hline
@@ -296,8 +316,7 @@
 	\hline
 \end{tabular} &
 \begin{tabular}{|c|c|c|}
-	\hline
-	\multicolumn{3}{|c|}{\textbf{与非门（NAND）}} \\
+	\multicolumn{3}{c}{\textbf{与非门（NAND）}} \\
 	\hline
 	\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
 	\hline
@@ -318,8 +337,7 @@
 
 \begin{tabular}{cc}%
 \begin{tabular}{|c|c|c|}
-	\hline
-	\multicolumn{3}{|c|}{\textbf{或门（OR）}} \\
+	\multicolumn{3}{c}{\textbf{或门（OR）}} \\
 	\hline
 	\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
 	\hline
@@ -335,8 +353,7 @@
 	\hline
 \end{tabular} &
 \begin{tabular}{|c|c|c|}
-	\hline
-	\multicolumn{3}{|c|}{\textbf{或非门（NOR）}} \\
+	\multicolumn{3}{c}{\textbf{或非门（NOR）}} \\
 	\hline
 	\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
 	\hline
@@ -357,8 +374,7 @@
 
 \begin{tabular}{cc}%
 \begin{tabular}{|c|c|c|}
-	\hline
-	\multicolumn{3}{|c|}{\textbf{异或门（XOR）}} \\
+	\multicolumn{3}{c}{\textbf{异或门（XOR）}} \\
 	\hline
 	\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
 	\hline
@@ -374,8 +390,7 @@
 	\hline
 \end{tabular} &
 \begin{tabular}{|c|c|c|}
-	\hline
-	\multicolumn{3}{|c|}{\textbf{异或非门（NXOR）}} \\
+	\multicolumn{3}{c}{\textbf{异或非门（NXOR）}} \\
 	\hline
 	\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
 	\hline
