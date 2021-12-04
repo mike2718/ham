@@ -9,3 +9,5 @@
 *.pdf
 add.sh
 archive.bat
+calc.c
+calc.exe
