@@ -34,6 +34,7 @@ right=1.5cm]{geometry}
 \usepackage{siunitx}
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
+\usepackage{longtable}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Noto Mono}
@@ -8244,7 +8245,10 @@ right=1.5cm]{geometry}
 \item 10dB
 \item 20dB
 \end{enumerate}
-\noindent\textbf{解说：}该电路的增益为\textbf{20dB}。\\\noindent\textbf{答案：}D
+\noindent\textbf{解说：}该电路的增益为\textbf{20dB}。\\
+套入功率增益的计算公式得：
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log 100 = 10 \log 10^2 = 20 \ \mathrm{dB}$$
+\noindent\textbf{答案：}D
 
 
 
@@ -8438,7 +8442,7 @@ $$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输�
 \end{enumerate}
 \noindent\textbf{解说：}该电路的增益约为\textbf{-7dB}。\\
 套入功率增益的计算公式得：
-$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log \frac{1}{5}=10 \log 0.2\approx -7 \ \mathrm{dB}$$
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log \frac{1}{5}=10 \left( \log 1 - \log 5 \right) = 10 \times \left( 0 - 0.699 \right) \approx -7 \ \mathrm{dB}$$
 \noindent\textbf{答案：}D
 
 
@@ -8457,7 +8461,7 @@ $$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输�
 \end{enumerate}
 \noindent\textbf{解说：}该电路的增益约为\textbf{-3dB}。\\
 套入功率增益的计算公式得：
-$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log \frac{1}{2}=10 \log 0.5\approx -3 \ \mathrm{dB}$$
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log \frac{1}{2}=10 \left( \log 1 - \log 2 \right) = 10 \times \left( 0 - 0.301 \right) \approx -3 \ \mathrm{dB}$$
 \noindent\textbf{答案：}B
 
 
@@ -8526,7 +8530,7 @@ $$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输�
 \end{enumerate}
 \noindent\textbf{解说：}该电路的增益约为\textbf{-6dB}。\\
 套入电压增益的计算公式得：
-$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log \frac{1}{2}=20 \log 0.5\approx -6 \ \mathrm{dB}$$
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log \frac{1}{2}=20 \left( \log 1 - \log 2 \right) = 20 \times \left( 0 - 0.301 \right) \approx -6 \ \mathrm{dB}$$
 \noindent\textbf{答案：}D
 
 
