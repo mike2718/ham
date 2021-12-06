@@ -13,7 +13,8 @@ right=1.5cm]{geometry}
 \usepackage{graphicx} % 图片
 \usepackage{xcolor} % 颜色
 \graphicspath{ {./images/} } % 图片路径
-\usepackage{enumitem} % 列表用
+\usepackage{enumitem}
+\usepackage{longtable}
 %\setlength{\parindent}{0pt}
 \usepackage[fleqn,tbtags]{amsmath}
 \usepackage{mathtools}
@@ -34,6 +35,7 @@ right=1.5cm]{geometry}
 \usepackage{siunitx}
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
+\usepackage{listings}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Noto Mono}
@@ -60,6 +62,33 @@ right=1.5cm]{geometry}
 \IfFileExists{.git/refs/heads/\branch.}{%
 	\CatchFileDef{\commit}{.git/refs/heads/\branch.}{}}{%
 	\newcommand{\commit}{\dots~(in \emph{packed-refs})}}
+
+\definecolor{codegreen}{HTML}{408080}
+\definecolor{codegray}{HTML}{72777D}
+\definecolor{codepurple}{HTML}{BA2121}
+\definecolor{backcolour}{HTML}{F8F9FA}
+\definecolor{keyword}{HTML}{008000}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{keyword},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=4
+}
+
+\lstset{style=mystyle}
 
 \begin{document}%内容开始
 
@@ -89,35 +118,39 @@ right=1.5cm]{geometry}
 % 编著者的话
 \include{bianzhuzhedehua}
 	
-% 第一章 无线电的相关法律 开始
-%\include{ham_c_1}
+
 % 第一章 无线电的相关法律 结束
 	
 % 第二章 无线电通信的方法 开始
-%\include{ham_c_2}
+
 % 第二章 无线电通信的方法 结束
 	
 % 第三章 无线电系统理论 开始
-%\include{ham_c_3}
+
 % 第三章 无线电系统理论 结束
 	
 % 第四章 无线电的安全性 开始
-%\include{ham_c_4}
+
 % 第四章 无线电的安全性 结束
 	
 % 第五章 避免和解决射频干扰 开始
-%\include{ham_c_5}
+
 % 第五章 避免和解决射频干扰 结束
 
 
+
+% 第一章 无线电的相关法律 开始
+
+\chapter{无线电的相关法律}
+
 \noindent\textbf{试题：}我国现行法律体系中专门针对无线电管理的最高法律文件及其立法机关是：
 \begin{enumerate}[leftmargin=3em]
-\item 中华人民共和国无线电管理条例，国务院和中央军委
-\item 中华人民共和国无线电管理办法，工业和信息化部
 \item 中华人民共和国电信条例，国务院
+\item 中华人民共和国无线电管理办法，工业和信息化部
 \item 中华人民共和国业余无线电台管理办法，工业和信息化部
+\item 中华人民共和国无线电管理条例，国务院和中央军委
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}我国专门针对无线电管理的最高法律文件是\textbf{《中华人民共和国无线电管理条例》}，其立法机关是\textbf{中华人民共和国国务院和中华人民共和国中央军事委员会}。\\\noindent\textbf{答案：}D
 
 \bigskip
 
@@ -126,12 +159,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}我国现行法律体系中专门针对业余无线电台管理的最高法律文件及其立法机关是：
 \begin{enumerate}[leftmargin=3em]
-\item 业余无线电台管理办法，工业和信息化部
-\item 个人业余无线电台管理暂行办法，国家体委和国家无委
-\item 业余无线电台管理暂行规定，国家体委和国家无委
 \item 中华人民共和国电信条例，国务院
+\item 个人业余无线电台管理暂行办法，国家体委和国家无委
+\item 业余无线电台管理办法，工业和信息化部
+\item 业余无线电台管理暂行规定，国家体委和国家无委
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}我国专门针对业余无线电台管理的最高法律文件是\textbf{《业余无线电台管理办法》}，其立法机关是\textbf{中华人民共和国工业和信息化部}。\\\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -140,12 +173,13 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}我国的无线电主管部门是：
 \begin{enumerate}[leftmargin=3em]
+\item 各地电信管理局
+\item 各地业余无线电协会
 \item 各级无线电管理机构
 \item 各级体育管理机构
-\item 各地业余无线电协会
-\item 各地电信管理局
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第三条规定：\\\textbf{国家无线电管理机构和省、自治区、直辖市无线电管理机构（以下简称地方无线电管理机构）依法对业余无线电台实施监督管理。\\
+国家无线电管理机构和地方无线电管理机构统称无线电管理机构}。\\\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -159,7 +193,9 @@ right=1.5cm]{geometry}
 \item 国家体育管理机构和地方体育管理机构
 \item 国家和地方公安部门
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第三条规定：\\\textbf{国家无线电管理机构和省、自治区、直辖市无线电管理机构（以下简称地方无线电管理机构）依法对业余无线电台实施监督管理。\\
+国家无线电管理机构和地方无线电管理机构统称无线电管理机构}。\\\noindent\textbf{答案：}A
+
 
 \bigskip
 
@@ -168,12 +204,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}《业余无线电台管理办法》所说的“地方无线电管理机构”指的是：
 \begin{enumerate}[leftmargin=3em]
-\item 省、自治区、直辖市无线电管理机构
 \item 地方业余无线电协会或者类似组织机构
-\item 地市县（区）及以下各级无线电管理机构
 \item 各地方与无线电设备生产销售和无线电应用有关的行政管理机构
+\item 地市县（区）及以下各级无线电管理机构
+\item 省、自治区、直辖市无线电管理机构
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第三条规定：\\\textbf{国家无线电管理机构和省、自治区、直辖市无线电管理机构（以下简称地方无线电管理机构）依法对业余无线电台实施监督管理}。\\\noindent\textbf{答案：}D
 
 \bigskip
 
@@ -182,12 +218,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}国家鼓励和支持业余无线电台开展下列活动：
 \begin{enumerate}[leftmargin=3em]
-\item 无线电通信技术研究、普及活动以及突发重大自然灾害等紧急情况下的应急通信活动
 \item 休闲娱乐性交谈
-\item 机动车辆行车服务性通信活动
+\item 无线电通信技术研究、普及活动以及突发重大自然灾害等紧急情况下的应急通信活动
 \item 作为日常公益活动的通信工具
+\item 机动车辆行车服务性通信活动
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第四条规定：国家鼓励和支持\textbf{业余无线电通信技术的研究、普及和突发重大自然灾害等紧急情况下的应急无线电通信活动。}\\\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -196,26 +232,26 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}关于业余电台管理的正确说法是：
 \begin{enumerate}[leftmargin=3em]
-\item 依法设置的业余无线电台受国家法律保护
 \item 业余无线电爱好者的一切行为都受国家法律保护
 \item 通过法律手段限制业余无线电台的设置
 \item 在业余电台与其他业务电台遇到干扰纠纷时无条件优先保护其他业务电台
+\item 依法设置的业余无线电台受国家法律保护
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第四条规定：\textbf{依法设置的业余无线电台受国家法律保护。}\\\noindent\textbf{答案：}D
 
 \bigskip
 
 
 
-
+%题库中修改的题目
 \noindent\textbf{试题：}无线电频率的使用必须得到各级无线电管理机构的批准，基本依据是“无线电频谱资源属于国家所有”，出自于下列法律的第二百五十二条： 
 \begin{enumerate}[leftmargin=3em]
-\item 中华人民共和国民法典
-\item 中华人民共和国宪法
-\item 中华人民共和国刑法
 \item 中华人民共和国电信法
+\item 中华人民共和国民法典
+\item 中华人民共和国刑法
+\item 中华人民共和国宪法
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《\textbf{中华人民共和国民法典}》第二百五十二条规定：无线电频谱资源属于国家所有。\\\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -224,12 +260,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}我国对无线电管理术语“业余业务”、“卫星业余业务”和“业余无线电台”做出具体定义的法规文件是 
 \begin{enumerate}[leftmargin=3em]
-\item 中华人民共和国无线电频率划分规定
-\item 中华人民共和国无线电管理条例
 \item 中华人民共和国电信条例
+\item 中华人民共和国无线电频率划分规定
 \item 无线电台执照管理规定
+\item 中华人民共和国无线电管理条例
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\textbf{解说：}《\textbf{中华人民共和国无线电频率划分规定}》第1.3.39款、第1.3.40款和第1.4.38款具体定义了“业余业务”、“卫星业余业务”和“业余无线电台”。\\\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -238,12 +274,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}业余电台的法定用途为：
 \begin{enumerate}[leftmargin=3em]
-\item 供业余无线电爱好者进行自我训练、相互通信和技术研究
 \item 供公民在业余时间进行与个人生活事务有关的通信
 \item 供公民在业余时间进行休闲娱乐
 \item 供私家车主或者相应组织作为行车安全保障和途中消遣工具
+\item 供业余无线电爱好者进行自我训练、相互通信和技术研究
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第二十八条规定：业余无线电台供其设置人、使用人用于\textbf{相互通信、技术研究和自我训练}。\\\noindent\textbf{答案：}D
 
 \bigskip
 
@@ -252,12 +288,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}无线电业余业务是供业余无线电爱好者作下列用途的无线电通信业务：
 \begin{enumerate}[leftmargin=3em]
-\item 自我训练、相互通信和技术研究
 \item 救灾抢险、车队联络和技术学习
 \item 娱乐休闲、报告路况和公益服务
+\item 自我训练、相互通信和技术研究
 \item 技术教学、民兵训练和公益通信
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《中华人民共和国无线电频率划分规定》第1.3.39款对业余无线电业务的定义：供业余无线电爱好者进行\textbf{自我训练、相互通信和技术研究}的无线电通信业务。\\\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -266,12 +302,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}关于无线电通信的正确说法：
 \begin{enumerate}[leftmargin=3em]
+\item 产生无线电波并用其加热属于无线电通信的一种应用
+\item 利用无线电波进行的符号、信号、文字、图像、声音以外的信息传输不属于无线电通信
 \item 无线电通信是指利用无线电波进行的符号、信号、文字、图像、声音或其他信息的传输、发射或接收。
 \item 无线电通信包括利用光在内的所有电磁波所进行的各种通信
-\item 利用无线电波进行的符号、信号、文字、图像、声音以外的信息传输不属于无线电通信
-\item 产生无线电波并用其加热属于无线电通信的一种应用
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《中华人民共和国无线电频率划分规定》第1.1.2款对电信的定义：\textbf{利用有线、无线电、光或其他电磁系统所进行的符号、信号、文字、图像、声音或其他信息的传输、发射或接收}。\\\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -280,12 +316,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}无线电波是指：
 \begin{enumerate}[leftmargin=3em]
+\item 频率为30 Hz至30GHz的在空间传播的电磁波
 \item 频率为3,000GHz以下的在空间传播的电磁波
 \item 频率为3,000GHz以下的所有电磁波
-\item 频率为30 Hz至30GHz的在空间传播的电磁波
 \item 频率为3,000 Hz至3,000 MHz的电磁波
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《中华人民共和国无线电频率划分规定》第1.1.4条规定：无线电波是指\textbf{频率规定在3000GHz以下}，不用人造波导而\textbf{在空间传播的电磁波}。\\\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -295,11 +331,11 @@ right=1.5cm]{geometry}
 \noindent\textbf{试题：}个人申请设置具有发信功能的业余无线电台的年龄条件是：
 \begin{enumerate}[leftmargin=3em]
 \item 年满十八周岁
-\item 年满十六周岁
 \item 年满十四周岁
 \item 具备《业余无线电台操作证书》者申请设置业余无线电台不受年龄限制
+\item 年满十六周岁
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第六条规定：个人申请设置具有发信功能的业余无线电台的，应当\textbf{年满十八周岁}。\\\noindent\textbf{答案：}A
 
 \bigskip
 
@@ -308,12 +344,19 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}申请设置业余无线电台应当具备的条件有：
 \begin{enumerate}[leftmargin=3em]
-\item 熟悉无线电管理规定、具备国家规定的操作技术能力、发射设备符合国家技术标准、法律和行政法规规定的其他条件
-\item 加入指定协会、具备当地无线电管理机构规定的操作技术能力、发射设备符合国家技术标准、法律和行政法规规定的其他条件
 \item 熟悉无线电管理规定、具备国家规定的操作技术能力、发射设备符合国家技术标准、当地无线电管理机构委托的受理机构设置的其他条件
+\item 加入指定协会、具备当地无线电管理机构规定的操作技术能力、发射设备符合国家技术标准、法律和行政法规规定的其他条件
+\item 熟悉无线电管理规定、具备国家规定的操作技术能力、发射设备符合国家技术标准、法律和行政法规规定的其他条件
 \item 熟悉无线电管理规定、具备当地无线电管理机构委托的考试机构设置的操作技术能力标准、发射设备符合国家技术标准、法律和行政法规规定的其他条件
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第六条规定：申请设置业余无线电台，应当具备下列条件：
+\begin{enumerate}[label=, leftmargin=0.8em]
+	\item （一）\textbf{熟悉无线电管理规定}；
+	\item （二）\textbf{具备国家无线电管理机构规定的操作技术能力}；
+	\item （三）\textbf{无线电发射设备符合国家相关技术标准}；
+	\item （四）\textbf{法律、行政法规规定的其他条件}。
+\end{enumerate}
+要点：记忆关键字“\textbf{规定}”、“\textbf{国家}”、“\textbf{国家}”、“\textbf{法律}”。\\\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -322,12 +365,19 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}使用业余无线电台应当具备的条件有：
 \begin{enumerate}[leftmargin=3em]
-\item 熟悉无线电管理规定、具备国家规定的操作技术能力并取得相应操作技术能力证明
 \item 使用具有发信功能的业余无线电台的，应当年满十八周岁
-\item 具备国家或地方无线电管理机构核发的业余无线电台执照
+\item 熟悉无线电管理规定、具备国家规定的操作技术能力并取得相应操作技术能力证明
 \item 熟悉无线电管理规定、实际上具备国家规定的操作技术能力但不必需取得相应的证明
+\item 具备国家或地方无线电管理机构核发的业余无线电台执照
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第十八条规定：使用业余无线电台，应当具备下列条件：
+\begin{enumerate}[label=, leftmargin=0.8em]
+	\item （一）\textbf{熟悉无线电管理规定}；
+	\item （二）\textbf{具备国家无线电管理机构规定的操作技术能力，取得相应操作技术能力证明}；
+	\item （三）无线电发射设备符合国家相关技术标准；
+	\item （四）法律、行政法规规定的其他条件。
+\end{enumerate}
+\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -336,12 +386,14 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}按照《业余电台管理办法》规定，申请设置使用配备有多台业余无线电发射设备的业余无线电台，应该：
 \begin{enumerate}[leftmargin=3em]
-\item 视为一个业余电台，指配一个电台呼号，但所有设备均应经过核定并将参数载入电台执照
-\item 视为一个业余电台，指配一个电台呼号，其中只需有一台设备加以核定并将参数载入电台执照
-\item 每台设备视为一个业余电台，各指配一个电台呼号，并都应经过核定并将参数载入电台执照
 \item 视为一个业余电台，指配一个电台呼号，每个频段选择一台设备加以核定并将参数载入电台执照
+\item 视为一个业余电台，指配一个电台呼号，但所有设备均应经过核定并将参数载入电台执照
+\item 每台设备视为一个业余电台，各指配一个电台呼号，并都应经过核定并将参数载入电台执照
+\item 视为一个业余电台，指配一个电台呼号，其中只需有一台设备加以核定并将参数载入电台执照
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第三十二条规定：\textbf{核发业余无线电台执照的无线电管理机构已经为设置人指配业余无线电台呼号的，不另行为其指配其他业余无线电台呼号}。\\
+《业余无线电台管理办法》第十四条规定：\textbf{业余无线电台执照应当载明所核定的技术参数和发射设备等信息}。\\
+《工业和信息化部关千实施〈业余无线电台管理办法〉若干事项的通知（工信部无〔2013〕43号）》第十一款规定：\textbf{业余无线电台执照应当载明所核定使用的全部发射设备}。\\\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -350,12 +402,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}申请设置下列业余无线电台时应在《业余无线电台设置（变更）申请表》 的“台站种类”选择“特殊”类：
 \begin{enumerate}[leftmargin=3em]
+\item 需要到外地移动操作的手持台
 \item 中继台、信标台、空间台
 \item 移动操作的车载台
 \item 用于业余卫星通信的地面业余无线电台
-\item 需要到外地移动操作的手持台
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《工业和信息化部关千实施〈业余无线电台管理办法〉若干事项的通知（工信部无〔2013〕43号）》第九款规定：《业余无线电台设置（变更）申请表》和《业余无线电台技术资料申报表》中特殊台站是指\textbf{业余信标台、空间业余无线电台、特殊实验电台等}特殊业余无线电台。\\\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -364,12 +416,13 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}申请设置信标台、空间台和技术参数需要超出管理办法规定的特殊业余电台的办法为：
 \begin{enumerate}[leftmargin=3em]
-\item 在《业余无线电台设置（变更）申请表》 的“台站种类”选择“特殊”类，由地方无线电管理机构受理和初审后交国家无线电管理机构审批
+\item 必须由地方业余无线电协会作为申请单位，经本地无线电管理机构办理批准设台
 \item 先按设置一般业余电台的办法申请，然后再到本地无线电管理机构办理变更执照核定内容
 \item 按照设置一般业余电台的办法申请即可，然后根据需要操作就可以
-\item 必须由地方业余无线电协会作为申请单位，经本地无线电管理机构办理批准设台
+\item 在《业余无线电台设置（变更）申请表》 的“台站种类”选择“特殊”类，由地方无线电管理机构受理和初审后交国家无线电管理机构审批
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}申请设置信标台、空间台和技术参数需要超出管理办法规定的特殊业余电台的办法为：\textbf{在《业余无线电台设置（变更）申请表》 的“台站种类”选择“特殊”类，由地方无线电管理机构受理和初审后交国家无线电管理机构审批}。\\\noindent\textbf{答案：}D
+%%%？？？
 
 \bigskip
 
@@ -378,12 +431,12 @@ right=1.5cm]{geometry}
 
 \noindent\textbf{试题：}设置通信范围涉及两个以上的省、自治区、直辖市或者涉及境外的一般业余无线电台，审批机构是下列中：
 \begin{enumerate}[leftmargin=3em]
-\item 国家无线电管理机构或其委托的设台地的地方无线电管理机构
 \item 设台地地方无线电管理机构
-\item 国家无线电管理机构委托的设台地地方无线电民间组织
 \item 设台地的地方无线电民间组织
+\item 国家无线电管理机构委托的设台地地方无线电民间组织
+\item 国家无线电管理机构或其委托的设台地的地方无线电管理机构
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}《业余无线电台管理办法》第八条规定：\textbf{设置通信范围涉及两个以上的省、自治区、直辖市或者涉及境外的业余无线电台，由国家无线电管理机构审批。国家无线电管理机构可以委托设台地地方无线电管理机构负责除业余信标台、用于卫星业余业务的空间业余无线电台等特殊业余无线电台以外的业余无线电台的设置审批，核发业余无线电台执照}。\\\noindent\textbf{答案：}D
 
 \bigskip
 
@@ -12181,11 +12234,14 @@ LK0745.jpg
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的100倍，该电路的增益为：
 \begin{enumerate}[leftmargin=3em]
 \item 20dB
-\item 10dB
 \item 100dB
+\item 10dB
 \item 1dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益为\textbf{20dB}。\\
+套入功率增益的计算公式得：
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log 100 = 10 \log 10^2 = 20 \ \mathrm{dB}$$
+\noindent\textbf{答案：}A
 
 \bigskip
 
@@ -12194,12 +12250,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的100万倍，该电路的增益为：
 \begin{enumerate}[leftmargin=3em]
+\item 100万dB
+\item 99万dB
 \item 60dB
 \item 100dB
-\item 99万dB
-\item 100万dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益为\textbf{60dB}。\\
+套入功率增益的计算公式得：
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log 1000000 = 10 \log 10^6 = 60 \ \mathrm{dB}$$
+\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -12208,12 +12267,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的5倍，该电路的增益约为：
 \begin{enumerate}[leftmargin=3em]
-\item 7dB
 \item 3.5dB
-\item 5dB
 \item 14dB
+\item 7dB
+\item 5dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益约为\textbf{7dB}。\\
+套入功率增益的计算公式得：
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log 5 = 10 \times 0.699 = \approx 7 \ \mathrm{dB}$$
+\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -12222,12 +12284,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的2倍，该电路的增益约为：
 \begin{enumerate}[leftmargin=3em]
-\item 3dB
-\item 1dB
 \item 2dB
+\item 1dB
+\item 3dB
 \item 0.5dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益约为\textbf{3dB}。\\
+套入功率增益的计算公式得：
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log 2 = 10 \times 0.301 \approx 3 \ \mathrm{dB}$$
+\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -12236,12 +12301,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号电压是输入信号电压的100倍，该电路的增益为：
 \begin{enumerate}[leftmargin=3em]
+\item 100dB
 \item 40dB
 \item 10dB
-\item 100dB
 \item 20dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益为\textbf{40dB}。\\
+套入电压增益的计算公式得：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log 100=20 \log 10^2= 40 \ \mathrm{dB}$$
+\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -12250,12 +12318,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号电压是输入信号电压的1万倍，该电路的增益为：（”x＾m”表示“x的m次方”）
 \begin{enumerate}[leftmargin=3em]
-\item 80dB
 \item 10,000 dB
+\item 80dB
 \item 9,999 dB
 \item 10＾4dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益为\textbf{80dB}。\\
+套入电压增益的计算公式得：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log 10000=20 \log 10^4= 80 \ \mathrm{dB}$$
+\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -12264,12 +12335,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号电压是输入信号电压的10倍，该电路的增益约为：
 \begin{enumerate}[leftmargin=3em]
-\item 20dB
 \item 7dB
 \item 14dB
+\item 20dB
 \item 15dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益约为\textbf{20dB}。\\
+套入电压增益的计算公式得：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log 10=20 \ \mathrm{dB}$$
+\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -12278,12 +12352,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号电压是输入信号电压的2倍，该电路的增益约为：
 \begin{enumerate}[leftmargin=3em]
-\item 6dB
 \item 2dB
+\item 6dB
 \item 4dB
 \item 0.5dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益约为\textbf{6dB}。\\
+套入电压增益的计算公式得：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log 2 = 20 \times 0.301 \approx 6 \ \mathrm{dB}$$
+\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -12293,11 +12370,14 @@ LK0745.jpg
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的1/100，该电路的增益为：
 \begin{enumerate}[leftmargin=3em]
 \item -20dB
+\item 100dB
 \item -10dB
 \item -100dB
-\item 100dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益为\textbf{-20dB}。\\
+套入功率增益的计算公式得：
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log \frac{1}{100}=10 \log 10^{-2}=-20 \ \mathrm{dB}$$
+\noindent\textbf{答案：}A
 
 \bigskip
 
@@ -12306,12 +12386,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的百万分之一，该电路的增益为：
 \begin{enumerate}[leftmargin=3em]
-\item -60dB
 \item -100dB
-\item 990000dB
 \item -1000000dB
+\item -60dB
+\item 990000dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益为\textbf{-60dB}。\\
+套入功率增益的计算公式得：
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log \frac{1}{1000000}=10 \log 10^{-6}=-60 \ \mathrm{dB}$$
+\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -12320,12 +12403,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的1/5，该电路的增益约为：
 \begin{enumerate}[leftmargin=3em]
-\item -7dB
-\item 3.5dB
 \item -5dB
 \item -14dB
+\item -7dB
+\item 3.5dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益约为\textbf{-7dB}。\\
+套入功率增益的计算公式得：
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log \frac{1}{5}=10 \left( \log 1 - \log 5 \right) = 10 \times \left( 0 - 0.699 \right) \approx -7 \ \mathrm{dB}$$
+\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -12334,12 +12420,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的1/2，该电路的增益约为：
 \begin{enumerate}[leftmargin=3em]
-\item -3dB
 \item -1dB
 \item -2dB
+\item -3dB
 \item 0.5dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益约为\textbf{-3dB}。\\
+套入功率增益的计算公式得：
+$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log \frac{1}{2}=10 \left( \log 1 - \log 2 \right) = 10 \times \left( 0 - 0.301 \right) \approx -3 \ \mathrm{dB}$$
+\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -12349,11 +12438,14 @@ LK0745.jpg
 \noindent\textbf{试题：}某电路输出信号电压是输入信号电压的1/100，该电路的增益为：
 \begin{enumerate}[leftmargin=3em]
 \item -40dB
-\item -10dB
 \item -100dB
+\item -10dB
 \item -20dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益为\textbf{-40dB}。\\
+套入电压增益的计算公式得：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log \frac{1}{100}=20 \log 10^{-2}= -40 \ \mathrm{dB}$$
+\noindent\textbf{答案：}A
 
 \bigskip
 
@@ -12362,12 +12454,15 @@ LK0745.jpg
 
 \noindent\textbf{试题：}某电路输出信号电压是输入信号电压的万分之一，该电路的增益为：（”x＾m”表示“x的m次方”）
 \begin{enumerate}[leftmargin=3em]
-\item -80dB
 \item -10,000 dB
-\item 1/10,000 dB
 \item 10＾-4dB
+\item -80dB
+\item 1/10,000 dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益为\textbf{-80dB}。\\
+套入电压增益的计算公式得：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log \frac{1}{10000}=20 \log 10^{-4}= -80 \ \mathrm{dB}$$
+\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -12378,10 +12473,13 @@ LK0745.jpg
 \begin{enumerate}[leftmargin=3em]
 \item -20dB
 \item -7dB
-\item -14dB
 \item 0.143dB
+\item -14dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益约为\textbf{-20dB}。\\
+套入电压增益的计算公式得：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log \frac{1}{10}=20 \log 10^{-1}= -20 \ \mathrm{dB}$$
+\noindent\textbf{答案：}A
 
 \bigskip
 
@@ -12391,11 +12489,14 @@ LK0745.jpg
 \noindent\textbf{试题：}某电路输出信号电压是输入信号电压的1/2，该电路的增益约为：
 \begin{enumerate}[leftmargin=3em]
 \item -6dB
-\item -2dB
 \item 0.5dB
+\item -2dB
 \item -0.5dB
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}该电路的增益约为\textbf{-6dB}。\\
+套入电压增益的计算公式得：
+$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log \frac{1}{2}=20 \left( \log 1 - \log 2 \right) = 20 \times \left( 0 - 0.301 \right) \approx -6 \ \mathrm{dB}$$
+\noindent\textbf{答案：}A
 
 \bigskip
 
@@ -12404,12 +12505,12 @@ LK0745.jpg
 
 \noindent\textbf{试题：}信号依次通过增益分别为 x dB、y dB和 z dB的三个电路，总增益为：
 \begin{enumerate}[leftmargin=3em]
-\item （x + y + z）dB
 \item （x × y × z）dB
+\item （x + y + z）dB
 \item （x + y + z）倍
 \item （x × y × z）倍
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}总增益为\textbf{（x + y + z）dB}。\\\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -12418,12 +12519,12 @@ LK0745.jpg
 
 \noindent\textbf{试题：}信号依次通过增益分别为 x dB、y dB和 z dB的三个电路，总增益为：（”x＾m”表示“x的m次方”）
 \begin{enumerate}[leftmargin=3em]
-\item 10＾(（x + y + z）/10) 倍
 \item 10＾（x × y × z） 倍
 \item （x + y + z）倍
 \item （x × y × z）倍
+\item 10＾(（x + y + z）/10) 倍
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}总增益为\textbf{10＾(（x + y + z）/ 10) 倍}。\\\noindent\textbf{答案：}D
 
 \bigskip
 
