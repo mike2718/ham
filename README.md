@@ -30,4 +30,4 @@
 
 ## 许可
 
-&copy; 2021 BG7XTQ
+Copyright (c) 2021 BG7XTQ
