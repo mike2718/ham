@@ -34,12 +34,13 @@ right=1.5cm]{geometry}
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
 \usepackage{longtable}
+\usepackage{listings}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
-\setmonofont{Hack}
+\setmonofont{Delugia Mono}
 \setCJKmainfont {Noto Serif CJK SC}
 % 设置正文罗马族的CJK字体，影响\rmfamily和\textrm 的字体
-\setCJKsansfont {Noto Sans SC Regular}
+\setCJKsansfont {Noto Sans CJK SC}
 % 设置正文无衬线族的CJK字体，影响\sffamily和\textsf 的字体
 \setCJKmonofont {Noto Sans Mono CJK SC}
 % 设置正文等宽族的CJK字体，影响\ttfamily 和 \texttt 的字体
@@ -52,6 +53,7 @@ right=1.5cm]{geometry}
 	section/number = \Roman{section},
 %	autoindent=false, %禁用自动调整功能
 }
+% 显示commit hash
 \setlist{nosep}
 
 \CatchFileDef{\headfull}{.git/HEAD.}{}
@@ -61,6 +63,33 @@ right=1.5cm]{geometry}
 	\CatchFileDef{\commit}{.git/refs/heads/\branch.}{}}{%
 	\newcommand{\commit}{\dots~(in \emph{packed-refs})}}
 
+% 显示代码
+\definecolor{codegreen}{HTML}{408080}
+\definecolor{codegray}{HTML}{72777D}
+\definecolor{codepurple}{HTML}{BA2121}
+\definecolor{backcolour}{HTML}{F8F9FA}
+\definecolor{keyword}{HTML}{008000}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{keyword},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=4
+}
+
+\lstset{style=mystyle}
 \begin{document}%内容开始
 
 \title{\sffamily {\Huge 业余无线电操作技能考核攻略本\\（类别：A）}}
