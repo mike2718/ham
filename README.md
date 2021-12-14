@@ -32,3 +32,5 @@
 ## 许可
 
 Copyright (c) 2021 BG7XTQ
+
+[PDF文件中所使用字体的许可](https://github.com/mike2718/ham/blob/main/LICENSE.md)
