@@ -1,6 +1,6 @@
-// 《计算逻辑门电路输出信号题型答案的C程序》
+// 计算逻辑门电路输出信号题型答案的C程序
 // 用法：
-// clang -Wall -Wpedantic -Wextra -Werror -std=c99 -o jisuan jisuan.c
+// clang -O0 -Wall -Wpedantic -Wextra -Werror -std=c99 -o jisuan jisuan.c
 // ./jisuan
 #include <stdio.h>
 #include <stdbool.h>
@@ -9,7 +9,7 @@ int main()
 {
     char b[40];
     bool a[8] = {false, false, false, false, false, false, false, false};
-    printf("\t《计算逻辑门电路输出信号题型答案的C程序》\n\n");
+    printf("\t计算逻辑门电路输出信号题型答案的C程序\n\n");
     printf("如果题目的两个输入信号组合分别为10、01、00、11，\n");
     printf("则输入不需要顿号的10010011\n");
     printf("请输入：");
@@ -18,19 +18,21 @@ int main()
     for (int i = 0; i < 8; i++)
         if (b[i] - '1') a[i] = true;
     printf("\n输出信号：\n");
-    printf("与门（AND）：%i、%i、%i、%i\n", a[0] && a[1], a[2] && a[3], \
-                                          a[4] && a[5], a[6] && a[7]);
-    printf("或门（OR）：%i、%i、%i、%i\n", a[0] || a[1], a[2] || a[3], \
-                                       a[4] || a[5], a[6] || a[7]);
-    printf("异或门（XOR）：%i、%i、%i、%i\n", a[0] != a[1], a[2] != a[3], \
-                                          a[4] != a[5], a[6] != a[7]);
-    printf("与非门（NAND）：%i、%i、%i、%i\n", !(a[0] && a[1]), !(a[2] && a[3]), \
-                                           !(a[4] && a[5]), !(a[6] && a[7]));
-    printf("或非门（NOR）：%i、%i、%i、%i\n", !(a[0] || a[1]), !(a[2] || a[3]), \
-                                          !(a[4] || a[5]),  !(a[6] || a[7]));
-    printf("异或非门（NXOR）：%i、%i、%i、%i\n", !(a[0] != a[1]), \
-                                             !(a[2] != a[3]), \
-                                              !(a[4] != a[5]), \
-                                               !(a[6] != a[7]));
+    printf("与门（AND）：%i、%i、%i、%i\n", a[0] && a[1], a[2] && a[3],
+           a[4] && a[5], a[6] && a[7]);
+    printf("或门（OR）：%i、%i、%i、%i\n", a[0] || a[1], a[2] || a[3],
+           a[4] || a[5], a[6] || a[7]);
+    printf("异或门（XOR）：%i、%i、%i、%i\n", a[0] != a[1], a[2] != a[3],
+           a[4] != a[5], a[6] != a[7]);
+    printf("与非门（NAND）：%i、%i、%i、%i\n", !(a[0] && a[1]), !(a[2]
+            && a[3]),
+           !(a[4] && a[5]), !(a[6] && a[7]));
+    printf("或非门（NOR）：%i、%i、%i、%i\n", !(a[0] || a[1]), !(a[2]
+            || a[3]),
+           !(a[4] || a[5]),  !(a[6] || a[7]));
+    printf("异或非门（NXOR）：%i、%i、%i、%i\n", !(a[0] != a[1]),
+           !(a[2] != a[3]),
+           !(a[4] != a[5]),
+           !(a[6] != a[7]));
     return 0;
 }

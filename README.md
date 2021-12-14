@@ -18,11 +18,12 @@
 - [下载《业余无线电操作技能考核攻略本（类别：A）》](https://github.com/mike2718/ham/releases)
 - [下载《业余无线电操作技能考核攻略本（类别：B）》](https://github.com/mike2718/ham/releases)
 
-## 使用软件
+## 依赖
 
-- ctex
 - XeTeX
-- TeXstudio
+- ctex
+- Noto Serif CJK SC, Noto Sans CJK SC, Noto Sans Mono CJK SC, Noto Sans, Noto Serif字体
+- Delugia Mono字体
 
 ## 编译
 
