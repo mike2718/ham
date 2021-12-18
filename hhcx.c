@@ -2,6 +2,9 @@
 // 使用方法：
 //   $ clang -O0 -Wall -Wpedantic -Wextra -Werror -std=c99 hhcx.c -o hhcx
 //   $ ./hhcx
+// 测试：
+//   BS7H, JJ1DSB, BG1AAA, BT55CRF, BT1A, BY1PK, B1Z, B1A
+//   K4X, N2ASD, A22A, I20000X, 4X4AAA, 3DA0RS
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
