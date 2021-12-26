@@ -1,4 +1,3 @@
-*.synctex.gz
 *.log
 *.aux
 *.toc
@@ -6,9 +5,10 @@
 *.7z
 *.xz
 *.zip
+*.rar
 *.pdf
 *.sh
-*.bat
+*.synctex.gz
 jisuan
 jisuan_a.c
 hhcx
