@@ -10,9 +10,9 @@ rm ../ham.tar.xz
 git archive --format=tar.xz -o ../ham.tar.xz HEAD
 @rem 打包
 touch ham_a.pdf ham_b.pdf ham_c.pdf LICENSE.md README.md
-rm *.zip
+rm ham_a_*.zip ham_b_*.zip ham_c_*.zip
 D:\cmdtool\zip.exe -Z bzip2 -9 ham_a_%datetime%.zip ham_a.pdf LICENSE.md README.md
 D:\cmdtool\zip.exe -Z bzip2 -9 ham_b_%datetime%.zip ham_b.pdf LICENSE.md README.md
 D:\cmdtool\zip.exe -Z bzip2 -9 ham_c_%datetime%.zip ham_c.pdf LICENSE.md README.md
-touch *.zip
+touch ham_a_%datetime%.zip ham_b_%datetime%.zip ham_c_%datetime%.zip
 pause
