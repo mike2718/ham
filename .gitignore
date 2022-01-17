@@ -2,6 +2,7 @@
 *.exe
 *.pdf
 *.zip
+*_a.c
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
