@@ -57,11 +57,11 @@ right=1.5cm]{geometry}
 }
 \setlist{nosep}
 
-\CatchFileDef{\headfull}{.git/HEAD.}{}
+\CatchFileDef{\headfull}{.git/HEAD}{}
 \StrGobbleRight{\headfull}{1}[\head]
 \StrBehind[2]{\head}{/}[\branch]
-\IfFileExists{.git/refs/heads/\branch.}{%
-	\CatchFileDef{\commit}{.git/refs/heads/\branch.}{}}{%
+\IfFileExists{.git/refs/heads/\branch}{%
+	\CatchFileDef{\commit}{.git/refs/heads/\branch}{}}{%
 	\newcommand{\commit}{\dots~(in \emph{packed-refs})}}
 
 \definecolor{codegreen}{HTML}{408080}
@@ -2619,16 +2619,18 @@ right=1.5cm]{geometry}
 \end{enumerate}
 \noindent\textbf{解说：}《工业和信息化部关于实施〈业余无线电台管理办法〉若干事项的通知（工信部无〔2013〕43号）》第四条规定：各\textbf{省、自治区、直辖市无线电管理机构或其委托的机构}负责组织对A类和B类业余无线电台所需操作技术能力进行验证，以及核发验证合格证明等工作。\\《业余无线电台管理办法》第三条规定：省、自治区、直辖市无线电管理机构简称\textbf{地方无线电管理机构}。\\\noindent\textbf{答案：}B
 
-
-
-
 % 第一章 无线电的相关法律 结束
+
+
+
+
+
+
+
 
 % 第二章 无线电通信的方法 开始
 
 \chapter{无线电通信的方法}
-
-
 
 
 \noindent\textbf{试题：}自制业余无线电发射设备，在经无线电检测机构检测合格并取得电台执照之前，调试时天线输出端应连接（或串联必要的仪表后连接）：

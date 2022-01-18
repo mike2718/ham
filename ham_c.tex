@@ -56,11 +56,11 @@ right=1.5cm]{geometry}
 }
 \setlist{nosep}
 
-\CatchFileDef{\headfull}{.git/HEAD.}{}
+\CatchFileDef{\headfull}{.git/HEAD}{}
 \StrGobbleRight{\headfull}{1}[\head]
 \StrBehind[2]{\head}{/}[\branch]
-\IfFileExists{.git/refs/heads/\branch.}{%
-	\CatchFileDef{\commit}{.git/refs/heads/\branch.}{}}{%
+\IfFileExists{.git/refs/heads/\branch}{%
+	\CatchFileDef{\commit}{.git/refs/heads/\branch}{}}{%
 	\newcommand{\commit}{\dots~(in \emph{packed-refs})}}
 
 \definecolor{codegreen}{HTML}{408080}
@@ -118,28 +118,6 @@ right=1.5cm]{geometry}
 % 编著者的话
 \include{bianzhuzhedehua}
 	
-
-% 第一章 无线电的相关法律 结束
-	
-% 第二章 无线电通信的方法 开始
-
-% 第二章 无线电通信的方法 结束
-	
-% 第三章 无线电系统理论 开始
-
-% 第三章 无线电系统理论 结束
-	
-% 第四章 无线电的安全性 开始
-
-% 第四章 无线电的安全性 结束
-	
-% 第五章 避免和解决射频干扰 开始
-
-% 第五章 避免和解决射频干扰 结束
-
-
-
-% 第一章 无线电的相关法律 开始
 
 \chapter{无线电的相关法律}
 
@@ -2902,10 +2880,20 @@ IARU的组成如下：
 \item 仅在参加国际竞赛、进行特殊技术试验等必需使用最大功率时才可使用
 \end{enumerate}
 \noindent\textbf{解说：}正确理解为：\textbf{仅在参加国际竞赛、进行特殊技术试验等必需使用最大功率时才可使用}。\\\noindent\textbf{答案：}D
+%%%
 
 \bigskip
 
 
+
+
+
+
+
+
+
+
+\chapter{无线电通信的方法}
 
 
 \noindent\textbf{试题：}自制业余无线电发射设备，在经无线电检测机构检测合格并取得电台执照之前，调试时天线输出端应连接（或串联必要的仪表后连接）：
@@ -2916,6 +2904,7 @@ IARU的组成如下：
 \item VSWR严格等于1:1的驻波天线
 \end{enumerate}
 \noindent\textbf{解说：}自制业余无线电发射设备，在经无线电检测机构检测合格并取得电台执照之前，调试时天线输出端应连接（或串联必要的仪表后连接）\textbf{假负载}。\\\noindent\textbf{答案：}C
+%%%
 
 \bigskip
 
