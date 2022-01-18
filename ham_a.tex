@@ -56,11 +56,11 @@ right=1.5cm]{geometry}
 % 显示commit hash
 \setlist{nosep}
 
-\CatchFileDef{\headfull}{.git/HEAD.}{}
+\CatchFileDef{\headfull}{.git/HEAD}{}
 \StrGobbleRight{\headfull}{1}[\head]
 \StrBehind[2]{\head}{/}[\branch]
-\IfFileExists{.git/refs/heads/\branch.}{%
-	\CatchFileDef{\commit}{.git/refs/heads/\branch.}{}}{%
+\IfFileExists{.git/refs/heads/\branch}{%
+	\CatchFileDef{\commit}{.git/refs/heads/\branch}{}}{%
 	\newcommand{\commit}{\dots~(in \emph{packed-refs})}}
 
 % 显示代码
