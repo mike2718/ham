@@ -3,6 +3,9 @@
 *.pdf
 *.zip
 *.7z
+*.tar
+*.zst
+*.lzh
 *_a.c
 
 ## Core latex/pdflatex auxiliary files:
