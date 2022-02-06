@@ -12,8 +12,10 @@ D:\cmdtool\7z.exe a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on ham_a_%datetime%.
 D:\cmdtool\7z.exe a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on ham_b_%datetime%.7z ham_b.pdf LICENSE.md README.md
 D:\cmdtool\7z.exe a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on ham_c_%datetime%.7z ham_c.pdf LICENSE.md README.md
 rem compress zstd
-del /q ham_*.tar.zst 2>nul
-C:\msys64\usr\bin\tar.exe --zstd -cvf ham_a_%datetime%.tar.zst ham_a.pdf LICENSE.md README.md
-C:\msys64\usr\bin\tar.exe --zstd -cvf ham_b_%datetime%.tar.zst ham_b.pdf LICENSE.md README.md
-C:\msys64\usr\bin\tar.exe --zstd -cvf ham_c_%datetime%.tar.zst ham_c.pdf LICENSE.md README.md
+rem del /q ham_*.tar.zst 2>nul
+rem C:\msys64\usr\bin\tar.exe --zstd -cvf ham_a_%datetime%.tar.zst ham_a.pdf LICENSE.md README.md
+rem C:\msys64\usr\bin\tar.exe --zstd -cvf ham_b_%datetime%.tar.zst ham_b.pdf LICENSE.md README.md
+rem C:\msys64\usr\bin\tar.exe --zstd -cvf ham_c_%datetime%.tar.zst ham_c.pdf LICENSE.md README.md
+rem generate sha256sums
+D:\cmdtool\generic_sum.exe SHA256 ham_*.7z > sha256sum.txt
 pause
