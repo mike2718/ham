@@ -7,6 +7,7 @@
 *.zst
 *.lzh
 *_a.c
+sha256sum.txt
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
