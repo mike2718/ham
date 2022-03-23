@@ -9,8 +9,8 @@
 *.rar
 *.cab
 *_a.c
-*.
 sha256sum.txt
+sha256sums.txt
 git-hash.txt
 
 ## Core latex/pdflatex auxiliary files:
