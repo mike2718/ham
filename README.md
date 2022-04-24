@@ -20,14 +20,26 @@
 
 ## 依赖
 
-- XeTeX
+- LuaLaTeX
 - ctex
-- Noto Serif CJK SC, Noto Sans CJK SC, Noto Sans Mono CJK SC, Noto Sans, Noto Serif字体
+- Noto Serif SC, Noto Sans SC, Noto Sans Mono CJK SC, Noto Sans, Noto Serif字体
 - Delugia Mono字体
 
 ## 编译
 
-自行编译本书的话，`.tex`文件必须保存为无BOM的UTF-8文档。
+编译选项为
+
+```
+lualatex \
+    -synctex=1 \
+    -interaction=nonstopmode \
+    -file-line-error \
+    -recorder \
+    -interaction=nonstopmode \
+    "./ham_*.tex"
+```
+
+自行编译本书的话，`.tex`文件必须保存为无BOM的UTF-8文本文件。
 
 ## 许可
 
