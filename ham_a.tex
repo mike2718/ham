@@ -1,12 +1,15 @@
 \documentclass{ctexbook}
-\usepackage[a4paper,left=1.5cm,top=2.5cm,bottom=2cm,
-right=1.5cm]{geometry}
+\usepackage[a4paper,left=3cm,top=2.5cm,bottom=2cm,
+right=2cm]{geometry}
+
+% 页眉和页脚样式（仿某书风格）
 \usepackage{fancyhdr}
-\fancyhf{}
-\lhead{业余无线电操作技能考核攻略本（类别：A）}
-\rhead{\textnormal{\kaishu\rightmark}}
-\rfoot{--\ \thepage\ --}
 \pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{业余无线电操作技能考核攻略本（类别：A）}
+\fancyhead[RO]{ \textnormal{\rightmark} }
+\fancyfoot[LE,RO]{--\ \thepage\ --}
+
 %\sectionmark 的重定义需要在 \pagestyle 之后生效
 \renewcommand\chaptermark[1]{
 	\markright{\CTEXifname{\CTEXthechapter\ }{}#1}}
@@ -35,15 +38,14 @@ right=1.5cm]{geometry}
 \renewcommand{\dateseparator}{-}
 \usepackage{longtable}
 \usepackage{listings}
+% 解决无法嵌入eps文件的问题
+\usepackage[outdir=./]{epstopdf}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Delugia Mono}
-\setCJKmainfont {Noto Serif SC}
-% 设置正文罗马族的CJK字体，影响\rmfamily和\textrm 的字体
-\setCJKsansfont {Noto Sans SC}
-% 设置正文无衬线族的CJK字体，影响\sffamily和\textsf 的字体
-\setCJKmonofont {Noto Sans Mono CJK SC}
-% 设置正文等宽族的CJK字体，影响\ttfamily 和 \texttt 的字体
+\setCJKmainfont{Noto Serif SC}
+\setCJKsansfont{Noto Sans SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
 \setenumerate[0]{label=(\Alph*)}
 \ctexset{
 	chapter/name = {第,章},
@@ -123,14 +125,7 @@ right=1.5cm]{geometry}
 
 \chapter{无线电的相关法律}
 
-%\lipsum[1-2]
-%\begin{figure}[h]
-%	\centering
-%	\rule{8cm}{6cm}
-%	\caption{Rectangle}
-%\end{figure}
-
-%ä or ß
+\newpage
 
 \noindent\textbf{试题：}我国现行法律体系中专门针对无线电管理的最高法律文件及其立法机关是：
 
@@ -2162,9 +2157,10 @@ right=1.5cm]{geometry}
 
 
 % 第二章 无线电通信的方法 开始
+
 \chapter{无线电通信的方法}
 
-
+\newpage
 
 \noindent\textbf{试题：}某俱乐部约定了一个成员业余电台之间交流技术的网络频率，当遇有其他业余电台按通信惯例要求参加通信时，处理原则应为：
 \begin{enumerate}[leftmargin=3em]
@@ -2827,9 +2823,10 @@ right=1.5cm]{geometry}
 
 
 % 第三章 无线电系统理论 开始
+
 \chapter{无线电系统理论}
 
-
+\newpage
 
 
 \noindent\textbf{试题：}电流的单位是：
@@ -5109,9 +5106,10 @@ $$\mbox{100伏的正弦交流电压的有效值}=100\times0.707=\textbf{70.7\mbo
 
 
 % 第四章 无线电的安全性 开始
+
 \chapter{无线电的安全性}
 
-
+\newpage
 
 \noindent\textbf{试题：}如何在电网停电的状况下给一个12伏的铅酸蓄电池充电？
 
@@ -5369,9 +5367,10 @@ $$\mbox{100伏的正弦交流电压的有效值}=100\times0.707=\textbf{70.7\mbo
 
 
 % 第五章 避免和解决射频干扰 开始
+
 \chapter{避免和解决射频干扰}
 
-
+\newpage
 
 \noindent\textbf{试题：}假设中继台的收、发信机共用天线，上下行频率分别为F1和F2。要防止中继台发射机对接收机产生干扰，应该对中继台设备采取下列措施：
 \begin{enumerate}[leftmargin=3em]

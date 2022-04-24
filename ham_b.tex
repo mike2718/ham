@@ -1,12 +1,15 @@
 \documentclass{ctexbook}
-\usepackage[a4paper,left=1.5cm,top=2.5cm,bottom=2cm,
-right=1.5cm]{geometry}
+\usepackage[a4paper,left=3cm,top=2.5cm,bottom=2cm,
+right=2cm]{geometry}
+
+% 页眉和页脚样式（仿某书风格）
 \usepackage{fancyhdr}
-\fancyhf{}
-\lhead{业余无线电操作技能考核攻略本（类别：B）}
-\rhead{\textnormal{\kaishu\rightmark}}
-\rfoot{--\ \thepage\ --}
 \pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{业余无线电操作技能考核攻略本（类别：A）}
+\fancyhead[RO]{ \textnormal{\rightmark} }
+\fancyfoot[LE,RO]{--\ \thepage\ --}
+
 %\sectionmark 的重定义需要在 \pagestyle 之后生效
 \renewcommand\chaptermark[1]{
 	\markright{\CTEXifname{\CTEXthechapter\ }{}#1}}
@@ -16,6 +19,8 @@ right=1.5cm]{geometry}
 \graphicspath{ {./images/} }
 \usepackage{enumitem}
 %\setlength{\parindent}{0pt}
+% 解决警告Overfull \hbox (x.yyyyypt too wide) in paragraph at lines xxx--yyy
+\setlength{\emergencystretch}{10pt}
 \usepackage[fleqn,tbtags]{amsmath}
 \usepackage{mathtools}
 \usepackage{lipsum}
@@ -37,15 +42,14 @@ right=1.5cm]{geometry}
 \renewcommand{\dateseparator}{-}
 \usepackage{longtable}
 \usepackage{listings}
+% 解决无法嵌入eps文件的问题
+\usepackage[outdir=./]{epstopdf}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Delugia Mono}
-\setCJKmainfont {Noto Serif SC}
-% 设置正文罗马族的CJK字体，影响\rmfamily和\textrm 的字体
-\setCJKsansfont {Noto Sans SC}
-% 设置正文无衬线族的CJK字体，影响\sffamily和\textsf 的字体
-\setCJKmonofont {Noto Sans Mono CJK SC}
-% 设置正文等宽族的CJK字体，影响\ttfamily 和 \texttt 的字体
+\setCJKmainfont{Noto Serif SC}
+\setCJKsansfont{Noto Sans SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
 \setenumerate[0]{label=(\Alph*)}
 \ctexset{
 	chapter/name = {第,章},
@@ -91,7 +95,7 @@ right=1.5cm]{geometry}
 
 \lstset{style=mystyle}
 
-\setlength{\headheight}{13.06885pt}
+%\setlength{\headheight}{13.06885pt}
 
 \begin{document}%内容开始
 
@@ -99,7 +103,8 @@ right=1.5cm]{geometry}
 \author{\large \texttt{BG7XTQ}（原\texttt{JJ1DSB}）编著}
 \date{\large{编译日期：\texttt{\today}}\\版本：\texttt{\commit}在分支\texttt{\branch}上}
 
-\maketitle%标题页
+\maketitle %标题页
+
 
 %献辞
 \thispagestyle{empty}
@@ -125,7 +130,7 @@ right=1.5cm]{geometry}
 
 \chapter{无线电的相关法律}
 
-
+\newpage
 
 
 
@@ -2633,6 +2638,7 @@ right=1.5cm]{geometry}
 
 \chapter{无线电通信的方法}
 
+\newpage
 
 \noindent\textbf{试题：}自制业余无线电发射设备，在经无线电检测机构检测合格并取得电台执照之前，调试时天线输出端应连接（或串联必要的仪表后连接）：
 \begin{enumerate}[leftmargin=3em]
@@ -5017,7 +5023,7 @@ right=1.5cm]{geometry}
 
 \chapter{无线电系统理论}
 
-
+\newpage
 
 
 \noindent\textbf{试题：}收发信机面板上或设置菜单中的符号VOX代表什么功能？
@@ -9471,6 +9477,7 @@ $$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输�
 % 第四章 无线电的安全性 开始
 \chapter{无线电的安全性}
 
+\newpage
 
 \bigskip
 
@@ -9803,6 +9810,7 @@ $$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输�
 
 \chapter{避免和解决射频干扰}
 
+\newpage
 
 \noindent\textbf{试题：}我国业余电台应该遵守的关于电磁辐射污染的具体管理规定文件为： 
 \begin{enumerate}[leftmargin=3em]

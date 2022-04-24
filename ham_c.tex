@@ -1,12 +1,15 @@
 \documentclass{ctexbook}
-\usepackage[a4paper,left=1.5cm,top=2.5cm,bottom=2cm,
-right=1.5cm]{geometry}
+\usepackage[a4paper,left=3cm,top=2.5cm,bottom=2cm,
+right=2cm]{geometry}
+
+% 页眉和页脚样式（仿某书风格）
 \usepackage{fancyhdr}
-\fancyhf{}
-\lhead{业余无线电操作技能考核攻略本（类别：C）}
-\rhead{\textnormal{\kaishu\rightmark}}
-\rfoot{--\ \thepage\ --}
 \pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{业余无线电操作技能考核攻略本（类别：A）}
+\fancyhead[RO]{ \textnormal{\rightmark} }
+\fancyfoot[LE,RO]{--\ \thepage\ --}
+
 %\sectionmark 的重定义需要在 \pagestyle 之后生效
 \renewcommand\chaptermark[1]{
 	\markright{\CTEXifname{\CTEXthechapter\ }{}#1}}
@@ -36,6 +39,7 @@ right=1.5cm]{geometry}
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
 \usepackage{listings}
+\usepackage[outdir=./]{epstopdf}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Delugia Mono}
@@ -122,6 +126,8 @@ right=1.5cm]{geometry}
 	
 
 \chapter{无线电的相关法律}
+
+\newpage
 
 \noindent\textbf{试题：}我国现行法律体系中专门针对无线电管理的最高法律文件及其立法机关是：
 \begin{enumerate}[leftmargin=3em]
@@ -2897,6 +2903,7 @@ IARU的组成如下：
 
 \chapter{无线电通信的方法}
 
+\newpage
 
 \noindent\textbf{试题：}自制业余无线电发射设备，在经无线电检测机构检测合格并取得电台执照之前，调试时天线输出端应连接（或串联必要的仪表后连接）：
 \begin{enumerate}[leftmargin=3em]
@@ -5376,7 +5383,9 @@ IARU的组成如下：
 \bigskip
 
 
+\chapter{无线电系统理论}
 
+\newpage
 
 \noindent\textbf{试题：}收发信机面板上或设置菜单中的符号VOX代表什么功能？
 \begin{enumerate}[leftmargin=3em]
@@ -14450,6 +14459,9 @@ LK0938.jpg
 \bigskip
 
 
+\chapter{无线电的安全性}
+
+\newpage
 
 
 \noindent\textbf{试题：}用甲乙两块电压表检查一节新干电池两端电压，均测得1.5伏。检查一节旧干电池，读数分别为1.2伏和1.3伏。正确的结论是：
@@ -14982,6 +14994,9 @@ LK0938.jpg
 \bigskip
 
 
+\chapter{避免和解决射频干扰}
+
+\newpage
 
 
 \noindent\textbf{试题：}我国业余电台应该遵守的关于电磁辐射污染的具体管理规定文件为： 
@@ -15005,7 +15020,8 @@ LK0938.jpg
 \item 发射频率30MHz以下的所有业余电台
 \item 发射频率30MHz以上的所有业余电台
 \end{enumerate}
-\noindent\textbf{解说：}\textbf{}。\\\noindent\textbf{答案：}
+\noindent\textbf{解说：}\textbf{}。
+\\\noindent\textbf{答案：}
 
 \bigskip
 
