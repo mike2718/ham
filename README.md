@@ -13,30 +13,32 @@
 
 ## 下载
 
-您可以
+你可以
 
 - [下载《业余无线电操作技能考核攻略本（类别：A）》](https://github.com/mike2718/ham/releases)
 - [下载《业余无线电操作技能考核攻略本（类别：B）》](https://github.com/mike2718/ham/releases)
 
 ## 依赖
 
-- LuaLaTeX
+- XeLaTeX
 - ctex
 - Noto Serif SC, Noto Sans SC, Noto Sans Mono CJK SC, Noto Sans, Noto Serif字体
-- Delugia Mono字体
+- Source Code Pro字体
 
 ## 编译
 
 编译选项为
 
 ```
-lualatex \
+xelatex \
+    -no-pdf \
     -synctex=1 \
     -interaction=nonstopmode \
     -file-line-error \
     -recorder \
-    -interaction=nonstopmode \
-    "./ham_*.tex"
+    -synctex=1 \
+    -shell-escape \
+    ham_a.tex
 ```
 
 自行编译本书的话，`.tex`文件必须保存为无BOM的UTF-8文本文件。
