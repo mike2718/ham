@@ -6,9 +6,9 @@ right=2cm]{geometry}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE]{业余无线电操作技能考核攻略本（类别：A）}
-\fancyhead[RO]{ \textnormal{\rightmark} }
-\fancyfoot[LE,RO]{--\ \thepage\ --}
+\fancyhead[LE]{	\textsf{ \small 业余无线电操作技能考核攻略本（类别：B）} }
+\fancyhead[RO]{ \textsf{ \small \rightmark } }
+\fancyfoot[LE,RO]{ \textrm{ \small --\ \thepage\ -- } }
 
 %\sectionmark 的重定义需要在 \pagestyle 之后生效
 \renewcommand\chaptermark[1]{
@@ -43,9 +43,10 @@ right=2cm]{geometry}
 \usepackage{listings}
 % 解决无法嵌入eps文件的问题
 \usepackage[outdir=./]{epstopdf}
+\usepackage{metalogo}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
-\setmonofont{Delugia Mono}
+\setmonofont{Source Code Pro Medium}
 \setCJKmainfont{Noto Serif SC}
 \setCJKsansfont{Noto Sans SC}
 \setCJKmonofont{Noto Sans Mono CJK SC}
@@ -100,7 +101,10 @@ right=2cm]{geometry}
 
 \title{\sffamily {\Huge 业余无线电操作技能考核攻略本\\（类别：B）}}
 \author{\large \texttt{BG7XTQ}（原\texttt{JJ1DSB}）编著}
-\date{\large{编译日期：\texttt{\today}}\\版本：\texttt{\commit}在分支\texttt{\branch}上}
+\date{\large{日期：\texttt{\today}}
+	\\版本：\texttt{\commit}在分支\texttt{\branch}上
+	\\使用 \XeLaTeX 编译
+}
 
 \maketitle %标题页
 
@@ -9020,7 +9024,7 @@ $$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输�
 \item 由天线振子的长度所决定
 \item 由天线振子导体所指的方向决定
 \end{enumerate}
-\noindent\textbf{解说：}短波水平偶极类天线（如偶极天线和八木天线等）的发射仰角主要由下列因素决定\textbf{由天线的辐射和大地的反射叠加造成，仰角高低与天线离地高度与波长的比值有关}。\\\noindent\textbf{答案：}A
+\noindent\textbf{解说：}短波水平偶极类天线（如偶极天线和八木天线等）的发射仰角主要\textbf{由天线的辐射和大地的反射叠加造成，仰角高低与天线离地高度与波长的比值有关}。\\\noindent\textbf{答案：}A
 
 
 
