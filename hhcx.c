@@ -1,6 +1,6 @@
 // 业余无线电台呼号所属分区信息查询C程序
 // 使用方法：
-//   $ clang -O0 -Wall -Wpedantic -Wextra -Werror -std=c99 hhcx.c -o hhcx
+//   $ pcc -Wall -Wpedantic -Wextra -std=c99 hhcx.c -o hhcx
 //   $ ./hhcx
 // 测试：
 //   BS7H, JJ1DSB, BG1AAA, BT55CRF, BT1A, BY1PK, B1Z, B1A

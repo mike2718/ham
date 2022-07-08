@@ -1,7 +1,7 @@
 // 计算逻辑门电路输出信号题型答案的C程序
 // 用法：
-// clang -O0 -Wall -Wpedantic -Wextra -Werror -std=c99 -o jisuan jisuan.c
-// ./jisuan
+//   $ pcc -Wall -Wpedantic -Wextra -std=c99 -o jisuan jisuan.c
+//   $ ./jisuan
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
