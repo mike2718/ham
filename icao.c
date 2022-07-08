@@ -1,6 +1,6 @@
-//   将呼号转换成字母解释法的单词组合的C程序
-//   用法：
-//   $ clang -O0 -Wall -Wpedantic -Wextra -Werror -std=c99 -o icao icao.c
+// 将呼号转换成字母解释法的单词组合的C程序
+// 用法：
+//   $ pcc -Wall -Wpedantic -Wextra -std=c99 -o icao icao.c
 //   $ ./icao
 #include <stdio.h>
 #include <string.h>
