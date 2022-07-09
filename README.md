@@ -23,7 +23,6 @@
 - XeLaTeX
 - ctex
 - Noto Serif SC, Noto Sans SC, Noto Sans Mono CJK SC, Noto Sans, Noto Serif字体
-- Source Code Pro字体
 
 ## 编译
 
@@ -38,7 +37,7 @@ xelatex \
     -recorder \
     -synctex=1 \
     -shell-escape \
-    ham_a.tex
+    ham_?.tex
 ```
 
 自行编译本书的话，`.tex`文件必须保存为无BOM的UTF-8文本文件。
