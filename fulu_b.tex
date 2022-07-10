@@ -1106,28 +1106,28 @@ Y & \textbf{YAGI} & Yagi–Uda antenna & 八木天线 \\
 \section{计算公式}
 
 直流电路欧姆定律：
-\[\mbox{电流}I(A)=\frac{\mbox{电压}U(V)}{\mbox{电阻值}R(\Omega)}\]
+\[\mbox{电流}I(\si{\ampere})=\frac{\mbox{电压}U(\si{\volt})}{\mbox{电阻值}R(\si{\ohm})}\]
 
 峰值电压的计算公式：
-\[\mbox{峰值}(V)=\frac{\mbox{峰--峰值}}{2}\]
+\[\mbox{峰值}(\si{\volt})=\frac{\mbox{峰--峰值}}{2}\]
 
 正弦交流电压的有效值计算公式：
-\[\mbox{交流的有效值}(V)=\frac{\mbox{峰值}}{\sqrt{2}} \approx \mbox{峰值}\times0.707\]
+\[\mbox{交流的有效值}(\si{\volt})=\frac{\mbox{峰值}}{\sqrt{2}} \approx \mbox{峰值}\times 0.707\]
 
 功率增益的计算公式：
-\[\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right)\ \mathrm{dB}\]
+\[\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right) \si{\dB}\]
 
 电压增益的计算公式：
-\[\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)\ \mathrm{dB}\]
+\[\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right) \si{\dB}\]
 
 %电流增益的计算公式：
 %$$\mbox{电流增益}=20 \log \left( {\frac{I_{ \mbox{输出} }}{I_{ \mbox{输入} }}} \right)\ \mathrm{dB}$$
 
 绝对增益与相对增益的关系：
-\[\mbox{绝对增益} = \mbox{相对增益} + 2.15 \ \mathrm{dB}\]
+\[\mbox{绝对增益} = \mbox{相对增益} + \SI{2.15}{\dB}\]
 
 两数的乘积的对数等于两数的对数之和：
-\[\log ab=\log a+\log b\]
+\[\log a\: b=\log a+\log b\]
 
 两数的商的对数等于两数的对数之差：
 \[\log\frac{a}{b}=\log a-\log b\]
@@ -1143,24 +1143,24 @@ Y & \textbf{YAGI} & Yagi–Uda antenna & 八木天线 \\
 说明：强烈建议背诵$\log_{10} 1.0$、$\log 2.0$、……$\log 10.0$等第0列的10个数值到小数点后三位，考试闭卷，无法使用计算器，如果不背诵，将无法计算。
 
 \begin{longtable}[c]{|c|c|}
-    \hline
-    \textbf{N} & \textbf{0} \\
-    \hline
-    \endfirsthead
-    \hline
-    \textbf{N} & \textbf{0} \\
-    \endhead
-    \textbf{1.0} & .000 \\ \hline
-    \textbf{2.0} & .301 \\ \hline
-    \textbf{3.0} & .477 \\ \hline
-    \textbf{4.0} & .602 \\ \hline
-    \textbf{5.0} & .699 \\ \hline
-    \textbf{6.0} & .778 \\ \hline
-    \textbf{7.0} & .845 \\ \hline
-    \textbf{8.0} & .903 \\ \hline
-    \textbf{9.0} & .954 \\ \hline
-    \textbf{10.0} & 1.000 \\ \hline
-\end{longtable}
+	\hline
+	\textbf{N} & \textbf{0} \\
+	\hline
+	\endfirsthead
+	\hline
+	\textbf{N} & \textbf{1.0} \\
+	\endhead
+	\num{1.0} & \num{.000} \\ \hline
+	\num{2.0} & \num{.301} \\ \hline
+	\num{3.0} & \num{.477} \\ \hline
+	\num{4.0} & \num{.602} \\ \hline
+	\num{5.0} & \num{.699} \\ \hline
+	\num{6.0} & \num{.778} \\ \hline
+	\num{7.0} & \num{.845} \\ \hline
+	\num{8.0} & \num{.903} \\ \hline
+	\num{9.0} & \num{.954} \\ \hline
+	\num{10.0} & \num{1.000} \\ \hline
+	\end{longtable}
 
 \newpage
 
