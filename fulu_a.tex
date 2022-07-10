@@ -95,15 +95,15 @@
 	\hline
 	    & \textbf{提问} & \textbf{回答或建议} \\
 	\hline
-	QRM & 你遇到他台干扰吗？ & 我遇到他台干扰 \\
+	\texttt{QRM} & 你遇到他台干扰吗？ & 我遇到他台干扰 \\
 	\hline
-	QRN & 你遇到天电干扰吗？ & 我遇到天电干扰 \\
+	\texttt{QRN} & 你遇到天电干扰吗？ & 我遇到天电干扰 \\
 	\hline
-	QRZ & 谁在呼叫我？ &  你正在×××× KHz/MHz上被呼叫 \\
+	\texttt{QRZ} & 谁在呼叫我？ &  ××××在××× KHz/\unit{\MHz} 上呼叫你 \\
 	\hline
-	QSL & 你能给我收据（或 QSL 卡片）吗？ & 我给你收据（QSL 卡片）、我已收妥 \\
+	\texttt{QSL} & 你能给我收据（或 \texttt{QSL} 卡片）吗？ & 我给你收据（\texttt{QSL} 卡片）、我已收妥 \\
 	\hline
-	QTH & 你的电台位置在哪里？ & 我的电台位置是 ×××× \\
+	\texttt{QTH} & 你的电台位置在哪里？ & 我的电台位置是 ×××× \\
 	\hline
 \end{longtable}
 
@@ -138,15 +138,15 @@
 	FET & Field-effect transistor & 场效应管 \\
 	FM & Frequency modulation & 频率调制、调频 \\
 	FREQ & Frequency & 频率 \\
-	GHz & gigahertz & 吉赫兹（单位） \\
+	\unit{\GHz} & gigahertz & 吉赫兹（单位） \\
 	\textbf{GND} & Ground & 地线、地面 \\
 	\textbf{GP} & Ground-plane antenna & 垂直接地天线 \\
 	HF & High frequency & 高频、即SW（Shortwave） \\
 	Hz & hertz & 赫兹（单位） \\
-	kHz & kilohertz & 千赫兹（单位） \\
+	\unit{\kHz} & kilohertz & 千赫兹（单位） \\
 	\textbf{LCD} & Liquid-crystal display & 液晶显示器 \\
 	\textbf{LED} & Light-emitting diode & 发光二极管 \\
-	MHz & megahertz & 兆赫兹（单位） \\
+	\unit{\MHz} & megahertz & 兆赫兹（单位） \\
 	MODE & & 模式 \\
 	NFM & Narrowband FM & 窄带调频 \\
 	\textbf{OM} & Old man & 老朋友 \\%朋友
@@ -199,19 +199,19 @@
 
 说明：黑体字的缩写为考到的重要缩写。
 
-\begin{longtable}{|c|c|c|}
+\begin{longtable}{|l|l|l|}
 	\hline
 	\textbf{频段名称} & \textbf{缩写} & \textbf{频率范围} \\
 	\hline
-	高频 & \textbf{HF} & 3–30 MHz \\
+	高频 & \texttt{\textbf{HF}} & 3–30 \unit{\MHz} \\
 	\hline
-	甚高频 & \textbf{VHF} & 30–300 MHz \\
+	甚高频 & \texttt{\textbf{VHF}} & 30–300 \unit{\MHz} \\
 	\hline
-	特高频 & \textbf{UHF} & 300–3,000 MHz \\
+	特高频 & \texttt{\textbf{UHF}} & 300–3,000 \unit{\MHz} \\
 	\hline
-	超高频 & SHF & 3–30 GHz \\
+	超高频 & \texttt{SHF} & 3–30 \unit{\GHz} \\
 	\hline
-	极高频 & EHF & 30–300 GHz \\
+	极高频 & \texttt{EHF} & 30–300 \unit{\GHz} \\
 	\hline
 \end{longtable}
 
@@ -225,25 +225,25 @@
 \section{各业余无线电频段名称（节录）}
 
 
-\begin{longtable}{|c|c|}
+\begin{longtable}{|l|l|}
 	\hline
 	\textbf{波段名称} & \textbf{频率范围} \\
 	\hline
-	80米 & 3.5–4.0 MHz \\
+	80米 & 3.5–4.0 \unit{\MHz} \\
 	\hline
-	40米 & 7.0–7.3 MHz \\
+	40米 & 7.0–7.3 \unit{\MHz} \\
 	\hline
-	20米 & 14.0–14.35 MHz \\
+	20米 & 14.0–14.35 \unit{\MHz} \\
 	\hline
-	15米 & 21–21.45 MHz \\
+	15米 & 21–21.45 \unit{\MHz} \\
 	\hline
-	10米 & 28–29.7 MHz \\
+	10米 & 28–29.7 \unit{\MHz} \\
 	\hline
-	6米 & 50–54 MHz \\
+	6米 & 50–54 \unit{\MHz} \\
 	\hline
-	2米 & 144–148 MHz \\
+	2米 & 144–148 \unit{\MHz} \\
 	\hline
-	0.7米 & 420–450 MHz \\
+	0.7米 & 420–450 \unit{\MHz} \\
 	\hline
 \end{longtable}
 
@@ -253,27 +253,27 @@
 
 \section{国际单位制词头（节录）}
 
-\begin{longtable}{|c|c|}
+\begin{longtable}{|l|l|}
 	\hline
 	\textbf{符号} & \textbf{意义} \\
 	\hline
-	T & $10^{12}$ \\
+	T & \num{e12} \\
 	\hline
-	G & $10^{9}$ \\
+	G & \num{e9} \\
 	\hline
-	M & $10^{6}$ \\
+	M & \num{e6} \\
 	\hline
-	k & $10^{3}$ \\
+	k & \num{e3} \\
 	\hline
-	 & $10^{0}$ \\
+	 & \(10^{0}\) \\
 	\hline
-	m & $10^{-3}$ \\
+	m & \num{e-3} \\
 	\hline
-	μ & $10^{-6}$ \\
+	μ & \num{e-6} \\
 	\hline
-	n & $10^{-9}$ \\
+	n & \num{e-9} \\
 	\hline
-	p & $10^{-12}$ \\
+	p & \num{e-12} \\
 	\hline
 \end{longtable}
 
@@ -292,12 +292,6 @@ $$\mbox{交流的有效值}(V)=\frac{\mbox{峰值}}{\sqrt{2}} \approx \mbox{峰�
 
 功率增益的计算公式：
 $$\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right)\ \mathrm{dB}$$
-
-%电压增益的计算公式：
-%$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)\ \mathrm{dB}$$
-
-%电流增益的计算公式：
-%$$\mbox{电流增益}=20 \log \left( {\frac{I_{ \mbox{输出} }}{I_{ \mbox{输入} }}} \right)\ \mathrm{dB}$$
 
 \newpage
 
