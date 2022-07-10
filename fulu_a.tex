@@ -138,12 +138,12 @@
 	FET & Field-effect transistor & 场效应管 \\
 	FM & Frequency modulation & 频率调制、调频 \\
 	FREQ & Frequency & 频率 \\
-	\unit{\\si{\GHz}} & gigahertz & 吉赫兹（单位） \\
+	\si{\GHz} & gigahertz & 吉赫兹（单位） \\
 	\textbf{GND} & Ground & 地线、地面 \\
 	\textbf{GP} & Ground-plane antenna & 垂直接地天线 \\
 	HF & High frequency & 高频、即SW（Shortwave） \\
 	Hz & hertz & 赫兹（单位） \\
-	\unit{\\si{\kHz}} & kilohertz & 千赫兹（单位） \\
+	\si{\kHz} & kilohertz & 千赫兹（单位） \\
 	\textbf{LCD} & Liquid-crystal display & 液晶显示器 \\
 	\textbf{LED} & Light-emitting diode & 发光二极管 \\
 	\si{\MHz} & megahertz & 兆赫兹（单位） \\
@@ -209,9 +209,9 @@
 	\hline
 	特高频 & \texttt{\textbf{UHF}} & 300–3,000 \si{\MHz} \\
 	\hline
-	超高频 & \texttt{SHF} & 3–30 \unit{\\si{\GHz}} \\
+	超高频 & \texttt{SHF} & 3–30 \si{\GHz} \\
 	\hline
-	极高频 & \texttt{EHF} & 30–300 \unit{\\si{\GHz}} \\
+	极高频 & \texttt{EHF} & 30–300 \si{\GHz} \\
 	\hline
 \end{longtable}
 
@@ -279,21 +279,33 @@
 
 \newpage
 
+
+
+
+
+
+
 \section{计算公式}
 
 直流电路欧姆定律：
-$$\mbox{电流}I(A)=\frac{\mbox{电压}U(V)}{\mbox{电阻值}R(\Omega)}$$
+\[\mbox{电流}I(\si{\ampere})=\frac{\mbox{电压}U(\si{\volt})}{\mbox{电阻值}R(\si{\ohm})}\]
 
 峰值电压的计算公式：
-$$\mbox{峰值}(V)=\frac{\mbox{峰--峰值}}{2}$$
+\[\mbox{峰值}(\si{\volt})=\frac{\mbox{峰--峰值}}{2}\]
 
 正弦交流电压的有效值计算公式：
-$$\mbox{交流的有效值}(V)=\frac{\mbox{峰值}}{\sqrt{2}} \approx \mbox{峰值}\times0.707$$
+\[\mbox{交流的有效值}(\si{\volt})=\frac{\mbox{峰值}}{\sqrt{2}} \approx \mbox{峰值}\times 0.707\]
 
 功率增益的计算公式：
-$$\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right)\ \mathrm{dB}$$
+\[\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right) \si{\dB}\]
 
 \newpage
+
+
+
+
+
+
 
 
 
