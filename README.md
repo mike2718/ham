@@ -44,6 +44,6 @@ xelatex \
 
 ## 许可
 
-&Copy; 2021 BG7XTQ Mike
+&copy; 2021 BG7XTQ Mike
 
 [PDF文件中所使用字体的许可](https://github.com/mike2718/ham/blob/main/LICENSE.md)
