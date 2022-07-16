@@ -22,7 +22,7 @@
 
 - XeLaTeX
 - ctex
-- Noto Serif SC, Noto Sans SC, Noto Sans Mono CJK SC, Noto Sans, Noto Serif字体
+- Noto Sans, Noto Serif, Noto Sans Mono, Noto Sans CJK SC, Noto Serif CJK SC, Noto Sans Mono CJK SC字体
 
 ## 编译
 
@@ -44,6 +44,6 @@ xelatex \
 
 ## 许可
 
-Copyright (c) 2021 BG7XTQ
+&Copy; 2021 BG7XTQ Mike
 
 [PDF文件中所使用字体的许可](https://github.com/mike2718/ham/blob/main/LICENSE.md)
