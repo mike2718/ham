@@ -1096,7 +1096,7 @@ Y & \textbf{YAGI} & Yagi–Uda antenna & 八木天线 \\
 	9Y--9Z & Trinidad and Tobago \\
 	\hline
 \end{longtable}
-	
+
 \newpage
 
 
@@ -1109,10 +1109,24 @@ Y & \textbf{YAGI} & Yagi–Uda antenna & 八木天线 \\
 \[\mbox{电流}I(\si{\ampere})=\frac{\mbox{电压}U(\si{\volt})}{\mbox{电阻值}R(\si{\ohm})}\]
 
 峰值电压的计算公式：
-\[\mbox{峰值}(\si{\volt})=\frac{\mbox{峰--峰值}}{2}\]
+\[\mbox{峰值电压}(\si{\volt})=\frac{\mbox{峰--峰值}}{2}\]
+
+电功率的计算公式：
+\begin{equation*}
+\begin{aligned}
+\mbox{电功率}P(\si{\watt}) &= U\times I \\
+& = I^2 \times R \\
+& = \frac{U^2}{R}
+\end{aligned}
+\end{equation*}
 
 正弦交流电压的有效值计算公式：
-\[\mbox{交流的有效值}(\si{\volt})=\frac{\mbox{峰值}}{\sqrt{2}} \approx \mbox{峰值}\times 0.707\]
+\begin{equation*}
+\begin{aligned}
+\mbox{交流电压的有效值}(\si{\volt})&=\frac{\mbox{峰值}}{\sqrt{2}} \\
+& \approx \mbox{峰值}\times 0.707
+\end{aligned}
+\end{equation*}
 
 功率增益的计算公式：
 \[\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right) \si{\dB}\]
@@ -1138,7 +1152,7 @@ Y & \textbf{YAGI} & Yagi–Uda antenna & 八木天线 \\
 \newpage
 
 
-\section{以10为底的常用对数表（节录）}
+\section{常用对数表（节录）}
 
 说明：强烈建议背诵$\log_{10} 1.0$、$\log 2.0$、……$\log 10.0$等第0列的10个数值到小数点后三位，考试闭卷，无法使用计算器，如果不背诵，将无法计算。
 
@@ -1146,9 +1160,9 @@ Y & \textbf{YAGI} & Yagi–Uda antenna & 八木天线 \\
 	\hline
 	\textbf{N} & \textbf{0} \\
 	\hline
-	\endfirsthead
-	\hline
-	\textbf{N} & \textbf{1.0} \\
+%	\endfirsthead
+%	\hline
+%	\textbf{N} & \textbf{1.0} \\
 	\endhead
 	\num{1.0} & \num{.000} \\ \hline
 	\num{2.0} & \num{.301} \\ \hline
@@ -1160,121 +1174,121 @@ Y & \textbf{YAGI} & Yagi–Uda antenna & 八木天线 \\
 	\num{8.0} & \num{.903} \\ \hline
 	\num{9.0} & \num{.954} \\ \hline
 	\num{10.0} & \num{1.000} \\ \hline
-	\end{longtable}
+\end{longtable}
 
 \newpage
 
 \section{逻辑门的真值表}
 
-
 \begin{tabular}{cc}%
-	\begin{tabular}{|c|c|c|}
-		\multicolumn{3}{c}{\textbf{与门（AND）}} \\
-		\hline
-		\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
-		\hline
-		A & B & A AND B \\
-		\hline
-		0 & 0 & 0 \\
-		\hline
-		0 & 1 & 0 \\
-		\hline
-		1 & 0 & 0 \\
-		\hline
-		1 & 1 & 1 \\
-		\hline
-	\end{tabular} &
-	\begin{tabular}{|c|c|c|}
-		\multicolumn{3}{c}{\textbf{与非门（NAND）}} \\
-		\hline
-		\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
-		\hline
-		A & B & A NAND B \\
-		\hline
-		0 & 0 & 1 \\
-		\hline
-		0 & 1 & 1 \\
-		\hline
-		1 & 0 & 1 \\
-		\hline
-		1 & 1 & 0 \\
-		\hline
-	\end{tabular} \tabularnewline
+    \begin{tabular}{|c|c|c|}
+        \multicolumn{3}{c}{\textbf{与门}} \\
+        \hline
+        \multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
+        \hline
+        A & B & A AND B \\
+        \hline
+        \num{0} & \num{0} & \num{0} \\
+        \hline
+        \num{0} & \num{1} & \num{0} \\
+        \hline
+        \num{1} & \num{0} & \num{0} \\
+        \hline
+        \num{1} & \num{1} & \num{1} \\
+        \hline
+    \end{tabular} &
+    \begin{tabular}{|c|c|c|}
+        \multicolumn{3}{c}{\textbf{与非门}} \\
+        \hline
+        \multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
+        \hline
+        A & B & A NAND B \\
+        \hline
+        \num{0} & \num{0} & \num{1} \\
+        \hline
+        \num{0} & \num{1} & \num{1} \\
+        \hline
+        \num{1} & \num{0} & \num{1} \\
+        \hline
+        \num{1} & \num{1} & \num{0} \\
+        \hline
+    \end{tabular} \tabularnewline
 \end{tabular}
 
 \bigskip
 
 \begin{tabular}{cc}%
-	\begin{tabular}{|c|c|c|}
-		\multicolumn{3}{c}{\textbf{或门（OR）}} \\
-		\hline
-		\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
-		\hline
-		A & B & A OR B \\
-		\hline
-		0 & 0 & 0 \\
-		\hline
-		0 & 1 & 1 \\
-		\hline
-		1 & 0 & 1 \\
-		\hline
-		1 & 1 & 1 \\
-		\hline
-	\end{tabular} &
-	\begin{tabular}{|c|c|c|}
-		\multicolumn{3}{c}{\textbf{或非门（NOR）}} \\
-		\hline
-		\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
-		\hline
-		A & B & A NOR B \\
-		\hline
-		0 & 0 & 1 \\
-		\hline
-		0 & 1 & 0 \\
-		\hline
-		1 & 0 & 0 \\
-		\hline
-		1 & 1 & 0 \\
-		\hline
-	\end{tabular}  \tabularnewline
+    \begin{tabular}{|c|c|c|}
+        \multicolumn{3}{c}{\textbf{或门}} \\
+        \hline
+        \multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
+        \hline
+        A & B & A OR B \\
+        \hline
+        \num{0} & \num{0} & \num{0} \\
+        \hline
+        \num{0} & \num{1} & \num{1} \\
+        \hline
+        \num{1} & \num{0} & \num{1} \\
+        \hline
+        \num{1} & \num{1} & \num{1} \\
+        \hline
+    \end{tabular} &
+    \begin{tabular}{|c|c|c|}
+        \multicolumn{3}{c}{\textbf{或非门}} \\
+        \hline
+        \multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
+        \hline
+        A & B & A NOR B \\
+        \hline
+        \num{0} & \num{0} & \num{1} \\
+        \hline
+        \num{0} & \num{1} & \num{0} \\
+        \hline
+        \num{1} & \num{0} & \num{0} \\
+        \hline
+        \num{1} & \num{1} & \num{0} \\
+        \hline
+    \end{tabular}  \tabularnewline
 \end{tabular}
 
 \bigskip
 
 \begin{tabular}{cc}%
-	\begin{tabular}{|c|c|c|}
-		\multicolumn{3}{c}{\textbf{异或门（XOR）}} \\
-		\hline
-		\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
-		\hline
-		A & B & A XOR B \\
-		\hline
-		0 & 0 & 0 \\
-		\hline
-		0 & 1 & 1 \\
-		\hline
-		1 & 0 & 1 \\
-		\hline
-		1 & 1 & 0 \\
-		\hline
-	\end{tabular} &
-	\begin{tabular}{|c|c|c|}
-		\multicolumn{3}{c}{\textbf{异或非门（NXOR）}} \\
-		\hline
-		\multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
-		\hline
-		A & B & A XNOR B \\
-		\hline
-		0 & 0 & 1 \\
-		\hline
-		0 & 1 & 0 \\
-		\hline
-		1 & 0 & 0 \\
-		\hline
-		1 & 1 & 1 \\
-		\hline
-	\end{tabular} \tabularnewline
+    \begin{tabular}{|c|c|c|}
+        \multicolumn{3}{c}{\textbf{异或门}} \\
+        \hline
+        \multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
+        \hline
+        A & B & A XOR B \\
+        \hline
+        \num{0} & \num{0} & \num{0} \\
+        \hline
+        \num{0} & \num{1} & \num{1} \\
+        \hline
+        \num{1} & \num{0} & \num{1} \\
+        \hline
+        \num{1} & \num{1} & \num{0} \\
+        \hline
+    \end{tabular} &
+    \begin{tabular}{|c|c|c|}
+        \multicolumn{3}{c}{\textbf{异或非门}} \\
+        \hline
+        \multicolumn{2}{|c|}{\textbf{输入}} & \textbf{输出} \\
+        \hline
+        A & B & A XNOR B \\
+        \hline
+        \num{0} & \num{0} & \num{1} \\
+        \hline
+        \num{0} & \num{1} & \num{0} \\
+        \hline
+        \num{1} & \num{0} & \num{0} \\
+        \hline
+        \num{1} & \num{1} & \num{1} \\
+        \hline
+    \end{tabular} \tabularnewline
 \end{tabular}
+
 
 \newpage
 
