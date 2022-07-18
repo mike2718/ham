@@ -2,13 +2,14 @@
 \usepackage[a4paper,twoside,left=2.5cm,top=2.5cm,bottom=2cm,
 right=2cm]{geometry}
 
-% 页眉和页脚样式（仿某书风格）
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 页眉和页脚样式（仿某书风格）
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LE]{	\textsf{ \small 业余无线电操作技能考核攻略本（类别：B）} }
 \fancyhead[RO]{ \textsf{ \small \rightmark } }
 \fancyfoot[LE,RO]{ \textrm{ \small --\ \thepage\ -- } }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 页眉和页脚样式（仿某书风格）
 
 %\sectionmark 的重定义需要在 \pagestyle 之后生效
 \renewcommand\chaptermark[1]{
@@ -10194,11 +10195,10 @@ $$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输�
 % 后记
 \include{houji}
 
-% 许可
-\include{xuke}
-
 % 参考文献
 \include{cankaowenxian}
 
+% 许可
+\include{xuke}
 
 \end{document}
