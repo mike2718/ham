@@ -2,13 +2,14 @@
 \usepackage[a4paper,twoside,left=2.5cm,top=2.5cm,bottom=2cm,
 right=2cm]{geometry}
 
-% 页眉和页脚样式（仿某书风格）
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 页眉和页脚样式（仿某书风格）
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LE]{	\textsf{ \small 业余无线电操作技能考核攻略本（类别：A）} }
 \fancyhead[RO]{ \textsf{ \small \rightmark } }
 \fancyfoot[LE,RO]{ \textrm{ \small --\ \thepage\ -- } }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 页眉和页脚样式（仿某书风格）
 
 %\sectionmark 的重定义需要在 \pagestyle 之后生效
 \renewcommand\chaptermark[1]{
@@ -3375,7 +3376,7 @@ right=2cm]{geometry}
 	\item 橡胶
 \end{enumerate}
 
-\noindent\textbf{解说：}导体是能够让电流通过的物体。\textbf{铜}是电的良导体。\cite{Electrical_conductor}\\
+\noindent\textbf{解说：}导体是能够让电流通过的物体。\textbf{铜}是电的良导体。\cite{Resistivity_and_conductivity_of_various_materials}\\
 其他选项：木材、玻璃、橡胶是电的良好绝缘体。\\
 \noindent\textbf{答案：}C
 
@@ -3392,7 +3393,7 @@ right=2cm]{geometry}
 	\item 铝
 \end{enumerate}
 
-\noindent\textbf{解说：}绝缘体是不能让电流通过的物体。\textbf{玻璃}是电的良好绝缘体。\\
+\noindent\textbf{解说：}绝缘体是不能让电流通过的物体。\textbf{玻璃}是电的良好绝缘体。\cite{Resistivity_and_conductivity_of_various_materials}\\
 其他选项：铜、铝、汞是电的良导体。\\
 \noindent\textbf{答案：}B
 
@@ -5634,10 +5635,10 @@ right=2cm]{geometry}
 % 后记
 \include{houji}
 
-% 许可
-\include{xuke}
-
 % 参考文献
 \include{cankaowenxian}
+
+% 许可
+\include{xuke}
 
 \end{document}
