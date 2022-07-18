@@ -8333,14 +8333,23 @@ right=2cm]{geometry}
 
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的100倍，该电路的增益为：
 \begin{enumerate}[leftmargin=3em]
-\item 100dB
-\item 1dB
-\item 10dB
-\item 20dB
+\item \SI{100}{\dB}
+\item \SI{1}{\dB}
+\item \SI{10}{\dB}
+\item \SI{20}{\dB}
 \end{enumerate}
-\noindent\textbf{解说：}该电路的增益为\textbf{20dB}。\\
+\noindent\textbf{解说：}该电路的增益为\SI{20}{\dB}。\\
 套入功率增益的计算公式得：
-$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log 100 = 10 \log 10^2 = 20 \ \mathrm{dB}$$
+\begin{equation*}
+\begin{aligned}
+\mbox{功率增益}&=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right) \\
+& = 10 \log 100 \\
+& = 10 \log 10^2 \\
+& = 10 \times 2\times \log 10 \\
+& = 10 \times 2\times 1 \\
+& = \SI{20}{\dB}
+\end{aligned}
+\end{equation*}
 \noindent\textbf{答案：}D
 
 
@@ -8350,14 +8359,23 @@ $$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输�
 
 \noindent\textbf{试题：}某电路输出信号功率是输入信号功率的100万倍，该电路的增益为：
 \begin{enumerate}[leftmargin=3em]
-\item 100万dB
-\item 60dB
-\item 100dB
-\item 99万dB
+\item \num{100}万\si{\dB}
+\item \SI{60}{\dB}
+\item \SI{100}{\dB}
+\item \num{99}万\si{\dB}
 \end{enumerate}
-\noindent\textbf{解说：}该电路的增益为\textbf{60dB}。\\
+\noindent\textbf{解说：}该电路的增益为\SI{60}{\dB}。\\
 套入功率增益的计算公式得：
-$$\mbox{功率增益}=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)=10 \log 1000000 = 10 \log 10^6 = 60 \ \mathrm{dB}$$
+\begin{equation*}
+\begin{aligned}
+\mbox{功率增益}&=10 \log \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}} \right)
+& = 10 \log 1000000 \\
+& = 10 \log 10^6 \\
+& = 10\times 6\times \log 10 \\
+& = 10\times 6\times 1 \\
+& = \SI{60}{\dB}
+\end{aligned}
+\end{equation*}
 \noindent\textbf{答案：}B
 
 
@@ -8453,22 +8471,31 @@ $$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输�
 
 \bigskip
 
-%2021-11-27 10:21AM B类 广西南宁 超纲题
+
+
+%%%%%%%%%%%%%%% 2021-11-27 10:21AM B类 广西南宁 超纲题 %%%%%%%%%%%%%%%
 \noindent\textbf{试题：}某电路输出信号电压是输入信号电压的7倍，该电路的增益约为：
 \begin{enumerate}[leftmargin=3em]
-	\item 7dB
-	\item 10dB
-	\item 15dB
-	\item 17dB%原选项14dB？不得已改成这个以符合题目要求
+	\item \SI{7}{\dB}
+	\item \SI{10}{\dB}
+	\item \SI{15}{\dB}
+	\item \SI{17}{\dB}  %原选项14dB？不得已改成这个以符合题目要求
 \end{enumerate}
-\noindent\textbf{解说：}该电路的增益约为\textbf{17dB}。\\
+\noindent\textbf{解说：}该电路的增益约为\SI{17}{\dB}。\\
 套入电压增益的计算公式得：
-$$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right)=20 \log 7 \approx17 \ \mathrm{dB}$$
+\begin{equation*}
+\begin{aligned}
+\mbox{电压增益}&=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输入} }}} \right) \\
+& = 20 \log 7 \\
+& = 20\times 0.845 \\
+& \approx \SI{17}{\dB}
+\end{aligned}
+\end{equation*}
 \noindent\textbf{答案：}D
 
-
-
 \bigskip
+%%%%%%%%%%%%%%% 2021-11-27 10:21AM B类 广西南宁 超纲题 %%%%%%%%%%%%%%%
+
 
 
 \noindent\textbf{试题：}某电路输出信号电压是输入信号电压的2倍，该电路的增益约为：
@@ -8676,14 +8703,14 @@ $$\mbox{电压增益}=20 \log \left( {\frac{V_{ \mbox{输出} }}{V_{ \mbox{输�
 \bigskip
 
 
-\noindent\textbf{试题：}接收机的接收信号强度表每两档的信号强度相差6dB。接收某电台信号，发射功率为10\unit[qualifier-mode=combine]{\deci\bel\of{W}}时读数为S8。该台减小发射功率后，接收机读数变为S5。此时该台的发射功率约为（以W为单位）：
+\noindent\textbf{试题：}接收机的接收信号强度表每两档的信号强度相差\SI{6}{\dB}。接收某电台信号，发射功率为10\unit[qualifier-mode=combine]{\deci\bel\of{W}}时读数为S8。该台减小发射功率后，接收机读数变为S5。此时该台的发射功率约为（以\si{\W}为单位）：
 \begin{enumerate}[leftmargin=3em]
-\item 0.098W
-\item 10.24W
+\item \SI{0.098}{\W}
+\item \SI{10.24}{\W}
 \item \SI{1.73}{\W}
-\item 0.156W
+\item \SI{0.156}{\W}
 \end{enumerate}
-\noindent\textbf{解说：}此时该台的发射功率约为\textbf{0.156W}。\\\noindent\textbf{答案：}D
+\noindent\textbf{解说：}此时该台的发射功率约为\SI{0.156}{\W}。\\\noindent\textbf{答案：}D
 
 
 
