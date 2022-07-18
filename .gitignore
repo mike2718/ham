@@ -5,13 +5,9 @@
 *.7z
 *.tar
 *.zst
-*.lzh
 *.rar
-*.cab
-*_a.c
-sha256sum.txt
+sha1sums.txt
 sha256sums.txt
-git-hash.txt
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
