@@ -209,9 +209,9 @@
 	\hline
 	特高频 & \textbf{UHF} & 300–3,000 \si{\MHz} \\
 	\hline
-	超高频 & \texttt{SHF} & 3–30 \si{\GHz} \\
+	超高频 & SHF & 3–30 \si{\GHz} \\
 	\hline
-	极高频 & \texttt{EHF} & 30–300 \si{\GHz} \\
+	极高频 & EHF & 30–300 \si{\GHz} \\
 	\hline
 \end{longtable}
 
@@ -294,7 +294,12 @@
 \[\mbox{峰值}(\si{\volt})=\frac{\mbox{峰--峰值}}{2}\]
 
 正弦交流电压的有效值计算公式：
-\[\mbox{交流的有效值}(\si{\volt})=\frac{\mbox{峰值}}{\sqrt{2}} \approx \mbox{峰值}\times 0.707\]
+\begin{equation*}
+    \begin{aligned}
+        \mbox{交流电压的有效值}(\si{\volt})&=\frac{\mbox{峰值}}{\sqrt{2}} \\
+        & \approx \mbox{峰值}\times 0.707
+    \end{aligned}
+\end{equation*}
 
 功率增益的计算公式：
 \[\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right) \si{\dB}\]
