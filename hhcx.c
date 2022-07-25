@@ -55,13 +55,15 @@ int main(void)
                 // LMNOPQ或UVWX为保留
                 printf("第二位字符%c：国家无线电管理机构留作备用\n", h[1]);
             else if (h[1] == 'J')
-                printf("第二位字符%c：业余信标台或空间业余无线电台\n", h[1]);
+                printf("第二位字符%c：业余信标台或空间业余无线电台\n",
+                       h[1]);
             else if (h[1] == 'R')
                 printf("第二位字符%c：业余中继台\n", h[1]);
             else if (h[1] == 'Y')
                 printf("第二位字符%c：曾用于指配给集体电台\n", h[1]);
             else if (h[1] == 'Z')
-                printf("第二位字符%c：曾用于指配给在集体电台上使用的个人呼号\n", h[1]);
+                printf("第二位字符%c：曾用于指配给在集体电台上使用的个人呼号\n",
+                       h[1]);
             if (h[2] < '0' || h[2] > '9')
                 printf("第三位字符%c：电台分区号非数字！\n", h[2]);
             if (strlen(h) == 5 && h[3] && h[4] && !h[5] && (h[4] < 'A'
@@ -73,12 +75,14 @@ int main(void)
             for (i = 0;  i < 2 ; i++)
             {
                 if (strlen(h) == 5 && h[i + 3] > '0' && h[i + 3] < '9')
-                    printf("含后缀字符%c的呼号由国家无线电管理机构负责分配\n", h[i + 3]);
+                    printf("含后缀字符%c的呼号由国家无线电管理机构负责分配\n",
+                           h[i + 3]);
             }
             for (i = 0;  i < 3 ; i++)
             {
                 if (strlen(h) == 6 && h[i + 3] > '0' && h[i + 3] < '9')
-                    printf("含后缀字符%c的呼号由国家无线电管理机构负责分配\n", h[i + 3]);
+                    printf("含后缀字符%c的呼号由国家无线电管理机构负责分配\n",
+                           h[i + 3]);
             }
             switch (h[2])
             {
@@ -89,9 +93,11 @@ int main(void)
                 // 试题格式BH9YY/BH9YYY对策
                 else if (strlen(h) == 5 && h[3] && h[4] && !h[5] && (h[3] == 'Y'
                          || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n", h[3], h[4]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n",
+                           h[3], h[4]);
                 else if (strlen(h) == 6 && h[3] && h[4] && h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n", h[3], h[4], h[5]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n",
+                           h[3], h[4], h[5]);
                 break;
             case '2':
                 printf("第2区\t");
@@ -102,9 +108,11 @@ int main(void)
                 else if (h[3] >= 'Q' && h[3] <= 'X')
                     printf("%s\n", f[1][2]);
                 else if (strlen(h) == 5 && h[4] && !h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n", h[3], h[4]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n",
+                           h[3], h[4]);
                 else if (strlen(h) == 6 && h[4] && h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n", h[3], h[4], h[5]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n",
+                           h[3], h[4], h[5]);
                 break;
             case '3':
                 printf("第3区\t");
@@ -117,9 +125,11 @@ int main(void)
                 else if (h[3] >= 'S' && h[3] <= 'X')
                     printf("%s\n", f[2][3]);
                 else if (strlen(h) == 5 && h[4] && !h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n", h[3], h[4]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n",
+                           h[3], h[4]);
                 else if (strlen(h) == 6 && h[4] && h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n", h[3], h[4], h[5]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n",
+                           h[3], h[4], h[5]);
                 break;
             case '4':
                 printf("第4区\t");
@@ -130,9 +140,11 @@ int main(void)
                 else if (h[3] >= 'Q' && h[3] <= 'X')
                     printf("%s\n", f[3][2]);
                 else if (strlen(h) == 5 && h[4] && !h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n", h[3], h[4]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n",
+                           h[3], h[4]);
                 else if (strlen(h) == 6 && h[4] && h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n", h[3], h[4], h[5]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n",
+                           h[3], h[4], h[5]);
                 break;
             case '5':
                 printf("第5区\t");
@@ -143,9 +155,11 @@ int main(void)
                 else if (h[3] >= 'Q' && h[3] <= 'X')
                     printf("%s\n", f[4][2]);
                 else if (strlen(h) == 5 && h[4] && !h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n", h[3], h[4]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n",
+                           h[3], h[4]);
                 else if (strlen(h) == 6 && h[4] && h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n", h[3], h[4], h[5]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n",
+                           h[3], h[4], h[5]);
                 break;
             case '6':
                 printf("第6区\t");
@@ -156,9 +170,11 @@ int main(void)
                 else if (h[3] >= 'Q' && h[3] <= 'X')
                     printf("%s\n", f[5][2]);
                 else if (strlen(h) == 5 && h[4] && !h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n", h[3], h[4]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n",
+                           h[3], h[4]);
                 else if (strlen(h) == 6 && h[4] && h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n", h[3], h[4], h[5]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n",
+                           h[3], h[4], h[5]);
                 break;
             case '7':
                 printf("第7区\t");
@@ -183,9 +199,11 @@ int main(void)
                 else if (h[3] >= 'S' && h[3] <= 'X')
                     printf("%s\n", f[7][3]);
                 else if (strlen(h) == 5 && h[4] && !h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n", h[3], h[4]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n",
+                           h[3], h[4]);
                 else if (strlen(h) == 6 && h[4] && h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n", h[3], h[4], h[5]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n",
+                           h[3], h[4], h[5]);
                 break;
             case '9':
                 printf("第9区\t");
@@ -198,9 +216,11 @@ int main(void)
                 else if (h[3] >= 'S' && h[3] <= 'X')
                     printf("%s\n", f[8][3]);
                 else if (strlen(h) == 5 && h[4] && !h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n", h[3], h[4]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n",
+                           h[3], h[4]);
                 else if (strlen(h) == 6 && h[4] && h[5] && (h[3] == 'Y' || h[3] == 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n", h[3], h[4], h[5]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n",
+                           h[3], h[4], h[5]);
                 break;
             case '0':
                 printf("第0区\t");  // 新疆、西藏
@@ -211,9 +231,11 @@ int main(void)
                     printf("%s\n", f[9][1]);
                 // MAA-ZZZ
                 else if (strlen(h) == 5 && h[4] && !h[5] && (h[3] >= 'M' || h[3] <= 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n", h[3], h[4]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c\n",
+                           h[3], h[4]);
                 else if (strlen(h) == 6 && h[4] && h[5] && (h[3] >= 'M' || h[3] <= 'Z'))
-                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n", h[3], h[4], h[5]);
+                    printf("\n由国家无线电管理机构负责分配的呼号后缀：%c%c%c\n",
+                           h[3], h[4], h[5]);
                 break;
             }
         }
@@ -224,7 +246,8 @@ int main(void)
     {
         if (h[0] == 'B')
         {
-            printf("4位呼号%c%c%c%c由国家无线电管理机构负责分配\n", h[0], h[1], h[2],
+            printf("4位呼号%c%c%c%c由国家无线电管理机构负责分配\n", h[0],
+                   h[1], h[2],
                    h[3]);
             if (h[0] == 'B' && h[1] == 'S' && h[2] == '7' && h[3] == 'H') // BS7H
                 printf("第7区\t黄岩岛\n");
@@ -236,7 +259,8 @@ int main(void)
     {
         if (h[0] == 'B')
         {
-            printf("7位呼号%c%c%c%c%c%c%c由国家无线电管理机构负责分配\n", h[0], h[1],
+            printf("7位呼号%c%c%c%c%c%c%c由国家无线电管理机构负责分配\n",
+                   h[0], h[1],
                    h[2],
                    h[3], h[4], h[5], h[6]);
         }
