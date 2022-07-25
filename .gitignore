@@ -1,4 +1,7 @@
-*.orig
+hhcx_a.c
+icao_a.c
+jisuan_a.c
+g.orig
 *.exe
 *.pdf
 *.zip
