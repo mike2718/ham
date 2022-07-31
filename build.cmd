@@ -12,4 +12,21 @@ del /q *.obj *.exe 2>nul
 "C:\Program Files (x86)\pcc\bin\pcc.exe" -Wall -Wpedantic -Wextra -std=c99 -o icao_a.exe icao_a.c
 "C:\Program Files (x86)\pcc\bin\pcc.exe" -Wall -Wpedantic -Wextra -std=c99 -o jisuan_a.exe jisuan_a.c
 rem ±àÒëpdfÎÄ¼þ
+xelatex.exe ham_a.tex
+bibtex.exe ham_a.tex
+xelatex.exe ham_a.tex
+xelatex.exe ham_a.tex
+xelatex.exe ham_a.tex
+
+xelatex.exe ham_b.tex
+bibtex.exe ham_b.tex
+xelatex.exe ham_b.tex
+xelatex.exe ham_b.tex
+xelatex.exe ham_b.tex
+
+xelatex.exe ham_c.tex
+bibtex.exe ham_c.tex
+xelatex.exe ham_c.tex
+xelatex.exe ham_c.tex
+xelatex.exe ham_c.tex
 pause
