@@ -7,6 +7,7 @@ g.orig
 *.zip
 *.7z
 *.tar
+*.tar.gz
 *.zst
 *.rar
 sha1sums.txt
