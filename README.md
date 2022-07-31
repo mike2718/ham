@@ -22,7 +22,8 @@
 
 - XeLaTeX
 - ctex
-- Noto Sans, Noto Serif, Noto Sans Mono, Noto Sans CJK SC, Noto Serif CJK SC, Noto Sans Mono CJK SC字体
+- Noto Sans, Noto Serif, Noto Sans CJK SC, Noto Serif CJK SC, Noto Sans Mono CJK SC 字体
+- Proggy Crossed 字体
 
 ## 编译
 
@@ -48,9 +49,17 @@ xelatex \
 
 ### PDF文件中所使用字体的许可
 
+```
 Copyright 2012 Google Inc. All Rights Reserved.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
 http://scripts.sil.org/OFL
 
+
+------------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2004, 2005 Tristan Grimmer
+```
