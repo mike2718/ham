@@ -27,20 +27,6 @@
 
 ## 编译
 
-编译选项为
-
-```
-xelatex \
-    -no-pdf \
-    -synctex=1 \
-    -interaction=nonstopmode \
-    -file-line-error \
-    -recorder \
-    -synctex=1 \
-    -shell-escape \
-    ham_?.tex
-```
-
 自行编译本书的话，`.tex`文件必须保存为无BOM的UTF-8文本文件。
 
 ## 许可
