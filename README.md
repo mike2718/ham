@@ -23,7 +23,7 @@
 - XeLaTeX
 - ctex
 - Noto Sans, Noto Serif, Noto Sans CJK SC, Noto Serif CJK SC, Noto Sans Mono CJK SC 字体
-- Proggy Crossed 字体
+- ProggyCrossed 字体
 
 ## 编译
 
