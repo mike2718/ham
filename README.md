@@ -20,10 +20,7 @@
 
 ## 依赖
 
-- XeLaTeX
 - ctex
-- Noto Sans, Noto Serif, Noto Sans CJK SC, Noto Serif CJK SC, Noto Sans Mono CJK SC 字体
-- ProggyCrossed 字体
 
 ## 编译
 
@@ -33,19 +30,17 @@
 
 &copy; 2021 BG7XTQ Mike
 
-### PDF文件中所使用字体的许可
+### 许可
+
+PDF文件中使用了以下字体。
+非常感谢各位字体开发者们。
 
 ```
-Copyright 2012 Google Inc. All Rights Reserved.
-
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
-http://scripts.sil.org/OFL
+Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC
+	Copyright 2012 Google Inc. All Rights Reserved.
 
 
-------------------------------------------------------------------------------
-
-MIT License
-
-Copyright (c) 2004, 2005 Tristan Grimmer
+-------------------------------------------------------
+ProggyCrossed
+    Copyright (c) 2004, 2005 Tristan Grimmer
 ```
