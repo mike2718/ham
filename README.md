@@ -37,7 +37,7 @@ PDF文件中使用了以下字体。
 
 ```
 Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC
-	Copyright 2012 Google Inc. All Rights Reserved.
+    Copyright 2012 Google Inc. All Rights Reserved.
 
 
 -------------------------------------------------------
