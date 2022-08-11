@@ -9,6 +9,6 @@ del /q ham_*.zip 2>nul
 E:\cmdtool\zip.exe ham_a_%today%.zip ham_a.pdf README.md
 E:\cmdtool\zip.exe ham_b_%today%.zip ham_b.pdf README.md
 E:\cmdtool\zip.exe ham_c_%today%.zip ham_c.pdf README.md
-E:\cmdtool\generic_sum.exe SHA1 ham_*.zip > sha1sums.txt
+E:\cmdtool\generic_sum.exe SHA1 ham_a*.zip ham_b*.zip > sha1sums.txt
 copy /y ham_*.pdf ..\
 pause
