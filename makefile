@@ -1,7 +1,7 @@
 
-all:	pdf compile tar
+all:	clean pdf compile tar
 
-tar:	clean
+tar:
 	git archive --format=zip --prefix=ham/ --output=../ham.zip main
 
 astyle:
@@ -10,7 +10,7 @@ astyle:
 	C:\gettext0.21-iconv1.16-static-64\bin\iconv.exe -f WINDOWS-936 -t UTF-8 icao_a.c > icao.c
 	C:\gettext0.21-iconv1.16-static-64\bin\iconv.exe -f WINDOWS-936 -t UTF-8 jisuan_a.c > jisuan.c
 
-compile:	clean astyle
+compile:
 	set "PCCDIR=C:\pcc-20120801-win32-bin"
 	rem call "C:\pcc-20120801-win32-bin\pccvars.bat"
 	"C:\pcc-20120801-win32-bin\bin\pcc.exe" -Wall -Wpedantic -Wextra -std=c99 -o hhcx_a.exe hhcx_a.c
@@ -37,3 +37,4 @@ pdf:	astyle
 clean:
 	del /q ..\ham.zip
 	del /q *.obj *.exe
+	del /q *.aux *.out *.pdf
