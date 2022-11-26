@@ -38,9 +38,4 @@ PDF文件中使用了以下字体。
 ```
 Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC
     Copyright 2018 The Noto Project Authors (github.com/googlei18n/noto-fonts)
-
-
--------------------------------------------------------
-ProggyCrossed
-    Copyright (c) 2004, 2005 Tristan Grimmer
 ```
