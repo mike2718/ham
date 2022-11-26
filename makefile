@@ -25,9 +25,9 @@ compile:	astyle
 
 astyle:
 	E:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c hhcx_a.c icao_a.c jisuan_a.c
-	C:\gettext0.21-iconv1.16-static-64\bin\iconv.exe -f WINDOWS-936 -t UTF-8 hhcx_a.c > hhcx.c
-	C:\gettext0.21-iconv1.16-static-64\bin\iconv.exe -f WINDOWS-936 -t UTF-8 icao_a.c > icao.c
-	C:\gettext0.21-iconv1.16-static-64\bin\iconv.exe -f WINDOWS-936 -t UTF-8 jisuan_a.c > jisuan.c
+	E:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 hhcx_a.c > hhcx.c
+	E:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 icao_a.c > icao.c
+	E:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 jisuan_a.c > jisuan.c
 
 tar:
 	git archive --format=zip --prefix=ham/ --output=../ham.zip main
