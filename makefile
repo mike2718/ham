@@ -12,11 +12,11 @@ pdf:	clean compile
 	xelatex.exe ham_b.tex
 	xelatex.exe ham_b.tex
 	xelatex.exe ham_b.tex
-	xelatex.exe ham_c.tex
-	bibtex.exe ham_c
-	xelatex.exe ham_c.tex
-	xelatex.exe ham_c.tex
-	xelatex.exe ham_c.tex
+#	xelatex.exe ham_c.tex
+#	bibtex.exe ham_c
+#	xelatex.exe ham_c.tex
+#	xelatex.exe ham_c.tex
+#	xelatex.exe ham_c.tex
 
 compile:	astyle
 	C:\mingw32\bin\i686-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o hhcx_a.exe hhcx_a.c
@@ -31,6 +31,10 @@ astyle:
 
 tar:
 	git archive --format=zip --prefix=ham/ --output=../ham.zip main
+	7z a -t7z -m0=lzma2 -mx=9 -md=64m ..\ham_a.7z ham_a.pdf LICENSE.md README.md
+	7z a -t7z -m0=lzma2 -mx=9 -md=64m ..\ham_b.7z ham_b.pdf LICENSE.md README.md
+#	7z a -t7z -m0=lzma2 -mx=9 -md=64m ..\ham_c.7z ham_c.pdf LICENSE.md README.md
+	generic_sum SHA256 ..\ham_*.7z > ..\sha256sums.txt
 
 clean:
 	del /q ..\ham.zip
