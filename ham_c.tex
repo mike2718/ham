@@ -2,14 +2,7 @@
 \usepackage[a4paper,twoside,left=2.5cm,top=2.5cm,bottom=2cm,
 right=2cm]{geometry}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 页眉和页脚样式（仿某书风格）
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[LE]{	\textsf{ \small 业余无线电操作技能考核攻略本（类别：C）} }
-\fancyhead[RO]{ \textsf{ \small \rightmark } }
-\fancyfoot[LE,RO]{ \textrm{ \small --\ \thepage\ -- } }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 页眉和页脚样式（仿某书风格）
+
 
 %\sectionmark 的重定义需要在 \pagestyle 之后生效
 \renewcommand\chaptermark[1]{
@@ -64,6 +57,15 @@ right=2cm]{geometry}
 \IfFileExists{.git/refs/heads/\branch}{%
 	\CatchFileDef{\commit}{.git/refs/heads/\branch}{}}{%
 	\newcommand{\commit}{\dots~(in \emph{packed-refs})}}
+
+% 页眉和页脚样式（仿某书风格）
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{	\textsf{ \small 业余无线电操作技能考核攻略本（类别：C）} }
+\fancyhead[RO]{ \textsf{ \small \rightmark } }
+\fancyfoot[LE,RO]{ \textrm{ \small --\ \thepage\ -- } }
+\fancyfoot[LO,RE]{ \textrm{ \small 版本：\texttt{\commit}在\texttt{\branch}分支上 } }
 
 \definecolor{codegreen}{HTML}{408080}
 \definecolor{codegray}{HTML}{72777D}
