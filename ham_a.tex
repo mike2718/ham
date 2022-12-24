@@ -1,27 +1,27 @@
 \documentclass{ctexbook}
 \usepackage[a4paper,twoside,left=2.5cm,top=2.5cm,bottom=2cm,
-right=2cm]{geometry}
-
-
+right=2cm]{geometry} % 纸张大小和边距
 
 %\sectionmark 的重定义需要在 \pagestyle 之后生效
 \renewcommand\chaptermark[1]{
 	\markright{\CTEXifname{\CTEXthechapter\ }{}#1}}
+
 \usepackage{graphicx} % 图片
 \usepackage{xcolor} % 颜色
-\graphicspath{{./images/}} % 图片路径
-\usepackage{enumitem}
-\usepackage{amsmath}
-\usepackage{mathtools}
-\usepackage{lipsum}
-\usepackage{wasysym}
-\usepackage{hyperref}
-\hypersetup{
+\graphicspath{{./images/}} % 图片默认位置
+\usepackage{enumitem} % 控制列表样式
+\usepackage{amsmath} % 数学
+\usepackage{mathtools} % 数学
+
+\usepackage{hyperref} % 链接
+\hypersetup{ % 链接样式
 	colorlinks=true,
 	linkcolor=blue,
-	urlcolor=red,
+    filecolor=magenta,
+	urlcolor=cyan,
 	pdftitle={业余无线电操作技能考核攻略本（类别：A）},
-	}
+}
+
 \usepackage{multirow}
 \usepackage{textcomp}
 \usepackage{xstring}
@@ -34,13 +34,16 @@ right=2cm]{geometry}
 \usepackage{longtable}
 \usepackage{listings}
 \usepackage{hologo}
-\usepackage{gbt7714}  % 参考文献用
+\usepackage{gbt7714} % 中文参考文献用
+
+% 使用的字体
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Fira Code}
 \setCJKmainfont{Noto Serif SC}
 \setCJKsansfont{Noto Sans SC}
 \setCJKmonofont{Noto Sans SC}
+
 \setenumerate[0]{label=(\Alph*)}
 \ctexset{
 	chapter/name = {第,章},
@@ -50,7 +53,8 @@ right=2cm]{geometry}
 	section/number = \Roman{section},
 %	autoindent=false, %禁用自动调整功能
 }
-% 显示commit hash
+
+% 显示commit哈希
 \setlist{nosep}
 
 \CatchFileDef{\headfull}{.git/HEAD}{}
@@ -70,7 +74,7 @@ right=2cm]{geometry}
 \fancyfoot[LE,RO]{ \textrm{ \small --\ \thepage\ -- } }
 \fancyfoot[LO,RE]{ \textrm{ \small 版本：\texttt{\commit}在\texttt{\branch}分支上 } }
 
-% 显示代码
+% 代码颜色定义
 \definecolor{codegreen}{HTML}{408080}
 \definecolor{codegray}{HTML}{72777D}
 \definecolor{codepurple}{HTML}{BA2121}
@@ -97,8 +101,6 @@ right=2cm]{geometry}
 }
 
 \lstset{style=mystyle}
-
-
 
 
 \begin{document}%内容开始
@@ -3365,7 +3367,7 @@ right=2cm]{geometry}
 \noindent\textbf{解说：}只向一个方向流动的电流叫做\textbf{直流}。\\
 其他选项：电流的大小和方向周期性变化的电流叫做交流。\\
 \noindent\textbf{答案：}C
-% 其中，干电池的直流电叫做平流。 看上去是日语术语
+% 干电池的直流电叫做平流。是日语术语
 
 \bigskip
 
@@ -4753,7 +4755,7 @@ right=2cm]{geometry}
 	\item 能。最后的信号是接收到的射频信号经过放大处理得到的，当然信号强声音越大
 \end{enumerate}
 
-\noindent\textbf{解说：}正确答案为\textbf{不能}。理由是\textbf{因为鉴频输出大小只取决于射频信号的频偏，而且正常信号的幅度会被限幅电路切齐到同样大小}。\\\noindent\textbf{答案：}B
+\noindent\textbf{解说：}\textbf{不能}。理由是\textbf{因为鉴频输出大小只取决于射频信号的频偏，而且正常信号的幅度会被限幅电路切齐到同样大小}。\\\noindent\textbf{答案：}B
 
 
 \bigskip
