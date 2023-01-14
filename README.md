@@ -41,6 +41,6 @@ Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC
 
 
 -------------------------------------------------------
-Fira Code
-    Copyright (c) 2014, The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+DaddyTimeMono
+    Copyright (c) 2018, Jason Stewart (https://eggplant.pro)
 ```
