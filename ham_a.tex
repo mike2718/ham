@@ -1,27 +1,27 @@
 \documentclass{ctexbook}
 \usepackage[a4paper,twoside,left=2.5cm,top=2.5cm,bottom=2cm,
-right=2cm]{geometry}
-
-
+right=2cm]{geometry} % 纸张大小和边距
 
 %\sectionmark 的重定义需要在 \pagestyle 之后生效
 \renewcommand\chaptermark[1]{
 	\markright{\CTEXifname{\CTEXthechapter\ }{}#1}}
+
 \usepackage{graphicx} % 图片
 \usepackage{xcolor} % 颜色
-\graphicspath{{./images/}} % 图片路径
-\usepackage{enumitem}
-\usepackage{amsmath}
-\usepackage{mathtools}
-\usepackage{lipsum}
-\usepackage{wasysym}
-\usepackage{hyperref}
-\hypersetup{
+\graphicspath{{./images/}} % 图片默认位置
+\usepackage{enumitem} % 控制列表样式
+\usepackage{amsmath} % 数学
+\usepackage{mathtools} % 数学
+
+\usepackage{hyperref} % 链接
+\hypersetup{ % 链接样式
 	colorlinks=true,
 	linkcolor=blue,
-	urlcolor=red,
+    filecolor=magenta,
+	urlcolor=cyan,
 	pdftitle={业余无线电操作技能考核攻略本（类别：A）},
-	}
+}
+
 \usepackage{multirow}
 \usepackage{textcomp}
 \usepackage{xstring}
@@ -34,13 +34,16 @@ right=2cm]{geometry}
 \usepackage{longtable}
 \usepackage{listings}
 \usepackage{hologo}
-\usepackage{gbt7714}  % 参考文献用
+\usepackage{gbt7714} % 中文参考文献用
+
+% 使用的字体
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
-\setmonofont{Fira Code}
+\setmonofont{DaddyTimeMono}
 \setCJKmainfont{Noto Serif SC}
 \setCJKsansfont{Noto Sans SC}
 \setCJKmonofont{Noto Sans SC}
+
 \setenumerate[0]{label=(\Alph*)}
 \ctexset{
 	chapter/name = {第,章},
@@ -50,7 +53,8 @@ right=2cm]{geometry}
 	section/number = \Roman{section},
 %	autoindent=false, %禁用自动调整功能
 }
-% 显示commit hash
+
+% 显示commit哈希
 \setlist{nosep}
 
 \CatchFileDef{\headfull}{.git/HEAD}{}
@@ -70,7 +74,7 @@ right=2cm]{geometry}
 \fancyfoot[LE,RO]{ \textrm{ \small --\ \thepage\ -- } }
 \fancyfoot[LO,RE]{ \textrm{ \small 版本：\texttt{\commit}在\texttt{\branch}分支上 } }
 
-% 显示代码
+% 代码颜色定义
 \definecolor{codegreen}{HTML}{408080}
 \definecolor{codegray}{HTML}{72777D}
 \definecolor{codepurple}{HTML}{BA2121}
@@ -97,8 +101,6 @@ right=2cm]{geometry}
 }
 
 \lstset{style=mystyle}
-
-
 
 
 \begin{document}%内容开始
@@ -136,6 +138,7 @@ right=2cm]{geometry}
 
 \newpage
 
+% 1
 \noindent\textbf{试题：}我国现行法律体系中专门针对无线电管理的最高法律文件及其立法机关是：
 
 \begin{enumerate}[leftmargin=3em]
@@ -149,7 +152,7 @@ right=2cm]{geometry}
 
 \bigskip
 
-
+% 2
 \noindent\textbf{试题：}我国现行法律体系中专门针对业余无线电台管理的最高法律文件及其立法机关是：
 
 \begin{enumerate}[leftmargin=3em]
@@ -164,6 +167,7 @@ right=2cm]{geometry}
 \bigskip
 
 
+% 3
 \noindent\textbf{试题：}我国的无线电主管部门是：
 
 \begin{enumerate}[leftmargin=3em]
@@ -2076,7 +2080,7 @@ right=2cm]{geometry}
 	\item  劝告拆除非法设置的电台；情节严重的，可以并处警告、查封或者没收设备
 	\item  责令停止使用非法设置的电台；情节严重的，可以并处警告、查封或者没收设备
 \end{enumerate}
-\noindent\textbf{解说：}《中华人民共和国无线电管理条例》（1993年9月11日发布）第四十三条规定：对有下列行为之一的单位和个人，国家无线电管理机构或者地方无线电管理机构可以根据具体情况给予\textbf{警告、查封或者没收设备、没收非法所得的处罚；情节严重的，可以并处一千元以上、五千元以下的罚款}或者吊销其电台执照：
+\noindent\textbf{解说：}《中华人民共和国无线电管理条例》（1993年9月11日发布）第四十三条规定：\textbf{对有下列行为之一的单位和个人，国家无线电管理机构或者地方无线电管理机构可以根据具体情况给予警告、查封或者没收设备、没收非法所得的处罚；情节严重的，可以并处一千元以上、五千元以下的罚款}或者吊销其电台执照：
 \begin{enumerate}[leftmargin=3em, label=]
 	\item（一）擅自设置、使用无线电台（站）的；
 	\item（二）违反本条例规定研制、生产、进口无线电发射设备的；
@@ -3365,7 +3369,7 @@ right=2cm]{geometry}
 \noindent\textbf{解说：}只向一个方向流动的电流叫做\textbf{直流}。\\
 其他选项：电流的大小和方向周期性变化的电流叫做交流。\\
 \noindent\textbf{答案：}C
-% 其中，干电池的直流电叫做平流。 看上去是日语术语
+% 干电池的直流电叫做平流。是日语术语
 
 \bigskip
 
@@ -4753,7 +4757,7 @@ right=2cm]{geometry}
 	\item 能。最后的信号是接收到的射频信号经过放大处理得到的，当然信号强声音越大
 \end{enumerate}
 
-\noindent\textbf{解说：}正确答案为\textbf{不能}。理由是\textbf{因为鉴频输出大小只取决于射频信号的频偏，而且正常信号的幅度会被限幅电路切齐到同样大小}。\\\noindent\textbf{答案：}B
+\noindent\textbf{解说：}\textbf{不能}。理由是\textbf{因为鉴频输出大小只取决于射频信号的频偏，而且正常信号的幅度会被限幅电路切齐到同样大小}。\\\noindent\textbf{答案：}B
 
 
 \bigskip
@@ -5530,67 +5534,6 @@ right=2cm]{geometry}
 \bigskip
 
 
-%\noindent\textbf{试题：}按照我国国家标准《电磁辐射防护规定》，凡其功率大于豁免水平（3\si{\MHz}以上等效辐射功率100瓦）的一切电磁波辐射体的所有者，必须：
-%\begin{enumerate}[leftmargin=3em]
-%	\item 向所在地区的环境保护部门申报、登记，并接受监督
-%	\item 向所在地区的环境保护部门缴纳环境保护费
-%	\item 向所在地区的无线电管理机构交纳环境电磁辐射监测报告
-%	\item 业余电台可不受环境保护部门的监督管理
-%\end{enumerate}
-%\noindent\textbf{解说：}按照我国国家标准《电磁辐射防护规定》，凡其功率大于豁免水平（3\si{\MHz}以上等效辐射功率100瓦）的一切电磁波辐射体的所有者，必须\textbf{向所在地区的环境保护部门申报、登记，并接受监督}。\\
-%\textbf{答案：}A
-%
-%\bigskip
-
-
-%\noindent\textbf{试题：}按照我国国家标准《电磁辐射防护规定》，负责对超过豁免水平（3\si{\MHz}以上等效辐射功率100瓦）电磁波辐射体所在的场所以及周围环境的电磁辐射水平进行监测的是：
-%\begin{enumerate}[leftmargin=3em]
-%	\item 所在地区业余无线电协会
-%	\item 所在地区无线电管理机构
-%	\item 其拥有者
-%	\item 所在地区环境保护部门
-%\end{enumerate}
-%\noindent\textbf{解说：}按照我国国家标准《电磁辐射防护规定》，\textbf{其拥有者}负责对超过豁免水平（3\si{\MHz}以上等效辐射功率100瓦）电磁波辐射体所在的场所以及周围环境的电磁辐射水平进行监测。\\\textbf{答案：}C
-%
-%\bigskip
-
-
-%\noindent\textbf{试题：}按照我国国家标准《电磁辐射防护规定》，当监测到超过豁免水平的电磁辐射体使环境电磁辐射水平超过规定的限值时，必须：
-%\begin{enumerate}[leftmargin=3em]
-%	\item 尽快采取措施降低辐射水平，同时向环境保护部门报告
-%	\item 立即到环境保护部门缴纳电磁污染治理费
-%	\item 立即向无线电管理机构报告
-%	\item 立即向当地城管机构报告
-%\end{enumerate}
-%\noindent\textbf{解说：}按照我国国家标准《电磁辐射防护规定》，当监测到超过豁免水平的电磁辐射体使环境电磁辐射水平超过规定的限值时，必须\textbf{尽快采取措施降低辐射水平，同时向环境保护部门报告}。\\\textbf{答案：}A
-%
-%\bigskip
-
-
-%\noindent\textbf{试题：}按照我国国家标准《电磁辐射防护规定》，对超过豁免水平的电磁辐射体的环境电磁辐射水平监测应在下列地点进行：
-%\begin{enumerate}[leftmargin=3em]
-%	\item 在距辐射体天线2000米以内最大辐射方向上选点测量
-%	\item 在距辐射体天线2000米以内选择任意位置测量
-%	\item 在距辐射体天线100米以内最小辐射方向上选点测量
-%	\item 在发射机射频输出端口进行测量
-%\end{enumerate}
-%\noindent\textbf{解说：}按照我国国家标准《电磁辐射防护规定》，对超过豁免水平的电磁辐射体的环境电磁辐射水平监测应\textbf{在距辐射体天线2000米以内最大辐射方向上选点测量}。\\\textbf{答案：}A
-%
-%\bigskip
-
-
-%\noindent\textbf{试题：}我国国家标准\textbf{《电磁辐射防护规定》}所规定的电磁辐射防护限值的公众照射基本限值，其基本计量方法是：
-%\begin{enumerate}[leftmargin=3em]
-%	\item 任何时刻的瞬时辐射场强都应小于与频率有关的限值
-%	\item 任何时刻的瞬时辐射场强都应小于与频率无关的固定限值
-%	\item 一天24小时内任意6分钟内全身平均的比吸收率（SAR）应小于每公斤体重限值
-%	\item 任何时刻的全身平均的比吸收率（SAR）都应小于每公斤体重限值
-%\end{enumerate}
-%\noindent\textbf{解说：}我国国家标准《电磁辐射防护规定》所规定的电磁辐射防护限值的公众照射基本限值，其基本计量方法是：\textbf{一天24小时内任意6分钟内全身平均的比吸收率（SAR）应小于每公斤体重限值}。\\
-%\textbf{答案：}C
-%
-%
-%\bigskip
 
 
 \noindent\textbf{试题：}我国国家标准《电磁环境控制限值》规定公众暴露控制限值中，对环境电磁辐射场强任意连续6分钟内的方均根值要求最严格的频率范围为：
