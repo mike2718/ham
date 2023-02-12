@@ -34,9 +34,11 @@ xelatex.exe ham_c.tex
 xelatex.exe ham_c.tex
 
 rem git archive --format=zip --prefix=ham_main/ --output=../ham_main.zip main
-E:\cmdtool32\zip.exe ..\ham_a_%datetime%.zip ham_a.pdf LICENSE.md README.md
-E:\cmdtool32\zip.exe ..\ham_b_%datetime%.zip ham_b.pdf LICENSE.md README.md
-E:\cmdtool32\zip.exe ..\ham_c_%datetime%.zip ham_c.pdf LICENSE.md README.md
-generic_sum.exe SHA256 ..\ham_a*.zip ..\ham_b*.zip > ..\sha256sums.txt
+E:\cmdtool32\zip.exe ham_a_%datetime%.zip ham_a.pdf LICENSE.md README.md
+E:\cmdtool32\zip.exe ham_b_%datetime%.zip ham_b.pdf LICENSE.md README.md
+E:\cmdtool32\zip.exe ham_c_%datetime%.zip ham_c.pdf LICENSE.md README.md
+
+E:\cmdtool64\generic_sum.exe SHA256 *.zip > SHA256SUMS.txt
+E:\cmdtool32\fciv.exe -sha1 -add .\ -wp -type *.zip | awk "NR > 3 { print }" > SHA1SUMS.txt
 
 pause

@@ -1,7 +1,13 @@
+MD5SUMS.txt
+SHA1SUMS.txt
+SHA256SUMS.txt
+MD5SUMS
+SHA1SUMS
+SHA256SUMS
 hhcx_a.c
 icao_a.c
 jisuan_a.c
-g.orig
+*.orig
 *.exe
 *.pdf
 *.zip
@@ -10,8 +16,6 @@ g.orig
 *.tar.gz
 *.zst
 *.rar
-sha1sums.txt
-sha256sums.txt
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
