@@ -9,13 +9,13 @@ del /q *.obj *.exe
 del /q *.log *.aux *.toc *.out *.pdf *.blg *.bbl *.fdb_latexmk *.fls *.xdv *.toc
 
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c hhcx_a.c icao_a.c jisuan_a.c
-C:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 hhcx_a.c > hhcx.c
-C:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 icao_a.c > icao.c
-C:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 jisuan_a.c > jisuan.c
+rem C:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 hhcx_a.c > hhcx.c
+rem C:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 icao_a.c > icao.c
+rem C:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 jisuan_a.c > jisuan.c
 
-rem C:\mingw32\bin\i686-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o hhcx_a.exe hhcx_a.c
-rem C:\mingw32\bin\i686-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o icao_a.exe icao_a.c
-rem C:\mingw32\bin\i686-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o jisuan_a.exe jisuan_a.c
+rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o hhcx_a.exe hhcx_a.c
+rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o icao_a.exe icao_a.c
+rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o jisuan_a.exe jisuan_a.c
 
 xelatex.exe ham_a.tex
 bibtex.exe ham_a
