@@ -39,7 +39,6 @@ C:\cmdtool32\zip.exe ..\ham_a_%datetime%.zip ham_a.pdf LICENSE.md README.md
 C:\cmdtool32\zip.exe ..\ham_b_%datetime%.zip ham_b.pdf LICENSE.md README.md
 C:\cmdtool32\zip.exe ..\ham_c_%datetime%.zip ham_c.pdf LICENSE.md README.md
 
-C:\cmdtool64\generic_sum.exe SHA256 ..\*.zip > ..\SHA256SUMS.txt
-C:\cmdtool32\fciv.exe -sha1 -add .\ -wp -type *.zip | awk "NR > 3 { print }" > ..\SHA1SUMS.txt
+C:\cmdtool64\generic_sum.exe SHA256 ..\ham_*.zip > ..\SHA256SUMS.txt
 
 pause
