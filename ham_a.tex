@@ -27,8 +27,7 @@ right=2cm]{geometry}
 \usepackage{xstring}
 \usepackage{catchfile}
 \usepackage{siunitx}
-%\DeclareSIUnit{\belmilliwatt}{Bm} %\unit[qualifier-mode=combine]{\deci\bel\of{m}}
-%\DeclareSIUnit{\\unit[qualifier-mode=combine]{\deci\bel\of{m}}}{\deci\belmilliwatt} %\unit[qualifier-mode=combine]{\deci\bel\of{m}}
+\sisetup{per-mode = symbol, range-phrase=--, range-units=single, product-units=single}
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
 \usepackage{longtable}
@@ -339,22 +338,22 @@ right=2cm]{geometry}
 \noindent\textbf{试题：}A类业余无线电台允许发射的发射频率为：
 \begin{enumerate}[leftmargin=3em]
   \item 各业余业务和卫星业余业务频段
-  \item 30-3000\si{\MHz}范围内的各业余业务和卫星业余业务频段
+  \item \qtyrange{30}{3000}{\MHz}范围内的各业余业务和卫星业余业务频段
   \item 所有VHF和UHF频段
   \item 各VHF和UHF频段
 \end{enumerate}
-\noindent\textbf{解说：}《工业和信息化部关于实施〈业余无线电台管理办法〉若干事项的通知（工信部无〔2013〕43号）》第一条规定：A类业余无线电台可以在\textbf{30-3000\si{\MHz}范围内的各业余业务和卫星业余业务频段内}发射工作，且最大发射功率不大于25瓦。\\\noindent\textbf{答案：}B
+\noindent\textbf{解说：}《工业和信息化部关于实施〈业余无线电台管理办法〉若干事项的通知（工信部无〔2013〕43号）》第一条规定：A类业余无线电台可以在\textbf{\qtyrange{30}{3000}{\MHz}范围内的各业余业务和卫星业余业务频段内}发射工作，且最大发射功率不大于\num{25}瓦。\\\noindent\textbf{答案：}B
 
 \bigskip
 
 \noindent\textbf{试题：}A类业余无线电台允许发射的最大发射功率为不大于：
 \begin{enumerate}[leftmargin=3em]
-  \item 30\si{\MHz}以下业余频段不大于100瓦，30\si{\MHz}以上业余频段不大于25瓦
-  \item 30\si{\MHz}以上业余频段不大于100瓦，30\si{\MHz}以下业余频段不大于25瓦
-  \item 25瓦
-  \item 100瓦
+  \item \qty{30}{\MHz}以下业余频段不大于\num{100}瓦，\qty{30}{\MHz}以上业余频段不大于\num{25}瓦
+  \item \qty{30}{\MHz}以上业余频段不大于\num{100}瓦，\qty{30}{\MHz}以下业余频段不大于\num{25}瓦
+  \item \num{25}瓦
+  \item \num{100}瓦
 \end{enumerate}
-\noindent\textbf{解说：}《工业和信息化部关于实施〈业余无线电台管理办法〉若干事项的通知（工信部无〔2013〕43号）》第一款规定：A类业余无线电台可以在30-1000\si{\MHz}范围内的各业余业务和卫星业余业务频段内发射工作，且最大发射功率不大于\textbf{25瓦}。\\\noindent\textbf{答案：}C
+\noindent\textbf{解说：}《工业和信息化部关于实施〈业余无线电台管理办法〉若干事项的通知（工信部无〔2013〕43号）》第一款规定：A类业余无线电台可以在\qtyrange{30}{1000}{\MHz}范围内的各业余业务和卫星业余业务频段内发射工作，且最大发射功率不大于\textbf{\num{25}瓦}。\\\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -682,7 +681,7 @@ right=2cm]{geometry}
 \begin{enumerate}[leftmargin=3em]
   \item 百万分之几（或者赫兹）
   \item 百分之几（或者兆赫）
-  \item \si{\decibel}
+  \item \unit{\decibel}
   \item 瓦
 \end{enumerate}
 \noindent\textbf{解说：}ITU《无线电规则》（2020年版）1.151款对\textbf{频率容限}的定义：发射所占频段中心频率偏离护配频率，或发射的特征频率偏离基准频率的最大容许偏差。\textbf{频率容限以百万分之几或以赫兹表示}。\\\noindent\textbf{答案：}A
@@ -692,11 +691,11 @@ right=2cm]{geometry}
 \noindent\textbf{试题：}杂散域发射功率是发射设备的重要指标，通常用下述单位来表示：
 \begin{enumerate}[leftmargin=3em]
   \item 千赫（或者赫兹）
-  \item 绝对功率\unit[qualifier-mode=combine]{\deci\bel\of{m}}、低于载波发射功率的分贝值\unit[qualifier-mode=combine]{\deci\bel\of{c}}、低于PEP发射功率的相对值\si{\dB}
+  \item 绝对功率\unit[qualifier-mode=combine]{\deci\bel\of{m}}、低于载波发射功率的分贝值\unit[qualifier-mode=combine]{\deci\bel\of{c}}、低于PEP发射功率的相对值\unit{\dB}
   \item 绝对功率（瓦）
   \item 百分之几
 \end{enumerate}
-\noindent\textbf{解说：}杂散域发射功率通常用\unit[qualifier-mode=combine]{\deci\bel\of{m}}、低于载波发射功率的分贝值\unit[qualifier-mode=combine]{\deci\bel\of{c}}、低于PEP发射功率的相对值\si{\dB}来表示。\\\noindent\textbf{答案：}B
+\noindent\textbf{解说：}杂散域发射功率通常用\unit[qualifier-mode=combine]{\deci\bel\of{m}}、低于载波发射功率的分贝值\unit[qualifier-mode=combine]{\deci\bel\of{c}}、低于PEP发射功率的相对值\unit{\dB}来表示。\\\noindent\textbf{答案：}B
 %%%
 
 \bigskip
@@ -1875,24 +1874,24 @@ right=2cm]{geometry}
 
 \noindent\textbf{试题：}业余电台\texttt{BH1ZZZ}用话音发起CQ呼叫的正确格式为：
 \begin{enumerate}[leftmargin=3em]
-  \item \texttt{CQ、CQ、CQ。我是BH1ZZZ。听到请回答}
-  \item \texttt{CQ、CQ、CQ。BH1ZZZ呼叫。Bravo Hotel One Zulu Zulu Zulu呼叫，BH1ZZZ呼叫。听到请回答。}
-  \item \texttt{CQ、CQ、CQ，CQ、CQ、CQ，CQ、CQ、CQ。BH1ZZZ呼叫。请过来。}
-  \item \texttt{CQ、CQ、CQ。听到请回答。}
+  \item CQ、CQ、CQ。我是\texttt{BH1ZZZ}。听到请回答
+  \item CQ、CQ、CQ。\texttt{BH1ZZZ}呼叫。Bravo Hotel One Zulu Zulu Zulu呼叫，\texttt{BH1ZZZ}呼叫。听到请回答。
+  \item CQ、CQ、CQ，CQ、CQ、CQ，CQ、CQ、CQ。\texttt{BH1ZZZ}呼叫。请过来。
+  \item CQ、CQ、CQ。听到请回答。
 \end{enumerate}
-\noindent\textbf{解说：}业余电台\texttt{BH1ZZZ}用话音发起CQ呼叫的正确格式为\texttt{\textbf{CQ、CQ、CQ。BH1ZZZ呼叫。Bravo Hotel One Zulu Zulu Zulu呼叫，BH1ZZZ呼叫。听到请回答。}}\cite{icao}\cite[49]{yeyuwuxiandiantongxin}\\
+\noindent\textbf{解说：}业余电台\texttt{BH1ZZZ}用话音发起CQ呼叫的正确格式为\textbf{CQ、CQ、CQ。\texttt{BH1ZZZ}呼叫。Bravo Hotel One Zulu Zulu Zulu呼叫，\texttt{BH1ZZZ}呼叫。听到请回答。}\cite{icao}\cite[49]{yeyuwuxiandiantongxin}\\
 \noindent\textbf{答案：}B
 
 \bigskip
 
 \noindent\textbf{试题：}业余电台\texttt{BH1ZZZ}用话音发起CQ呼叫的正确格式为：
 \begin{enumerate}[leftmargin=3em]
-  \item \texttt{CQ CQ CQ, CQ CQ CQ, CQ CQ CQ. This is BH1ZZZ. Back to you.}
-  \item \texttt{CQ CQ CQ.This is BH1ZZZ. Bravo Hotel One Zulu Zulu Zulu, BH1ZZZ is calling. I’m standing by.}
-  \item \texttt{CQ CQ CQ. This One Zulu Zulu Zulu. Over.}
-  \item \texttt{CQ CQ CQ. Go ahead please.}
+  \item CQ CQ CQ, CQ CQ CQ, CQ CQ CQ. This is \texttt{BH1ZZZ}. Back to you.
+  \item CQ CQ CQ.This is \texttt{BH1ZZZ}. Bravo Hotel One Zulu Zulu Zulu, \texttt{BH1ZZZ} is calling. I’m standing by.
+  \item CQ CQ CQ. This One Zulu Zulu Zulu. Over.
+  \item CQ CQ CQ. Go ahead please.
 \end{enumerate}
-\noindent\textbf{解说：}业余电台\texttt{BH1ZZZ}用话音发起CQ呼叫的正确格式为\texttt{\textbf{CQ CQ CQ.This is BH1ZZZ. Bravo Hotel One Zulu Zulu Zulu, BH1ZZZ is calling. I’m standing by.}}\cite{icao}\cite[49]{yeyuwuxiandiantongxin}\\
+\noindent\textbf{解说：}业余电台\texttt{BH1ZZZ}用话音发起CQ呼叫的正确格式为\textbf{CQ CQ CQ.This is \texttt{BH1ZZZ}. Bravo Hotel One Zulu Zulu Zulu, \texttt{BH1ZZZ} is calling. I’m standing by.}\cite{icao}\cite[49]{yeyuwuxiandiantongxin}\\
 \noindent\textbf{答案：}B
 
 \bigskip
@@ -2572,56 +2571,56 @@ right=2cm]{geometry}
 \noindent\textbf{试题：}音频所指的频率范围大致是：
 
 \begin{enumerate}[leftmargin=3em]
-  \item 16\si{\kHz} - 56\si{\kHz}
-  \item 16\unit{\hertz} - 20\si{\kHz}
-  \item 300\unit{\hertz} - 3000\unit{\hertz}
-  \item 16\si{\kHz} - 20\si{\kHz}
+  \item \num{16}\unit{\kHz} - \num{56}\unit{\kHz}
+  \item \num{16}\unit{\hertz} - \num20\unit{\kHz}
+  \item \num{300}\unit{\hertz} - \num{3000}\unit{\hertz}
+  \item \num{16}\unit{\kHz} - \num{20}\unit{\kHz}
 \end{enumerate}
 
-\noindent\textbf{解说：}音频的频率范围大致是 \textbf{16\unit{\hertz} - 20\si{\kHz}}。\\\noindent\textbf{答案：}B
+\noindent\textbf{解说：}音频的频率范围大致是 \textbf{\num{16}\unit{\hertz} - \num{20}\unit{\kHz}}。\\\noindent\textbf{答案：}B
 %%% 查资料得 20Hz ～ 20kHz
 
 \bigskip
 
-\noindent\textbf{试题：}5W可以表示为：
+\noindent\textbf{试题：}\qty{5}{\watt}可以表示为：
 
 \begin{enumerate}[leftmargin=3em]
-  \item 35\unit[qualifier-mode=combine]{\deci\bel\of{μ}}
-  \item 17\unit[qualifier-mode=combine]{\deci\bel\of{m}}
-  \item 37\unit[qualifier-mode=combine]{\deci\bel\of{m}}
-  \item 5\unit[qualifier-mode=combine]{\deci\bel\of{W}}
+  \item \num{35}\unit[qualifier-mode=combine]{\deci\bel\of{μ}}
+  \item \num{17}\unit[qualifier-mode=combine]{\deci\bel\of{m}}
+  \item \num{37}\unit[qualifier-mode=combine]{\deci\bel\of{m}}
+  \item \num{5}\unit[qualifier-mode=combine]{\deci\bel\of{W}}
 \end{enumerate}
 
-\noindent\textbf{解说：}5W可以表示为\textbf{37\unit[qualifier-mode=combine]{\deci\bel\of{m}}}。\\\noindent\textbf{答案：}C
+\noindent\textbf{解说：}\qty{5}{\watt}可以表示为\textbf{\num{37}\unit[qualifier-mode=combine]{\deci\bel\of{m}}}。\\\noindent\textbf{答案：}C
 %%%
 
 \bigskip
 
-\noindent\textbf{试题：}0.25W可以表示为：
+\noindent\textbf{试题：}\qty{0.25}{\watt}可以表示为：
 
 \begin{enumerate}[leftmargin=3em]
-  \item 25\unit[qualifier-mode=combine]{\deci\bel\of{m}}
-  \item 6\unit[qualifier-mode=combine]{\deci\bel\of{W}}
-  \item 54\unit[qualifier-mode=combine]{\deci\bel\of{μ}}
-  \item 36\unit[qualifier-mode=combine]{\deci\bel\of{m}}
+  \item \num{25}\unit[qualifier-mode=combine]{\deci\bel\of{m}}
+  \item \num{6}\unit[qualifier-mode=combine]{\deci\bel\of{W}}
+  \item \num{54}\unit[qualifier-mode=combine]{\deci\bel\of{μ}}
+  \item \num{36}\unit[qualifier-mode=combine]{\deci\bel\of{m}}
 \end{enumerate}
 
-\noindent\textbf{解说：}0.25W可以表示为\textbf{54\unit[qualifier-mode=combine]{\deci\bel\of{μ}}}。\\\noindent\textbf{答案：}C
+\noindent\textbf{解说：}\qty{0.25}{\watt}可以表示为\textbf{\num{54}\unit[qualifier-mode=combine]{\deci\bel\of{μ}}}。\\\noindent\textbf{答案：}C
 
 %%%
 
 \bigskip
 
-\noindent\textbf{试题：}0.4kW可以表示为：
+\noindent\textbf{试题：}\qty{0.4}{\kW}可以表示为：
 
 \begin{enumerate}[leftmargin=3em]
-  \item 86\unit[qualifier-mode=combine]{\deci\bel\of{μ}}
-  \item 6000\unit[qualifier-mode=combine]{\deci\bel\of{m}}
-  \item 34\unit[qualifier-mode=combine]{\deci\bel\of{m}}
-  \item 400\unit[qualifier-mode=combine]{\deci\bel\of{m}}
+  \item \num{86}\unit[qualifier-mode=combine]{\deci\bel\of{μ}}
+  \item \num{6000}\unit[qualifier-mode=combine]{\deci\bel\of{m}}
+  \item \num{34}\unit[qualifier-mode=combine]{\deci\bel\of{m}}
+  \item \num{400}\unit[qualifier-mode=combine]{\deci\bel\of{m}}
 \end{enumerate}
 
-\noindent\textbf{解说：}0.4kW可以表示为\textbf{86\unit[qualifier-mode=combine]{\deci\bel\of{μ}}}。\\\noindent\textbf{答案：}A
+\noindent\textbf{解说：}\qty{0.4}{\kW}可以表示为\textbf{\num{86}\unit[qualifier-mode=combine]{\deci\bel\of{μ}}}。\\\noindent\textbf{答案：}A
 
 %%%
 
@@ -3419,30 +3418,30 @@ right=2cm]{geometry}
 
 \bigskip
 
-\noindent\textbf{试题：}两款VHF垂直全向天线，用作发射。甲天线增益4.5\unit[qualifier-mode=combine]{\deci\bel\of{d}}，乙天线增益为5.85\unit[qualifier-mode=combine]{\deci\bel\of{i}}。它们在远处某接收天线中形成的信号功率差为：
+\noindent\textbf{试题：}两款VHF垂直全向天线，用作发射。甲天线增益\num{4.5}\unit[qualifier-mode=combine]{\deci\bel\of{d}}，乙天线增益为\num{5.85}\unit[qualifier-mode=combine]{\deci\bel\of{i}}。它们在远处某接收天线中形成的信号功率差为：
 
 \begin{enumerate}[leftmargin=3em]
-  \item 甲信号比乙信号强1.35\si{\dB}
-  \item 乙信号比甲信号强3.5\si{\dB}
-  \item 甲信号比乙信号强0.8\si{\dB}
-  \item 乙信号比甲信号强1.35\si{\dB}
+  \item 甲信号比乙信号强\qty{1.35}{\dB}
+  \item 乙信号比甲信号强\qty{3.5}{\dB}
+  \item 甲信号比乙信号强\qty{0.8}{\dB}
+  \item 乙信号比甲信号强\qty{1.35}{\dB}
 \end{enumerate}
 
-\noindent\textbf{解说：甲信号比乙信号强0.8\si{\dB}}。\\\noindent\textbf{答案：}C
+\noindent\textbf{解说：甲信号比乙信号强\qty{0.8}{\dB}}。\\\noindent\textbf{答案：}C
 %%%%%%%%%%%
 
 \bigskip
 
-\noindent\textbf{试题：}两款VHF垂直全向天线，用作发射。甲天线增益2.9\unit[qualifier-mode=combine]{\deci\bel\of{d}}，乙天线增益为5.85\unit[qualifier-mode=combine]{\deci\bel\of{i}}。它们在远处某接收天线中形成的信号功率差为：
+\noindent\textbf{试题：}两款VHF垂直全向天线，用作发射。甲天线增益\num{2.9}\unit[qualifier-mode=combine]{\deci\bel\of{d}}，乙天线增益为\num{5.85}\unit[qualifier-mode=combine]{\deci\bel\of{i}}。它们在远处某接收天线中形成的信号功率差为：
 
 \begin{enumerate}[leftmargin=3em]
-  \item 乙信号比甲信号强2.95\si{\dB}
-  \item 甲信号比乙信号强2.95\si{\dB}
-  \item 乙信号比甲信号强0.8\si{\dB}
-  \item 乙信号比甲信号强7.1\si{\dB}
+  \item 乙信号比甲信号强\qty{2.95}{\dB}
+  \item 甲信号比乙信号强\qty{2.95}{\dB}
+  \item 乙信号比甲信号强\qty{0.8}{\dB}
+  \item 乙信号比甲信号强\qty{7.1}{\dB}
 \end{enumerate}
 
-\noindent\textbf{解说：乙信号比甲信号强0.8\si{\dB}}。\\\noindent\textbf{答案：}C
+\noindent\textbf{解说：乙信号比甲信号强\qty{0.8}{\dB}}。\\\noindent\textbf{答案：}C
 %%%%%%
 
 \bigskip
@@ -4263,13 +4262,13 @@ right=2cm]{geometry}
 \noindent\textbf{试题：}移动车载电台通常使用的电源电压是？
 
 \begin{enumerate}[leftmargin=3em]
-  \item 约30伏特
-  \item 约240伏特
-  \item 约12伏特
-  \item 约120伏特
+  \item 约\num{30}伏特
+  \item 约\num{240}伏特
+  \item 约\num{12}伏特
+  \item 约\num{120}伏特
 \end{enumerate}
 
-\noindent\textbf{解说：}移动车载电台通常使用的电源电压\textbf{约12伏特}。\\\noindent\textbf{答案：}C
+\noindent\textbf{解说：}移动车载电台通常使用的电源电压\textbf{至少为\num{12}伏特}，约为\numrange{12}{14}伏特。\\\noindent\textbf{答案：}C
 
 \bigskip
 
@@ -4288,13 +4287,13 @@ right=2cm]{geometry}
 \noindent\textbf{试题：}一个新的干电池的标称电压是多少？
 
 \begin{enumerate}[leftmargin=3em]
-  \item 1.2伏
-  \item 1.5伏
-  \item 1.0伏
-  \item 2.2伏
+  \item \num{1.2}伏
+  \item \num{1.5}伏
+  \item \num{1.0}伏
+  \item \num{2.2}伏
 \end{enumerate}
 
-\noindent\textbf{解说：}一个新的干电池的标称电压是\textbf{1.5伏}。一个充电电池充满电的电压是1.2伏。\\\noindent\textbf{答案：}B
+\noindent\textbf{解说：}一个新的干电池的标称电压是\textbf{\num{1.5}伏}。镍镉电池、镍氢电池的标称电压是\num{1.2}伏。\\\noindent\textbf{答案：}B
 
 \bigskip
 
@@ -4461,10 +4460,10 @@ right=2cm]{geometry}
 
 \newpage
 
-\noindent\textbf{试题：}如何在电网停电的状况下给一个12伏的铅酸蓄电池充电？
+\noindent\textbf{试题：}如何在电网停电的状况下给一个\num{12}伏的铅酸蓄电池充电？
 
 \begin{enumerate}[leftmargin=3em]
-  \item 将蓄电池串联一个电灯泡作为限流装置，然后连接到220伏市电上
+  \item 将蓄电池串联一个电灯泡作为限流装置，然后连接到\num{220}伏市电上
   \item 将蓄电池连接与汽车的蓄电池并联，并且发动汽车
   \item 给蓄电池中加一些酸
   \item 将蓄电池放在冰里冷却一会儿
@@ -4555,13 +4554,13 @@ right=2cm]{geometry}
 \noindent\textbf{试题：}安全电压是指不致使人直接致死或致残的电压。根据国家标准GB3805－83《安全电压》，一般环境条件下允许持续接触的“安全特低电压”为：
 
 \begin{enumerate}[leftmargin=3em]
-  \item 6V
-  \item 24V
-  \item 48V
-  \item 72V
+  \item \num{6}V
+  \item \num{24}V
+  \item \num{48}V
+  \item \num{72}V
 \end{enumerate}
 
-\noindent\textbf{解说：}国家标准GB3805－83《安全电压》规定：一般环境条件下允许持续接触的“安全特低电压”上限为\textbf{24V}。\\\noindent\textbf{答案：}B%%%%%%%%%%%
+\noindent\textbf{解说：}国家标准GB3805--83《安全电压》规定：一般环境条件下允许持续接触的“安全特低电压”上限为\textbf{\num{24}V}。\\\noindent\textbf{答案：}B%%%%%%%%%%%
 
 \bigskip
 
@@ -4727,22 +4726,22 @@ right=2cm]{geometry}
 \noindent\textbf{试题：}按照我国国家标准GB/T 51391《通信工程建设环境保护技术标准》，向没有屏蔽空间发射电磁场可以免于管理的有：
 \begin{enumerate}[leftmargin=3em]
   \item 所有业余电台
-  \item 发射频率30\si{\MHz}以下的所有业余电台
-  \item 等效辐射功率在0.1-3\si{\MHz}不大于300W、在3\si{\MHz}-300\si{\GHz}不大于100瓦的无线通信设施（设备）
-  \item 发射频率30\si{\MHz}以上的所有业余电台
+  \item 发射频率\qty{30}{\MHz}以下的所有业余电台
+  \item 等效辐射功率在\qtyrange{0.1}{3}{\MHz}不大于\qty{300}{\watt}、在\qtyrange{3}{300}{\GHz}不大于\num{100}瓦的无线通信设施（设备）
+  \item 发射频率\qty{30}{\MHz}以上的所有业余电台
 \end{enumerate}
-\noindent\textbf{解说：}按照我国国家标准GB/T 51391《通信工程建设环境保护技术标准》，向没有屏蔽空间发射电磁场可以免于管理的有\textbf{等效辐射功率在0.1-3\si{\MHz}不大于300W、在3\si{\MHz}-300\si{\GHz}不大于100瓦的无线通信设施（设备）}。\\\textbf{答案：}C
+\noindent\textbf{解说：}按照我国国家标准GB/T 51391《通信工程建设环境保护技术标准》，向没有屏蔽空间发射电磁场可以免于管理的有\textbf{等效辐射功率在\qtyrange{0.1}{3}{\MHz}不大于\qty{300}{\watt}、在\qtyrange{3}{300}{\GHz}不大于\num{100}瓦的无线通信设施（设备）}。\\\textbf{答案：}C
 
 \bigskip
 
 \noindent\textbf{试题：}我国国家标准《电磁环境控制限值》规定公众暴露控制限值中，对环境电磁辐射场强任意连续6分钟内的方均根值要求最严格的频率范围为：
 \begin{enumerate}[leftmargin=3em]
-  \item 30\si{\MHz}-3\si{\GHz}
-  \item 3\si{\MHz}-30\si{\MHz}
-  \item 1200\si{\MHz}-30\si{\GHz}
-  \item 300\si{\kHz}-30\si{\MHz}
+  \item \qty{30}{\MHz}--\qty{3}{\GHz}
+  \item \qty{3}{\MHz}--\qty{30}{\MHz}
+  \item \qty{1200}{\MHz}--\qty{30}{\GHz}
+  \item \qty{300}{\kHz}--\qty{30}{\MHz}
 \end{enumerate}
-\noindent\textbf{解说：}我国国家标准《电磁环境控制限值》规定公众暴露控制限值中，对环境电磁辐射场强任意连续6分钟内的方均根值要求最严格的频率范围为\textbf{30\si{\MHz}-3\si{\GHz}}。\\
+\noindent\textbf{解说：}我国国家标准《电磁环境控制限值》规定公众暴露控制限值中，对环境电磁辐射场强任意连续6分钟内的方均根值要求最严格的频率范围为\textbf{\qty{30}{\MHz}--\qty{3}{\GHz}}。\\
 \textbf{答案：}A
 
 \bigskip
