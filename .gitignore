@@ -16,6 +16,7 @@ jisuan_a.c
 *.tar.gz
 *.zst
 *.rar
+*.bak?
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
