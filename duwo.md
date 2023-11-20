@@ -39,13 +39,3 @@ PDF文件中使用了以下字体。
 Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC, Noto Sans Mono
     Copyright 2018 The Noto Project Authors (https://github.com/notofonts/noto-fonts)
 ```
- 
-## 字数统计 
- 
-| 类别 | 行 | 字符数 | 
-| :---- | :---- | :---- | 
-| A类 | 5174 | 151147 |
-| B类 | 9472 | 299326 |
-| C类 | 13551 | 388278 |
- 
-

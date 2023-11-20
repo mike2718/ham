@@ -8,11 +8,12 @@ del /q ..\ham_a*.zip ..\ham_b*.zip ..\ham_c*.zip ..\SHA256SUMS.txt 2>nul
 del /q *.obj *.exe 2>nul
 del /q *.log *.aux *.toc *.out *.pdf *.blg *.bbl *.fdb_latexmk *.fls *.xdv *.toc 2>nul
 del /q *.bak0 *.bak1 2>nul
+del /q zishutongji.md zishutongji.utf8.md 2>nul
 rd /s /q out 2>nul
 
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c icao_a.c jisuan_a.c
-C:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 icao_a.c > icao.c
-C:\cmdtool32\iconv.exe -f WINDOWS-936 -t UTF-8 jisuan_a.c > jisuan.c
+C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 icao_a.c > icao.c
+C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 jisuan_a.c > jisuan.c
 
 rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o icao_a.exe icao_a.c
 rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o jisuan_a.exe jisuan_a.c
@@ -45,7 +46,21 @@ xelatex.exe ham_c.tex
 xelatex.exe ham_c.tex
 xelatex.exe ham_c.tex
 
-rem git archive --format=zip --prefix=ham_%datetime%/ --output=../ham_%datetime%.zip main
+touch zishutongji.md
+echo( >> zishutongji.md
+echo ## 字数统计 >> zishutongji.md
+echo( >> zishutongji.md
+echo ^| 类别 ^| 行 ^| 字符数 ^| >> zishutongji.md
+echo ^| :---- ^| :---- ^| :---- ^| >> zishutongji.md
+echo|set /p="| A类 " >> zishutongji.md
+C:\cmdtool32\awk.exe -f wc.awk ham_a.tex qianyan.tex bianzhuzhedehua.tex fulu_a.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
+echo|set /p="| B类 " >> zishutongji.md
+C:\cmdtool32\awk.exe -f wc.awk ham_b.tex qianyan.tex bianzhuzhedehua.tex fulu_b.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
+echo|set /p="| C类 " >> zishutongji.md
+C:\cmdtool32\awk.exe -f wc.awk ham_c.tex qianyan.tex bianzhuzhedehua.tex fulu_c.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
+echo( >> zishutongji.md
+C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 zishutongji.md > zishutongji.utf8.md
+copy /y duwo.md+zishutongji.utf8.md README.md
 
 C:\cmdtool32\zip.exe ..\ham_a_%datetime%.zip ham_a.pdf LICENSE.md README.md
 C:\cmdtool32\zip.exe ..\ham_b_%datetime%.zip ham_b.pdf LICENSE.md README.md
