@@ -50,7 +50,7 @@ C:\cmdtool64\touch.cmd zishutongji.md
 echo( >> zishutongji.md
 echo ## 字数统计 >> zishutongji.md
 echo( >> zishutongji.md
-echo ^| 类别 ^| 总计行 ^| 总计字数 ^| 总计字符数 ^| >> zishutongji.md
+echo ^| 类别 ^| 总计行 ^| 总计单词数 ^| 总计字符数 ^| >> zishutongji.md
 echo ^| :---- ^| :---- ^| :---- ^| :---- ^| >> zishutongji.md
 echo|set /p="| A类 " >> zishutongji.md
 C:\cmdtool32\awk.exe -f wc.awk ham_a.tex qianyan.tex bianzhuzhedehua.tex fulu_a.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
