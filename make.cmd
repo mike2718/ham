@@ -46,12 +46,12 @@ xelatex.exe ham_c.tex
 xelatex.exe ham_c.tex
 xelatex.exe ham_c.tex
 
-touch zishutongji.md
+C:\cmdtool64\touch.cmd zishutongji.md
 echo( >> zishutongji.md
 echo ## 字数统计 >> zishutongji.md
 echo( >> zishutongji.md
-echo ^| 类别 ^| 行 ^| 字符数 ^| >> zishutongji.md
-echo ^| :---- ^| :---- ^| :---- ^| >> zishutongji.md
+echo ^| 类别 ^| 总计行 ^| 总计字数 ^| 总计字符数 ^| >> zishutongji.md
+echo ^| :---- ^| :---- ^| :---- ^| :---- ^| >> zishutongji.md
 echo|set /p="| A类 " >> zishutongji.md
 C:\cmdtool32\awk.exe -f wc.awk ham_a.tex qianyan.tex bianzhuzhedehua.tex fulu_a.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
 echo|set /p="| B类 " >> zishutongji.md
@@ -60,7 +60,7 @@ echo|set /p="| C类 " >> zishutongji.md
 C:\cmdtool32\awk.exe -f wc.awk ham_c.tex qianyan.tex bianzhuzhedehua.tex fulu_c.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
 echo( >> zishutongji.md
 C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 zishutongji.md > zishutongji.utf8.md
-copy /y duwo.md+zishutongji.utf8.md README.md
+copy /b /y duwo.md+zishutongji.utf8.md README.md
 
 C:\cmdtool32\zip.exe ..\ham_a_%datetime%.zip ham_a.pdf LICENSE.md README.md
 C:\cmdtool32\zip.exe ..\ham_b_%datetime%.zip ham_b.pdf LICENSE.md README.md
