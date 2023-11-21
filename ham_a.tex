@@ -2582,6 +2582,7 @@ right=2cm]{geometry}
 
 \bigskip
 
+% 以下三题，不知为何出现在A类题库中，而且对于A类来说看似难度偏高，难道是出题者手滑把B类或者C类的题目剪切粘贴过来了？
 \noindent\textbf{试题：}\qty{5}{\watt}可以表示为：
 
 \begin{enumerate}[leftmargin=3em]
@@ -2594,14 +2595,14 @@ right=2cm]{geometry}
 \noindent\textbf{解说：}
 将数值套入将功率(\unit{\watt})转换为功率(\unit[qualifier-mode=combine]{\deci\bel\of{m}})的计算公式得：
 \begin{equation*}
-	\begin{aligned}
-		P_{(\unit[qualifier-mode=combine]{\deci\bel\of{m}})} & = 10 \cdot \log_{10} \left( 1000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
-		& = 10 \cdot \log_{10} \left( 1000 \cdot 5 \unit{\watt} \right)                                                     \\
-		& = 10 \cdot \log_{10} 1000 + 10 \cdot \log_{10} 5 \unit{\watt} \\
-		& = 30 + 10 \times 0.699 \\
-		& = 36.99 \unit[qualifier-mode=combine]{\deci\bel\of{m}}                               \\
-		& \approx 37     \unit[qualifier-mode=combine]{\deci\bel\of{m}}
-	\end{aligned}
+  \begin{aligned}
+    P_{(\unit[qualifier-mode=combine]{\deci\bel\of{m}})} & = 10 \cdot \log_{10} \left( 1000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
+                                                         & = 10 \cdot \log_{10} \left( 1000 \cdot 5 \unit{\watt} \right)                             \\
+                                                         & = 10 \cdot \log_{10} 1000 + 10 \cdot \log_{10} 5 \unit{\watt}                             \\
+                                                         & = 30 + 10 \times 0.699                                                                    \\
+                                                         & = 36.99 \unit[qualifier-mode=combine]{\deci\bel\of{m}}                                    \\
+                                                         & \approx 37     \unit[qualifier-mode=combine]{\deci\bel\of{m}}
+  \end{aligned}
 \end{equation*}
 
 即\qty{5}{\watt}可以表示为\textbf{\num{37}\unit[qualifier-mode=combine]{\deci\bel\of{m}}}。
@@ -2621,15 +2622,15 @@ right=2cm]{geometry}
 \noindent\textbf{解说：}
 将数值套入将功率(\unit{\watt})转换为功率(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})的计算公式得：
 \begin{equation*}
-	\begin{aligned}
-		P_{(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})} & = 10 \cdot \log_{10} \left( 1000000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
-		& = 10 \cdot \log_{10} \left( 1000000 \cdot 0.25 \unit{\watt} \right)                                                     \\
-		& = 10 \cdot \log_{10} \left( 10000 \cdot 5 \cdot 5 \unit{\watt} \right)                                                     \\
-		& = 10 \cdot \log_{10} 10000 + 10 \cdot \log_{10} 5 + 10 \cdot \log_{10} 5 \\
-		& = 40 + 10 \times 0.699 + 10 \times 0.699 \\
-		& = 53.998 \unit[qualifier-mode=combine]{\deci\bel\of{μ}}                               \\
-		& \approx 54    \unit[qualifier-mode=combine]{\deci\bel\of{μ}}
-	\end{aligned}
+  \begin{aligned}
+    P_{(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})} & = 10 \cdot \log_{10} \left( 1000000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
+                                                         & = 10 \cdot \log_{10} \left( 1000000 \cdot 0.25 \unit{\watt} \right)                          \\
+                                                         & = 10 \cdot \log_{10} \left( 10000 \cdot 5 \cdot 5 \unit{\watt} \right)                       \\
+                                                         & = 10 \cdot \log_{10} 10000 + 10 \cdot \log_{10} 5 + 10 \cdot \log_{10} 5                     \\
+                                                         & = 40 + 10 \times 0.699 + 10 \times 0.699                                                     \\
+                                                         & = 53.998 \unit[qualifier-mode=combine]{\deci\bel\of{μ}}                                      \\
+                                                         & \approx 54    \unit[qualifier-mode=combine]{\deci\bel\of{μ}}
+  \end{aligned}
 \end{equation*}
 
 即\qty{0.25}{\watt}可以表示为\textbf{\num{54}\unit[qualifier-mode=combine]{\deci\bel\of{μ}}}。\\背诵了附录中的“常用对数表（节录）”并掌握了附录中的对数计算公式以及对数计算技巧后，可以很容易的带入数值并计算出结果。（考场不能带计算器进入）请尤其注意计算过程中使用的对数运算化简技巧。\\\noindent\textbf{答案：}C
@@ -2648,16 +2649,16 @@ right=2cm]{geometry}
 \noindent\textbf{解说：}
 将数值套入将功率(\unit{\watt})转换为功率(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})的计算公式得：
 \begin{equation*}
-	\begin{aligned}
-		P_{(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})} & = 10 \cdot \log_{10} \left( 1000000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
-		& = 10 \cdot \log_{10} \left( 1000000 \cdot 0.4 \unit{\kW} \right)                                                     \\
-		& = 10 \cdot \log_{10} \left( 1000000 \cdot 0.4 \cdot 1000 \unit{\watt} \right)                                                     \\
-		& = 10 \cdot \log_{10} \left( 100000000 \cdot 4 \unit{\watt} \right)                                                     \\
-		& = 10 \cdot \log_{10} 100000000 + 10 \cdot \log_{10} 4 \\
-		& = 80 + 10 \times 0.602 \\
-		& = 86.02 \unit[qualifier-mode=combine]{\deci\bel\of{μ}}                               \\
-		& \approx 86 \unit[qualifier-mode=combine]{\deci\bel\of{μ}}
-	\end{aligned}
+  \begin{aligned}
+    P_{(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})} & = 10 \cdot \log_{10} \left( 1000000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
+                                                         & = 10 \cdot \log_{10} \left( 1000000 \cdot 0.4 \unit{\kW} \right)                             \\
+                                                         & = 10 \cdot \log_{10} \left( 1000000 \cdot 0.4 \cdot 1000 \unit{\watt} \right)                \\
+                                                         & = 10 \cdot \log_{10} \left( 100000000 \cdot 4 \unit{\watt} \right)                           \\
+                                                         & = 10 \cdot \log_{10} 100000000 + 10 \cdot \log_{10} 4                                        \\
+                                                         & = 80 + 10 \times 0.602                                                                       \\
+                                                         & = 86.02 \unit[qualifier-mode=combine]{\deci\bel\of{μ}}                                       \\
+                                                         & \approx 86 \unit[qualifier-mode=combine]{\deci\bel\of{μ}}
+  \end{aligned}
 \end{equation*}
 
 即\qty{0.4}{\kW}可以表示为\textbf{\num{86}\unit[qualifier-mode=combine]{\deci\bel\of{μ}}}。\\背诵了附录中的“常用对数表（节录）”并掌握了附录中的对数计算公式以及对数计算技巧后，可以很容易的带入数值并计算出结果。（考场不能带计算器进入）请尤其注意计算过程中使用的对数运算化简技巧。在套用公式的时候，请注意功率(\unit{\kW})的数值必须先转换为功率(\unit{\watt})的数值（乘以\num{1000}），再套入公式进行运算。\\\noindent\textbf{答案：}A
