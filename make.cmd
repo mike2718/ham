@@ -1,4 +1,4 @@
-@echo off
+@echo on
 cd /d "%~dp0"
 
 for /f "tokens=2 delims==" %%I in ('wmic os get localdatetime /format:list') do set datetime=%%I
@@ -8,7 +8,7 @@ del /q ..\ham_a*.zip ..\ham_b*.zip ..\ham_c*.zip ..\SHA256SUMS.txt 2>nul
 del /q *.obj *.exe 2>nul
 del /q *.log *.aux *.toc *.out *.pdf *.blg *.bbl *.fdb_latexmk *.fls *.xdv *.toc 2>nul
 del /q *.bak0 *.bak1 2>nul
-del /q zishutongji.md zishutongji.utf8.md 2>nul
+rem del /q zishutongji.md zishutongji.utf8.md 2>nul
 rd /s /q out 2>nul
 
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c icao_a.c jisuan_a.c
@@ -46,19 +46,17 @@ xelatex.exe ham_c.tex
 xelatex.exe ham_c.tex
 xelatex.exe ham_c.tex
 
-C:\cmdtool64\touch.cmd zishutongji.md
-echo( >> zishutongji.md
-echo ## 字数统计 >> zishutongji.md
-echo( >> zishutongji.md
-echo ^| 类别 ^| 总计行 ^| 总计单词数 ^| 总计字符数 ^| >> zishutongji.md
-echo ^| :---- ^| :---- ^| :---- ^| :---- ^| >> zishutongji.md
+echo(> zishutongji.md
+echo ## 字数统计>> zishutongji.md
+echo(>> zishutongji.md
+echo ^| 类别 ^| 总计行 ^| 总计单词数 ^| 总计字符数 ^|>> zishutongji.md
+echo ^| :---- ^| :---- ^| :---- ^| :---- ^|>> zishutongji.md
 echo|set /p="| A类 " >> zishutongji.md
 C:\cmdtool32\awk.exe -f wc.awk ham_a.tex qianyan.tex bianzhuzhedehua.tex fulu_a.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
 echo|set /p="| B类 " >> zishutongji.md
 C:\cmdtool32\awk.exe -f wc.awk ham_b.tex qianyan.tex bianzhuzhedehua.tex fulu_b.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
 echo|set /p="| C类 " >> zishutongji.md
 C:\cmdtool32\awk.exe -f wc.awk ham_c.tex qianyan.tex bianzhuzhedehua.tex fulu_c.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
-echo( >> zishutongji.md
 C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 zishutongji.md > zishutongji.utf8.md
 copy /b /y duwo.md+zishutongji.utf8.md README.md
 

@@ -117,8 +117,21 @@
       \hline
       9           & Nine        \\
       \hline
-    \end{tabular} \tabularnewline
-  \end{tabular}
+    \end{tabular}
+    \begin{tabular}[t]{|c|l|}
+    	\hline
+    	\textbf{字母} & \textbf{单词} \\
+    	\hline
+    	／           & Portable, Stroke        \\
+    	\hline
+    	?           & Question         \\
+    	\hline
+    	-           & Hyphen, Dash         \\
+    	\hline
+    	.           & Decimal         \\
+    	\hline
+    \end{tabular}  \tabularnewline
+    \end{tabular}
 \end{center}
 
 \newpage
@@ -133,7 +146,7 @@
   \hline
   \texttt{QRN} & 你遇到天电干扰吗？                   & 我遇到天电干扰                                        \\
   \hline
-  \texttt{QRZ} & 谁在呼叫我？                      & ××××在××× \si{\kHz}/\si{\MHz} 上呼叫你\cite{Q_code} \\
+  \texttt{QRZ} & 谁在呼叫我？                      & ××××在××× \unit{\kHz}/\unit{\MHz} 上呼叫你\cite{Q_code} \\
   \hline
   \texttt{QSL} & 你能给我收据（或 \texttt{QSL} 卡片）吗？ & 我给你收据（\texttt{QSL} 卡片）、我已收妥                    \\
   \hline
@@ -170,15 +183,15 @@
   FET            & Field-effect transistor              & 场效应管                \\
   FM             & Frequency modulation                 & 频率调制、调频             \\
   FREQ           & Frequency                            & 频率                  \\
-  \si{\GHz}      & gigahertz                            & 吉赫兹（单位）             \\
+  \unit{\GHz}      & gigahertz                            & 吉赫兹（单位）             \\
   \textbf{GND}   & Ground                               & 地线、地面               \\
   \textbf{GP}    & Ground-plane antenna                 & 垂直接地天线              \\
   HF             & High frequency                       & 高频、即SW（Shortwave）   \\
   Hz             & hertz                                & 赫兹（单位）              \\
-  \si{\kHz}      & kilohertz                            & 千赫兹（单位）             \\
+  \unit{\kHz}      & kilohertz                            & 千赫兹（单位）             \\
   \textbf{LCD}   & Liquid-crystal display               & 液晶显示器               \\
   \textbf{LED}   & Light-emitting diode                 & 发光二极管               \\
-  \si{\MHz}      & megahertz                            & 兆赫兹（单位）             \\
+  \unit{\MHz}      & megahertz                            & 兆赫兹（单位）             \\
   MODE           &                                      & 模式                  \\
   NFM            & Narrowband FM                        & 窄带调频                \\
   \textbf{OM}    & Old man                              & 老朋友                 \\%朋友
@@ -234,15 +247,15 @@
   \hline
   \textbf{频段名称} & \textbf{缩写}  & \textbf{频率范围}       \\
   \hline
-  高频            & \textbf{HF}  & 3–30 \si{\MHz}      \\
+  高频            & \textbf{HF}  & 3–30 \unit{\MHz}      \\
   \hline
-  甚高频           & \textbf{VHF} & 30–300 \si{\MHz}    \\
+  甚高频           & \textbf{VHF} & 30–300 \unit{\MHz}    \\
   \hline
-  特高频           & \textbf{UHF} & 300–3,000 \si{\MHz} \\
+  特高频           & \textbf{UHF} & 300–3,000 \unit{\MHz} \\
   \hline
-  超高频           & SHF          & 3–30 \si{\GHz}      \\
+  超高频           & SHF          & 3–30 \unit{\GHz}      \\
   \hline
-  极高频           & EHF          & 30–300 \si{\GHz}    \\
+  极高频           & EHF          & 30–300 \unit{\GHz}    \\
   \hline
 \end{longtable}
 
@@ -254,21 +267,21 @@
   \hline
   \textbf{波段名称} & \textbf{频率范围}        \\
   \hline
-  80米           & 3.5–4.0 \si{\MHz}    \\
+  80米           & 3.5–4.0 \unit{\MHz}    \\
   \hline
-  40米           & 7.0–7.3 \si{\MHz}    \\
+  40米           & 7.0–7.3 \unit{\MHz}    \\
   \hline
-  20米           & 14.0–14.35 \si{\MHz} \\
+  20米           & 14.0–14.35 \unit{\MHz} \\
   \hline
-  15米           & 21–21.45 \si{\MHz}   \\
+  15米           & 21–21.45 \unit{\MHz}   \\
   \hline
-  10米           & 28–29.7 \si{\MHz}    \\
+  10米           & 28–29.7 \unit{\MHz}    \\
   \hline
-  6米            & 50–54 \si{\MHz}      \\
+  6米            & 50–54 \unit{\MHz}      \\
   \hline
-  2米            & 144–148 \si{\MHz}    \\
+  2米            & 144–148 \unit{\MHz}    \\
   \hline
-  0.7米          & 420–450 \si{\MHz}    \\
+  0.7米          & 420–450 \unit{\MHz}    \\
   \hline
 \end{longtable}
 
@@ -304,24 +317,74 @@
 
 \section{计算公式}
 
+两数的乘积的对数等于两数的对数之和：
+\[\log a\: b=\log a+\log b\]
+
+某数的n次幂的对数等于该数的对数的n倍：
+\[\log a^n =n \cdot \log a\]
+
 直流电路欧姆定律：
-\[\mbox{电流}I(\si{\ampere})=\frac{\mbox{电压}U(\si{\volt})}{\mbox{电阻值}R(\si{\ohm})}\]
+\[\mbox{电流}I_{(\unit{\ampere})} = \frac{\mbox{电压}U_{(\unit{\volt})}}{\mbox{电阻值}R_{(\unit{\ohm})}}\]
 
 峰值电压的计算公式：
-\[\mbox{峰值}(\si{\volt})=\frac{\mbox{峰--峰值}}{2}\]
+\[\mbox{峰值}_{(\unit{\volt})} = \frac{\mbox{峰--峰值}}{2}\]
 
 正弦交流电压的有效值计算公式：
 \begin{equation*}
   \begin{aligned}
-    \mbox{交流电压的有效值}(\si{\volt}) & =\frac{\mbox{峰值}}{\sqrt{2}}   \\
+    \mbox{交流电压的有效值}_{(\unit{\volt})} & =\frac{\mbox{峰值}}{\sqrt{2}}   \\
                                 & \approx \mbox{峰值}\times 0.707
   \end{aligned}
 \end{equation*}
 
 功率增益的计算公式：
-\[\mbox{功率增益}=10 \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right) \si{\dB}\]
+\[\mbox{功率增益}= 10 \cdot \log_{10} \left( {\frac{P_{ \mbox{输出} }}{P_{ \mbox{输入} }}}\right) \unit{\dB}\]
+
+将功率(\unit{\watt})转换为功率(\unit[qualifier-mode=combine]{\deci\bel\of{m}})的计算公式：
+
+\begin{equation*}
+	\begin{aligned}
+		P_{(\unit[qualifier-mode=combine]{\deci\bel\of{m}})} & = 10 \cdot \log_{10} \left( 10000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
+	\end{aligned}
+\end{equation*}
+
+将功率(\unit{\watt})转换为功率(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})的计算公式：
+
+\begin{equation*}
+	\begin{aligned}
+		P_{(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})} & = 10 \cdot \log_{10} \left( 1000000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
+	\end{aligned}
+\end{equation*}
+
 
 \newpage
+
+\section{常用对数表（节录）}
+
+说明：强烈建议背诵$\log_{10} 1.0$、$\log 2.0$、……$\log 10.0$等第0列的10个数值到小数点后三位，考试闭卷，无法使用计算器，如果不背诵，将无法计算。
+
+\begin{longtable}[c]{|c|c|}
+	\hline
+	\textbf{N} & \textbf{0}  \\
+	\hline
+	%	\endfirsthead
+	%	\hline
+	%	\textbf{N} & \textbf{1.0} \\
+	\endhead
+	\num{1.0}  & \num{.000}  \\ \hline
+	\num{2.0}  & \num{.301}  \\ \hline
+	\num{3.0}  & \num{.477}  \\ \hline
+	\num{4.0}  & \num{.602}  \\ \hline
+	\num{5.0}  & \num{.699}  \\ \hline
+	\num{6.0}  & \num{.778}  \\ \hline
+	\num{7.0}  & \num{.845}  \\ \hline
+	\num{8.0}  & \num{.903}  \\ \hline
+	\num{9.0}  & \num{.954}  \\ \hline
+	\num{10.0} & \num{1.000} \\ \hline
+\end{longtable}
+
+\newpage
+
 
 \section{将呼号转换成字母解释法的单词组合的C程序}
 
