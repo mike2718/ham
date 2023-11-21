@@ -119,19 +119,19 @@
       \hline
     \end{tabular}
     \begin{tabular}[t]{|c|l|}
-    	\hline
-    	\textbf{字母} & \textbf{单词} \\
-    	\hline
-    	／           & Portable, Stroke        \\
-    	\hline
-    	?           & Question         \\
-    	\hline
-    	-           & Hyphen, Dash         \\
-    	\hline
-    	.           & Decimal         \\
-    	\hline
+      \hline
+      \textbf{字母} & \textbf{单词}      \\
+      \hline
+      ／           & Portable, Stroke \\
+      \hline
+      ?           & Question         \\
+      \hline
+      -           & Hyphen, Dash     \\
+      \hline
+      .           & Decimal          \\
+      \hline
     \end{tabular}  \tabularnewline
-    \end{tabular}
+  \end{tabular}
 \end{center}
 
 \newpage
@@ -140,17 +140,17 @@
 
 \begin{longtable}{|l|l|l|}
   \hline
-               & \textbf{提问}                 & \textbf{回答或建议}                                 \\
+               & \textbf{提问}                 & \textbf{回答或建议}                                     \\
   \hline
-  \texttt{QRM} & 你遇到他台干扰吗？                   & 我遇到他台干扰                                        \\
+  \texttt{QRM} & 你遇到他台干扰吗？                   & 我遇到他台干扰                                            \\
   \hline
-  \texttt{QRN} & 你遇到天电干扰吗？                   & 我遇到天电干扰                                        \\
+  \texttt{QRN} & 你遇到天电干扰吗？                   & 我遇到天电干扰                                            \\
   \hline
   \texttt{QRZ} & 谁在呼叫我？                      & ××××在××× \unit{\kHz}/\unit{\MHz} 上呼叫你\cite{Q_code} \\
   \hline
-  \texttt{QSL} & 你能给我收据（或 \texttt{QSL} 卡片）吗？ & 我给你收据（\texttt{QSL} 卡片）、我已收妥                    \\
+  \texttt{QSL} & 你能给我收据（或 \texttt{QSL} 卡片）吗？ & 我给你收据（\texttt{QSL} 卡片）、我已收妥                        \\
   \hline
-  \texttt{QTH} & 你的电台位置在哪里？                  & 我的电台位置是 ××××                                   \\
+  \texttt{QTH} & 你的电台位置在哪里？                  & 我的电台位置是 ××××                                       \\
   \hline
 \end{longtable}
 
@@ -183,15 +183,15 @@
   FET            & Field-effect transistor              & 场效应管                \\
   FM             & Frequency modulation                 & 频率调制、调频             \\
   FREQ           & Frequency                            & 频率                  \\
-  \unit{\GHz}      & gigahertz                            & 吉赫兹（单位）             \\
+  \unit{\GHz}    & gigahertz                            & 吉赫兹（单位）             \\
   \textbf{GND}   & Ground                               & 地线、地面               \\
   \textbf{GP}    & Ground-plane antenna                 & 垂直接地天线              \\
   HF             & High frequency                       & 高频、即SW（Shortwave）   \\
   Hz             & hertz                                & 赫兹（单位）              \\
-  \unit{\kHz}      & kilohertz                            & 千赫兹（单位）             \\
+  \unit{\kHz}    & kilohertz                            & 千赫兹（单位）             \\
   \textbf{LCD}   & Liquid-crystal display               & 液晶显示器               \\
   \textbf{LED}   & Light-emitting diode                 & 发光二极管               \\
-  \unit{\MHz}      & megahertz                            & 兆赫兹（单位）             \\
+  \unit{\MHz}    & megahertz                            & 兆赫兹（单位）             \\
   MODE           &                                      & 模式                  \\
   NFM            & Narrowband FM                        & 窄带调频                \\
   \textbf{OM}    & Old man                              & 老朋友                 \\%朋友
@@ -245,7 +245,7 @@
 
 \begin{longtable}[c]{|l|l|l|}
   \hline
-  \textbf{频段名称} & \textbf{缩写}  & \textbf{频率范围}       \\
+  \textbf{频段名称} & \textbf{缩写}  & \textbf{频率范围}         \\
   \hline
   高频            & \textbf{HF}  & 3–30 \unit{\MHz}      \\
   \hline
@@ -265,7 +265,7 @@
 
 \begin{longtable}{|l|l|}
   \hline
-  \textbf{波段名称} & \textbf{频率范围}        \\
+  \textbf{波段名称} & \textbf{频率范围}          \\
   \hline
   80米           & 3.5–4.0 \unit{\MHz}    \\
   \hline
@@ -333,7 +333,7 @@
 \begin{equation*}
   \begin{aligned}
     \mbox{交流电压的有效值}_{(\unit{\volt})} & =\frac{\mbox{峰值}}{\sqrt{2}}   \\
-                                & \approx \mbox{峰值}\times 0.707
+                                     & \approx \mbox{峰值}\times 0.707
   \end{aligned}
 \end{equation*}
 
@@ -343,48 +343,46 @@
 将功率(\unit{\watt})转换为功率(\unit[qualifier-mode=combine]{\deci\bel\of{m}})的计算公式：
 
 \begin{equation*}
-	\begin{aligned}
-		P_{(\unit[qualifier-mode=combine]{\deci\bel\of{m}})} & = 10 \cdot \log_{10} \left( 10000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
-	\end{aligned}
+  \begin{aligned}
+    P_{(\unit[qualifier-mode=combine]{\deci\bel\of{m}})} & = 10 \cdot \log_{10} \left( 1000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
+  \end{aligned}
 \end{equation*}
 
 将功率(\unit{\watt})转换为功率(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})的计算公式：
 
 \begin{equation*}
-	\begin{aligned}
-		P_{(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})} & = 10 \cdot \log_{10} \left( 1000000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
-	\end{aligned}
+  \begin{aligned}
+    P_{(\unit[qualifier-mode=combine]{\deci\bel\of{μ}})} & = 10 \cdot \log_{10} \left( 1000000 \cdot P_{(\unit{\watt})} \middle/ 1 \unit{\watt} \right) \\
+  \end{aligned}
 \end{equation*}
-
 
 \newpage
 
 \section{常用对数表（节录）}
 
-说明：强烈建议背诵$\log_{10} 1.0$、$\log 2.0$、……$\log 10.0$等第0列的10个数值到小数点后三位，考试闭卷，无法使用计算器，如果不背诵，将无法计算。
+强烈建议背诵$\log_{10} 1.0$、$\log_{10} 2.0$、……$\log_{10} 10.0$等第0列的10个数值到小数点后三位，考试闭卷，无法使用计算器，如果不背诵，将无法计算。
 
 \begin{longtable}[c]{|c|c|}
-	\hline
-	\textbf{N} & \textbf{0}  \\
-	\hline
-	%	\endfirsthead
-	%	\hline
-	%	\textbf{N} & \textbf{1.0} \\
-	\endhead
-	\num{1.0}  & \num{.000}  \\ \hline
-	\num{2.0}  & \num{.301}  \\ \hline
-	\num{3.0}  & \num{.477}  \\ \hline
-	\num{4.0}  & \num{.602}  \\ \hline
-	\num{5.0}  & \num{.699}  \\ \hline
-	\num{6.0}  & \num{.778}  \\ \hline
-	\num{7.0}  & \num{.845}  \\ \hline
-	\num{8.0}  & \num{.903}  \\ \hline
-	\num{9.0}  & \num{.954}  \\ \hline
-	\num{10.0} & \num{1.000} \\ \hline
+  \hline
+  \textbf{N} & \textbf{0}  \\
+  \hline
+  %	\endfirsthead
+  %	\hline
+  %	\textbf{N} & \textbf{1.0} \\
+  \endhead
+  \num{1.0}  & \num{.000}  \\ \hline
+  \num{2.0}  & \num{.301}  \\ \hline
+  \num{3.0}  & \num{.477}  \\ \hline
+  \num{4.0}  & \num{.602}  \\ \hline
+  \num{5.0}  & \num{.699}  \\ \hline
+  \num{6.0}  & \num{.778}  \\ \hline
+  \num{7.0}  & \num{.845}  \\ \hline
+  \num{8.0}  & \num{.903}  \\ \hline
+  \num{9.0}  & \num{.954}  \\ \hline
+  \num{10.0} & \num{1.000} \\ \hline
 \end{longtable}
 
 \newpage
-
 
 \section{将呼号转换成字母解释法的单词组合的C程序}
 
