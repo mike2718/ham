@@ -126,7 +126,7 @@
       \hline
       ?           & Question         \\
       \hline
-      -           & Hyphen, Dash     \\
+      --          & Hyphen, Dash     \\
       \hline
       .           & Decimal          \\
       \hline
@@ -495,29 +495,41 @@
 
 \newpage
 
-\section{各业余无线电频段名称（节录）}
+\section{中国大陆各业余无线电频段}
 
-\begin{longtable}{|c|c|}
+\begin{longtable}{|l|l|}
   \hline
-  \textbf{波段名称} & \textbf{频率范围}        \\
+  \textbf{波段名称} & \textbf{频率范围}                                    \\
   \hline
-  160米          & 1800–2000 \si{\kHz}  \\
+  2200米         & \qtyrange[range-phrase=--]{135.7}{137.8}{\kHz}   \\
   \hline
-  80米           & 3.5–4.0 \si{\MHz}    \\
+  160米          & \qtyrange[range-phrase=--]{1800}{2000}{\kHz}     \\
   \hline
-  40米           & 7.0–7.3 \si{\MHz}    \\
+  80米           & \qtyrange[range-phrase=--]{3.5}{3.9}{\MHz}       \\
   \hline
-  20米           & 14.0–14.35 \si{\MHz} \\
+  60米           & \qtyrange[range-phrase=--]{5.3515}{5.3665}{\MHz} \\
   \hline
-  15米           & 21–21.45 \si{\MHz}   \\
+  40米           & \qtyrange[range-phrase=--]{7.0}{7.2}{\MHz}       \\
   \hline
-  10米           & 28–29.7 \si{\MHz}    \\
+  30米           & \qtyrange[range-phrase=--]{10.1}{10.15}{\MHz}    \\
   \hline
-  6米            & 50–54 \si{\MHz}      \\
+  20米           & \qtyrange[range-phrase=--]{14.0}{14.35}{\MHz}    \\
   \hline
-  2米            & 144–148 \si{\MHz}    \\
+  17米           & \qtyrange[range-phrase=--]{18.068}{18.168}{\MHz} \\
   \hline
-  0.7米（70厘米）    & 420–450 \si{\MHz}    \\
+  15米           & \qtyrange[range-phrase=--]{21}{21.45}{\MHz}      \\
+  \hline
+  12米           & \qtyrange[range-phrase=--]{24.89}{24.99}{\MHz}   \\
+  \hline
+  10米           & \qtyrange[range-phrase=--]{28.0}{29.7}{\MHz}     \\
+  \hline
+  6米            & \qtyrange[range-phrase=--]{50}{54}{\MHz}         \\
+  \hline
+  2米            & \qtyrange[range-phrase=--]{144}{148}{\MHz}       \\
+  \hline
+  70厘米          & \qtyrange[range-phrase=--]{430}{440}{\MHz}       \\
+  \hline
+  23厘米          & \qtyrange[range-phrase=--]{1240}{1300}{\MHz}     \\
   \hline
 \end{longtable}
 
@@ -1345,9 +1357,9 @@
 
 \newpage
 
-\section{将呼号转换成字母解释法的单词组合的C程序}
+\section{将呼号转换成ICAO字母解释法的单词组合的C程序}
 
-\lstinputlisting[language=C]{icao.utf8.c}
+\lstinputlisting[language=C]{icao.c}
 
 \newpage
 

@@ -1,7 +1,7 @@
-// 将呼号转换成ICAO字母解释法的单词组合的C程序
+// 将呼号转换成非标准字母解释法的单词组合的C程序
 // 用法：
-//   $ gcc -Wall -Wpedantic -Wextra -std=c99 -o icao icao.c
-//   $ ./icao
+//   $ gcc -Wall -Wpedantic -Wextra -std=c99 -o feibiao feibiao.c
+//   $ ./feibiao
 // 特别鸣谢：ChatGPT
 #include <stdio.h>
 #include <ctype.h>
@@ -12,57 +12,57 @@ const char* natoTranslate(char c)
     switch (toupper(c))
     {
     case 'A':
-        return "Alfa";
+        return "America";
     case 'B':
-        return "Bravo";
+        return "Boston";
     case 'C':
-        return "Charlie";
+        return "Canada";
     case 'D':
-        return "Delta";
+        return "Denmark";
     case 'E':
-        return "Echo";
+        return "England";
     case 'F':
-        return "Foxtrot";
+        return "Florida";
     case 'G':
-        return "Golf";
+        return "Germany";
     case 'H':
-        return "Hotel";
+        return "Honolulu";
     case 'I':
-        return "India";
+        return "Italy";
     case 'J':
-        return "Juliett";
+        return "Japan";
     case 'K':
-        return "Kilo";
+        return "Kilowatt";
     case 'L':
-        return "Lima";
+        return "London";
     case 'M':
-        return "Mike";
+        return "Mexico";
     case 'N':
-        return "November";
+        return "Norway";
     case 'O':
-        return "Oscar";
+        return "Ontario";
     case 'P':
-        return "Papa";
+        return "Peter";
     case 'Q':
-        return "Quebec";
+        return "Queen";
     case 'R':
-        return "Romeo";
+        return "Radio";
     case 'S':
-        return "Sierra";
+        return "Sugar";
     case 'T':
-        return "Tango";
+        return "Tokyo";
     case 'U':
-        return "Uniform";
+        return "United";
     case 'V':
-        return "Victor";
+        return "Virginia";
     case 'W':
-        return "Whiskey";
+        return "Washington";
     case 'X':
         return "X-ray";
     case 'Y':
-        return "Yankee";
+        return "Yokohama";
     case '0':
-        return "Zero";
+        return "Zanzibar";
     case '1':
         return "One";
     case '2':
@@ -99,13 +99,13 @@ int main(void)
     }
     for (i = 0; ch[i] != '\0'; i++)
     {
-        if (ch[i] == '/' || isalnum(ch[i]))
+        if (isalnum(ch[i]) || ch[i] == '/')
             printf("%c", ch[i]);
     }
     printf("的字母解释法是：");
     for (i = 0; ch[i] != '\0'; i++)
     {
-        if (ch[i] == '/' || isalnum(ch[i]))
+        if (isalnum(ch[i]) || ch[i] == '/')
             printf("%s ", natoTranslate(ch[i]));
     }
     printf("\n");
