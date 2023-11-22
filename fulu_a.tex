@@ -126,7 +126,7 @@
       \hline
       ?           & Question         \\
       \hline
-      -           & Hyphen, Dash     \\
+      --          & Hyphen, Dash     \\
       \hline
       .           & Decimal          \\
       \hline
@@ -269,43 +269,57 @@
 
 \begin{longtable}[c]{|l|l|l|}
   \hline
-  \textbf{频段名称} & \textbf{缩写}  & \textbf{频率范围}         \\
+  \textbf{频段名称} & \textbf{缩写}  & \textbf{频率范围}                               \\
   \hline
-  高频            & \textbf{HF}  & 3–30 \unit{\MHz}      \\
+  高频            & \textbf{HF}  & \qtyrange[range-phrase=--]{3}{30}{\MHz}     \\
   \hline
-  甚高频           & \textbf{VHF} & 30–300 \unit{\MHz}    \\
+  甚高频           & \textbf{VHF} & \qtyrange[range-phrase=--]{30}{300}{\MHz}   \\
   \hline
-  特高频           & \textbf{UHF} & 300–3,000 \unit{\MHz} \\
+  特高频           & \textbf{UHF} & \qtyrange[range-phrase=--]{300}{3000}{\MHz} \\
   \hline
-  超高频           & SHF          & 3–30 \unit{\GHz}      \\
-  \hline
-  极高频           & EHF          & 30–300 \unit{\GHz}    \\
-  \hline
+  %超高频           & SHF          & \qtyrange[range-phrase=--]{3}{30}{\GHz}      \\
+  %\hline
+  %极高频           & EHF          & \qtyrange[range-phrase=--]{30}{300}{\GHz}    \\
+  %\hline
 \end{longtable}
 
 \newpage
 
-\section{各业余无线电频段名称（节录）}
+\section{中国大陆各业余无线电频段}
 
 \begin{longtable}{|l|l|}
   \hline
-  \textbf{波段名称} & \textbf{频率范围}          \\
+  \textbf{波段名称} & \textbf{频率范围}                                    \\
   \hline
-  80米           & 3.5–4.0 \unit{\MHz}    \\
+  2200米         & \qtyrange[range-phrase=--]{135.7}{137.8}{\kHz}   \\
   \hline
-  40米           & 7.0–7.3 \unit{\MHz}    \\
+  160米          & \qtyrange[range-phrase=--]{1800}{2000}{\kHz}     \\
   \hline
-  20米           & 14.0–14.35 \unit{\MHz} \\
+  80米           & \qtyrange[range-phrase=--]{3.5}{3.9}{\MHz}       \\
   \hline
-  15米           & 21–21.45 \unit{\MHz}   \\
+  60米           & \qtyrange[range-phrase=--]{5.3515}{5.3665}{\MHz} \\
   \hline
-  10米           & 28–29.7 \unit{\MHz}    \\
+  40米           & \qtyrange[range-phrase=--]{7.0}{7.2}{\MHz}       \\
   \hline
-  6米            & 50–54 \unit{\MHz}      \\
+  30米           & \qtyrange[range-phrase=--]{10.1}{10.15}{\MHz}    \\
   \hline
-  2米            & 144–148 \unit{\MHz}    \\
+  20米           & \qtyrange[range-phrase=--]{14.0}{14.35}{\MHz}    \\
   \hline
-  0.7米          & 420–450 \unit{\MHz}    \\
+  17米           & \qtyrange[range-phrase=--]{18.068}{18.168}{\MHz} \\
+  \hline
+  15米           & \qtyrange[range-phrase=--]{21}{21.45}{\MHz}      \\
+  \hline
+  12米           & \qtyrange[range-phrase=--]{24.89}{24.99}{\MHz}   \\
+  \hline
+  10米           & \qtyrange[range-phrase=--]{28.0}{29.7}{\MHz}     \\
+  \hline
+  6米            & \qtyrange[range-phrase=--]{50}{54}{\MHz}         \\
+  \hline
+  2米            & \qtyrange[range-phrase=--]{144}{148}{\MHz}       \\
+  \hline
+  70厘米          & \qtyrange[range-phrase=--]{430}{440}{\MHz}       \\
+  \hline
+  23厘米          & \qtyrange[range-phrase=--]{1240}{1300}{\MHz}     \\
   \hline
 \end{longtable}
 
@@ -351,7 +365,7 @@
 \[\mbox{电流}I_{(\unit{\ampere})} = \frac{\mbox{电压}U_{(\unit{\volt})}}{\mbox{电阻值}R_{(\unit{\ohm})}}\]
 
 峰值电压的计算公式：
-\[\mbox{峰值}_{(\unit{\volt})} = \frac{\mbox{峰--峰值}}{2}\]
+\[\mbox{峰值电压}_{(\unit{\volt})} = \frac{\mbox{峰--峰值}}{2}\]
 
 正弦交流电压的有效值计算公式：
 \begin{equation*}
@@ -416,9 +430,9 @@
 
 \newpage
 
-\section{将呼号转换成字母解释法的单词组合的C程序}
+\section{将呼号转换成ICAO字母解释法的单词组合的C程序}
 
-\lstinputlisting[language=C]{icao.utf8.c}
+\lstinputlisting[language=C]{icao.c}
 
 \newpage
 
