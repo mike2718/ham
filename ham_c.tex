@@ -70,6 +70,8 @@ right=2cm]{geometry}
 \fancyhead[RO]{ \textsf{ \small \rightmark } }
 \fancyfoot[LE,RO]{ \textrm{ \small --\ \thepage\ -- } }
 %\fancyfoot[LO,RE]{ \textrm{ \small 版本：\texttt{\commit}在\texttt{\branch}分支上 } }
+\usepackage{morse} % 摩尔斯用
+
 
 \definecolor{codegreen}{HTML}{408080}
 \definecolor{codegray}{HTML}{72777D}
@@ -105,8 +107,10 @@ right=2cm]{geometry}
 \title{\sffamily {\Huge 业余无线电操作技能考核攻略本\\（类别：C）}}
 \author{\large \texttt{BG7XTQ}（原\texttt{JJ1DSB}）编著}
 \date{\large{日期：\texttt{\today}}
-  \\版本：\texttt{\commit}在\texttt{\branch}分支上
-  \\使用 \textrm{\hologo{XeLaTeX}} 编译
+	\\版本：\texttt{\commit}在\texttt{\branch}分支上
+	\vspace{\baselineskip}
+	\\使用 \hologo{XeLaTeX} 编译
+	\\使用了 \Morsesym 包
 }
 
 \maketitle
