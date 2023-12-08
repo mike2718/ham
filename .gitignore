@@ -6,9 +6,6 @@ SHA256SUMS.txt
 MD5SUMS
 SHA1SUMS
 SHA256SUMS
-hhcx_a.c
-icao_a.c
-jisuan_a.c
 *.orig
 *.exe
 *.pdf

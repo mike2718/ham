@@ -14,7 +14,7 @@ const char* natoTranslate(char c)
     case 'A':
         return "America";
     case 'B':
-        return "Boston";
+        return "Beta";
     case 'C':
         return "Canada";
     case 'D':
