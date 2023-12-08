@@ -37,5 +37,13 @@ PDF文件中使用了以下字体。
 
 ```
 Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC, Noto Sans Mono
-    Copyright 2018 The Noto Project Authors (https://github.com/notofonts/noto-fonts)
+
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/)
+
+This Font Software is licensed under the SIL Open Font License,
+Version 1.1.
+
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
 ```

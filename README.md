@@ -37,13 +37,21 @@ PDF文件中使用了以下字体。
 
 ```
 Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC, Noto Sans Mono
-    Copyright 2018 The Noto Project Authors (https://github.com/notofonts/noto-fonts)
+
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/)
+
+This Font Software is licensed under the SIL Open Font License,
+Version 1.1.
+
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
 ```
 
 ## 字数统计
 
 | 类别 | 总计行 | 总计单词数 | 总计字符数 |
 | :---- | :---- | :---- | :---- |
-| A类 | 5443 | 7334 | 163149 |
-| B类 | 9622 | 15288 | 302627 |
-| C类 | 13613 | 19876 | 391770 |
+| A类 | 5451 | 7361 | 163302 |
+| B类 | 9630 | 15315 | 302780 |
+| C类 | 13621 | 19903 | 391923 |
