@@ -27,20 +27,20 @@ C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml qianyan.tex
 C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml xuke.tex
 
 xelatex.exe ham_a.tex
-bibtex.exe ham_a
-xelatex.exe ham_a.tex
-xelatex.exe ham_a.tex
-xelatex.exe ham_a.tex
+rem bibtex.exe ham_a
+rem xelatex.exe ham_a.tex
+rem xelatex.exe ham_a.tex
+rem xelatex.exe ham_a.tex
 xelatex.exe ham_b.tex
-bibtex.exe ham_b
-xelatex.exe ham_b.tex
-xelatex.exe ham_b.tex
-xelatex.exe ham_b.tex
+rem bibtex.exe ham_b
+rem xelatex.exe ham_b.tex
+rem xelatex.exe ham_b.tex
+rem xelatex.exe ham_b.tex
 xelatex.exe ham_c.tex
-bibtex.exe ham_c
-xelatex.exe ham_c.tex
-xelatex.exe ham_c.tex
-xelatex.exe ham_c.tex
+rem bibtex.exe ham_c
+rem xelatex.exe ham_c.tex
+rem xelatex.exe ham_c.tex
+rem xelatex.exe ham_c.tex
 
 echo(> zishutongji.md
 echo ## ×ÖÊýÍ³¼Æ>> zishutongji.md
