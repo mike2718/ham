@@ -6,6 +6,7 @@ SHA256SUMS.txt
 MD5SUMS
 SHA1SUMS
 SHA256SUMS
+*.utf8.c
 *.orig
 *.exe
 *.pdf
