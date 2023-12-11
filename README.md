@@ -36,7 +36,7 @@ PDF文件中使用了以下字体。
 非常感谢各位字体开发者们。
 
 ```
-Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC, Noto Sans Mono
+Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC, Noto Sans Mono CJK SC, Noto Sans Mono
 
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/)
 
@@ -52,6 +52,6 @@ http://scripts.sil.org/OFL
 
 | 类别 | 总计行 | 总计单词数 | 总计字符数 |
 | :---- | :---- | :---- | :---- |
-| A类 | 5449 | 7352 | 162769 |
-| B类 | 9628 | 15306 | 303209 |
-| C类 | 13619 | 19894 | 392360 |
+| A类 | 5449 | 7359 | 162801 |
+| B类 | 9628 | 15313 | 303241 |
+| C类 | 13619 | 19901 | 392392 |
