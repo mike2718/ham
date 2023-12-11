@@ -7,30 +7,15 @@ set datetime=%datetime:~0,4%%datetime:~4,2%%datetime:~6,2%
 del /q ..\ham_a*.zip ..\ham_b*.zip ..\ham_c*.zip ..\SHA256SUMS.txt 2>nul
 del /q *.obj *.exe 2>nul
 del /q *.log *.aux *.toc *.out *.pdf *.blg *.bbl *.fdb_latexmk *.fls *.xdv *.toc 2>nul
-del /q *.bak0 *.bak1 2>nul
+del /q *.bak* 2>nul
 rd /s /q out 2>nul
 
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c icao.c
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c jisuan.c
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c feibiao.c
-C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 icao.c > icao.utf8.c
-C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 icao.c > jisuan.utf8.c
-C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 icao.c > feibiao.utf8.c
 C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o icao.exe icao.c
 C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o jisuan.exe jisuan.c
 C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o feibiao.exe feibiao.c
-
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml ham_a.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml ham_b.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml ham_c.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml fulu_a.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml fulu_b.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml fulu_c.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml bianzhuzhedehua.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml cankaowenxian.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml houji.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml qianyan.tex
-rem C:\cmdtool64\latexindent.exe -w -m -s -l latexindent.yaml xuke.tex
 
 xelatex.exe ham_a.tex
 rem bibtex.exe ham_a

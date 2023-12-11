@@ -36,7 +36,7 @@ PDF文件中使用了以下字体。
 非常感谢各位字体开发者们。
 
 ```
-Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC, Noto Sans Mono
+Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC, Noto Sans Mono CJK SC, Noto Sans Mono
 
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/)
 
