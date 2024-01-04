@@ -82,7 +82,7 @@ const char* natoTranslate(char c)
     case '9':
         return "Nine";
     case '/':
-        return "Stroke";
+        return "Portable";
     default:
         return 0;
     }
