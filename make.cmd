@@ -8,7 +8,6 @@ del /q ..\ham_a*.zip ..\ham_b*.zip ..\ham_c*.zip ..\SHA256SUMS.txt 2>nul
 del /q *.obj *.exe 2>nul
 del /q *.log *.aux *.toc *.out *.pdf *.blg *.bbl *.fdb_latexmk *.fls *.xdv *.toc 2>nul
 del /q *.bak* 2>nul
-rd /s /q out 2>nul
 
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c icao.c
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c jisuan.c
