@@ -61,6 +61,8 @@ const char* natoTranslate(char c)
         return "X-ray";
     case 'Y':
         return "Yankee";
+    case 'Z':
+        return "Zulu";
     case '0':
         return "Zero";
     case '1':
