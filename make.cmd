@@ -33,17 +33,17 @@ rem xelatex.exe ham_c.tex
 rem xelatex.exe ham_c.tex
 
 echo(> zishutongji.md
-echo ## ×ÖÊýÍ³¼Æ>> zishutongji.md
+echo ## å­—æ•°ç»Ÿè®¡>> zishutongji.md
 echo(>> zishutongji.md
-echo ^| Àà±ð ^| ×Ü¼ÆÐÐ ^| ×Ü¼Æµ¥´ÊÊý ^| ×Ü¼Æ×Ö·ûÊý ^|>> zishutongji.md
+echo ^| ç±»åˆ« ^| æ€»è®¡è¡Œ ^| æ€»è®¡å•è¯æ•° ^| æ€»è®¡å­—ç¬¦æ•° ^|>> zishutongji.md
 echo ^| :---- ^| :---- ^| :---- ^| :---- ^|>> zishutongji.md
-echo|set /p="| AÀà " >> zishutongji.md
+echo|set /p="| Aç±» " >> zishutongji.md
 C:\cmdtool32\awk.exe -f wc.awk ham_a.tex qianyan.tex bianzhuzhedehua.tex fulu_a.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
-echo|set /p="| BÀà " >> zishutongji.md
+echo|set /p="| Bç±» " >> zishutongji.md
 C:\cmdtool32\awk.exe -f wc.awk ham_b.tex qianyan.tex bianzhuzhedehua.tex fulu_b.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
-echo|set /p="| CÀà " >> zishutongji.md
+echo|set /p="| Cç±» " >> zishutongji.md
 C:\cmdtool32\awk.exe -f wc.awk ham_c.tex qianyan.tex bianzhuzhedehua.tex fulu_c.tex cankaowenxian.tex houji.tex xuke.tex >> zishutongji.md
-C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 zishutongji.md > zishutongji.utf8.md
+rem C:\cmdtool64\iconv.exe -f WINDOWS-936 -t UTF-8 zishutongji.md > zishutongji.utf8.md
 copy /b /y duwo.md+zishutongji.utf8.md README.md
 
 C:\cmdtool32\zip.exe ..\ham_a_%datetime%.zip ham_a.pdf LICENSE.md README.md
