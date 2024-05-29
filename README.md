@@ -34,12 +34,12 @@
 
 ### 字体许可
 
-PDF文件中使用了以下字体。
-非常感谢各位字体开发者们。
+在PDF文件中使用了以下字体。
+在此感谢各位字体开发者。
+
+Noto Sans Mono CJK SC, Noto Sans Mono, Noto Sans SC, Noto Sans, Noto Serif SC, Noto Serif
 
 ```
-Noto Sans, Noto Serif, Noto Sans SC, Noto Serif SC, Noto Sans Mono CJK SC, Noto Sans Mono
-
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/)
 
 This Font Software is licensed under the SIL Open Font License,
