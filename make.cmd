@@ -12,25 +12,13 @@ del /q *.bak* 2>nul
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c icao.c
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c jisuan.c
 C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c feibiao.c
-C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o icao.exe icao.c
-C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o jisuan.exe jisuan.c
-C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o feibiao.exe feibiao.c
+rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o icao.exe icao.c
+rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o jisuan.exe jisuan.c
+rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o feibiao.exe feibiao.c
 
-xelatex.exe ham_a.tex
-rem bibtex.exe ham_a
-rem xelatex.exe ham_a.tex
-rem xelatex.exe ham_a.tex
-rem xelatex.exe ham_a.tex
-xelatex.exe ham_b.tex
-rem bibtex.exe ham_b
-rem xelatex.exe ham_b.tex
-rem xelatex.exe ham_b.tex
-rem xelatex.exe ham_b.tex
-xelatex.exe ham_c.tex
-rem bibtex.exe ham_c
-rem xelatex.exe ham_c.tex
-rem xelatex.exe ham_c.tex
-rem xelatex.exe ham_c.tex
+xelatex.exe --shell-escape ham_a.tex
+xelatex.exe --shell-escape ham_b.tex
+rem xelatex.exe --shell-escape ham_c.tex
 
 echo(> zishutongji.md
 echo ## ×ÖÊýÍ³¼Æ>> zishutongji.md
