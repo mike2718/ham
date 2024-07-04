@@ -1,5 +1,6 @@
 @echo on
 cd /d "%~dp0"
+set "PATH=C:\texlive\2024\bin\windows;%PATH%"
 
 for /f "tokens=2 delims==" %%I in ('wmic os get localdatetime /format:list') do set datetime=%%I
 set datetime=%datetime:~0,4%%datetime:~4,2%%datetime:~6,2%
@@ -16,9 +17,9 @@ rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 
 rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o jisuan.exe jisuan.c
 rem C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe -Wall -Wpedantic -Wextra -std=c99 -o feibiao.exe feibiao.c
 
-xelatex.exe --shell-escape ham_a.tex
-xelatex.exe --shell-escape ham_b.tex
-rem xelatex.exe --shell-escape ham_c.tex
+xelatex.exe ham_a.tex
+xelatex.exe ham_b.tex
+rem xelatex.exe ham_c.tex
 
 echo(> zishutongji.md
 echo ## 字数统计>> zishutongji.md
@@ -40,5 +41,10 @@ C:\cmdtool32\zip.exe ..\ham_b_%datetime%.zip ham_b.pdf LICENSE.md README.md
 C:\cmdtool32\zip.exe ..\ham_c_%datetime%.zip ham_c.pdf LICENSE.md README.md
 
 C:\cmdtool64\generic_sum.exe SHA256 ..\ham_a*.zip ..\ham_b*.zip ..\ham_c*.zip > ..\SHA256SUMS.txt
+
+rem 清理
+del /q *.log *.aux *.toc *.out *.blg *.bbl *.fdb_latexmk *.fls *.xdv *.toc 2>nul
+del /q *.bak* 2>nul
+
 
 pause
