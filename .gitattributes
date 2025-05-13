@@ -1,20 +1,17 @@
-# Set the default behavior, in case people don't have core.autocrlf set.
-* text=auto
-
 # Explicitly declare text files you want to always be normalized and converted
 # to native line endings on checkout.
-*.tex text
-*.bib text
-*.eps text
-*.md text
-*.c text
-*.h text
-*.awk text
+#*.tex text
+#*.bib text
+#*.eps text
+#*.md text
+#*.c text
+#*.h text
+#*.awk text
 
 # Declare files that will always have CRLF line endings on checkout.
 *.bat text eol=crlf
 *.cmd text eol=crlf
-*.txsprofile text eol=crlf
+#*.txsprofile text eol=crlf
 
 # Denote all files that are truly binary and should not be modified.
 *.png binary
@@ -28,3 +25,6 @@
 *.rar binary
 *.7z binary
 *.exe binary
+
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
