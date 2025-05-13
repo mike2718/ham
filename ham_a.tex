@@ -14,16 +14,8 @@ right=2cm]{geometry}
 \setlist{nosep} % 项间距和段落间距设置为零
 
 \usepackage{mathtools}
-%\usepackage{unicode-math} % 使用 unicode-math 宏包
-%\setmathfont{Noto Sans Math} % 设置数学字体
-
-\usepackage[hidelinks]{hyperref}
-\hypersetup{
-	colorlinks=true,
-	allcolors=black,
-	pdfauthor={BG7XTQ},
-	pdftitle={业余无线电操作技能考核攻略本（类别：A）}
-}
+\usepackage{unicode-math} % 使用 unicode-math 宏包
+\setmathfont{Noto Sans Math} % 设置数学字体
 
 \usepackage{multirow}
 \usepackage{textcomp}
@@ -51,15 +43,14 @@ right=2cm]{geometry}
 \usepackage{hologo}
 
 \usepackage{parskip}
-\setlength{\parindent}{0pt} % 取消段落首行缩进
-%\setlength{\parskip}{0.618em}   % 设置段落之间的间距
+\setlength{\parindent}{0pt} % 禁用缩进
 
 % 使用的字体
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
 \setmonofont{Noto Sans Mono}
-\setCJKmainfont{Noto Serif SC}
-\setCJKsansfont{Noto Sans SC}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
 \setCJKmonofont{Noto Sans Mono CJK SC}
 
 \setenumerate[0]{label=(\Alph*)}
@@ -70,7 +61,7 @@ right=2cm]{geometry}
 	chapter/numberformat = \color{blue}\zihao{0}\emph,
 	section/name = {},
 	section/number = \Roman{section},
-%	autoindent=false, %禁用自动调整功能
+%	autoindent=false, % 禁用自动调整功能
 }
 
 
@@ -109,6 +100,15 @@ right=2cm]{geometry}
 }
 
 \lstset{style=mystyle}
+
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+	colorlinks=true,
+	allcolors=black,
+	pdfauthor={BG7XTQ},
+	pdftitle={业余无线电操作技能考核攻略本（类别：A）}
+}
 
 
 \begin{document}%内容开始
