@@ -10,10 +10,6 @@ del /q *.obj *.exe 2>nul
 del /q *.log *.aux *.toc *.out *.pdf *.blg *.bbl *.fdb_latexmk *.fls *.xdv *.toc 2>nul
 del /q *.bak* 2>nul
 
-rem C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c icao.c
-rem C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c jisuan.c
-rem C:\cmdtool32\astyle.exe -A1 -p -s4 -xC80 -c feibiao.c
-
 xelatex.exe ham_a.tex
 xelatex.exe ham_b.tex
 rem xelatex.exe ham_c.tex

@@ -50,7 +50,7 @@
 
 字体和文本处理：
 
-- fontspec(隐式) 字体选择
+- fontspec 字体选择
 - textcomp 文本符号支持
 - xstring 字符串处理
 
