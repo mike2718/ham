@@ -1,1 +1,1 @@
-&copy; 2021 BG7XTQ, Mike
+&copy; 2021 BG7XTQ
