@@ -12,6 +12,7 @@ right=2cm]{geometry}
 
 \usepackage{enumitem}
 \setlist{nosep} % 项间距和段落间距设置为零
+\setenumerate[0]{label=(\Alph*)}
 
 \usepackage{mathtools}
 \usepackage{unicode-math} % 使用 unicode-math 宏包
@@ -53,8 +54,6 @@ right=2cm]{geometry}
 \setCJKsansfont{Noto Sans CJK SC}
 \setCJKmonofont{Noto Sans Mono CJK SC}
 
-\setenumerate[0]{label=(\Alph*)}
-
 \ctexset{
 	chapter/name = {第,章},
 	chapter/number = \arabic{chapter},
@@ -64,7 +63,6 @@ right=2cm]{geometry}
 %	autoindent=false, % 禁用自动调整功能
 }
 
-
 % 页眉和页脚样式（仿某书风格）
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -73,35 +71,6 @@ right=2cm]{geometry}
 \fancyhead[RO]{ \textsf{ \small \rightmark } }
 \fancyfoot[LE,RO]{ \textrm{ \small --\ \thepage\ -- } }
 
-% 代码颜色定义
-\definecolor{codegreen}{HTML}{408080}
-\definecolor{codegray}{HTML}{72777D}
-\definecolor{codepurple}{HTML}{BA2121}
-\definecolor{backcolour}{HTML}{F8F9FA}
-\definecolor{keyword}{HTML}{008000}
-
-\lstdefinestyle{mystyle}{
-	backgroundcolor=\color{backcolour},
-	commentstyle=\color{codegreen},
-	keywordstyle=\color{keyword},
-	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{codepurple},
-	basicstyle=\ttfamily\footnotesize,
-	breakatwhitespace=false,
-	breaklines=true,
-	captionpos=b,
-	keepspaces=true,
-	numbers=left,
-	numbersep=5pt,
-	showspaces=false,
-	showstringspaces=false,
-	showtabs=false,
-	tabsize=4
-}
-
-\lstset{style=mystyle}
-
-
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
 	colorlinks=true,
@@ -109,7 +78,6 @@ right=2cm]{geometry}
 	pdfauthor={BG7XTQ},
 	pdftitle={业余无线电台操作技术能力验证考核攻略本（类别：A）}
 }
-
 
 \begin{document}%内容开始
 
