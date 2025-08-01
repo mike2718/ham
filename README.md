@@ -1,5 +1,3 @@
-# 由于作者这家伙很懒，现本书暂停更新中。
-
 # 《业余无线电操作技能考核攻略本（类别：A、B）》
 
 ## 目录
@@ -22,7 +20,57 @@
 
 ## 依赖
 
-- ctex
+基本文档类和本地化支持：
+
+- ctexbook 中文书籍文档类
+- ctex宏包
+
+页面布局和格式：
+
+- geometry 页面边距设置
+- fancyhdr 页眉页脚设置
+- parskip 段落间距控制
+
+图形和颜色：
+
+- graphicx 图形支持
+- xcolor 颜色支持
+
+数学相关：
+
+- mathtools 数学工具扩展
+- unicode-math Unicode数学支持
+- siunitx 科学单位支持
+
+表格和列表：
+
+- multirow 多行表格支持
+- enumitem 列表控制
+- longtable 长表格支持
+
+字体和文本处理：
+
+- fontspec(隐式) 字体选择
+- textcomp 文本符号支持
+- xstring 字符串处理
+
+代码和环境：
+
+- listings 代码列表环境
+- hologo LaTeX相关logo
+
+版本控制和元数据：
+
+- catchfile 文件内容读取
+- datetime2 日期时间格式
+
+超链接和PDF设置：
+
+- hyperref 超链接支持
+
+其他：
+
+- url URL格式化
 
 ## 编译
 
@@ -50,7 +98,7 @@ http://scripts.sil.org/OFL
 
 | 类别 | 总计行 | 总计单词数 | 总计字符数 |
 | :---- | :---- | :---- | :---- |
-| A类 | 5451 | 7417 | 156217 |
+| A类 | 5451 | 7520 | 156339 |
 | B类 | 9639 | 15390 | 290705 |
 | C类 | 13617 | 19895 | 392275 |
 
